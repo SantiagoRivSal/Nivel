@@ -1,0 +1,11 @@
+{
+  "name": "NIVEL · Entrena. Registra. Evoluciona.",
+  "short_name": "NIVEL",
+  "description": "Registro personal de entrenamiento, fuerza y medidas corporales.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0b111a",
+  "theme_color": "#0b111a",
+  "icons": [{"src":"./icons/icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]
+}

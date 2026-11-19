@@ -1,0 +1,837 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "heightCm": 155,
+    "referenceWeightKg": 60,
+    "gym": "Fitness Park Zubiarte",
+    "goalDate": "2026-12-30",
+    "goalName": "Viaje a Miami",
+    "goal": "Reducir grasa corporal y desarrollar músculo equilibradamente; entrenar 5 días a la semana. Los pesos indicados son orientativos y NO son registros reales."
+  },
+  "measurements": [],
+  "sessions": [],
+  "activeSession": null,
+  "exercises": [
+    {
+      "id": "press-pecho",
+      "name": "Press de pecho en máquina",
+      "muscle": "Pecho",
+      "equipment": "Máquina",
+      "unit": "reps",
+      "instructions": "Espalda pegada al respaldo; empuja sin bloquear los codos.",
+      "loadUnit": "Máquina"
+    },
+    {
+      "id": "press-inclinado-manc",
+      "name": "Press inclinado con mancuernas",
+      "muscle": "Pecho",
+      "equipment": "Mancuernas",
+      "unit": "reps",
+      "instructions": "Banco a 20–35°, baja controlado y empuja sobre el pecho alto.",
+      "loadUnit": "Por mancuerna"
+    },
+    {
+      "id": "press-hombro-maq",
+      "name": "Press de hombros en máquina",
+      "muscle": "Hombros",
+      "equipment": "Máquina",
+      "unit": "reps",
+      "instructions": "Ajusta el asiento; empuja sin arquear la espalda.",
+      "loadUnit": "Máquina"
+    },
+    {
+      "id": "elev-lateral",
+      "name": "Elevaciones laterales",
+      "muscle": "Hombros",
+      "equipment": "Mancuernas",
+      "unit": "reps",
+      "instructions": "Brazos ligeramente flexionados, eleva hasta la altura del hombro.",
+      "loadUnit": "Por mancuerna"
+    },
+    {
+      "id": "triceps-polea",
+      "name": "Extensión de tríceps en polea",
+      "muscle": "Tríceps",
+      "equipment": "Polea",
+      "unit": "reps",
+      "instructions": "Codos pegados al cuerpo, extiende sin mover los hombros.",
+      "loadUnit": "Máquina"
+    },
+    {
+      "id": "prensa",
+      "name": "Prensa de piernas",
+      "muscle": "Cuádriceps",
+      "equipment": "Máquina",
+      "unit": "reps",
+      "instructions": "Apoya pies enteros, baja sin despegar cadera y empuja de forma controlada.",
+      "loadUnit": "Máquina"
+    },
+    {
+      "id": "split-squat",
+      "name": "Sentadilla dividida",
+      "muscle": "Cuádriceps",
+      "equipment": "Peso corporal",
+      "unit": "reps",
+      "instructions": "Separa los pies, desciende vertical manteniendo estabilidad.",
+      "loadUnit": "Peso corporal"
+    },
+    {
+      "id": "extension-cuadriceps",
+      "name": "Extensión de cuádriceps",
+      "muscle": "Cuádriceps",
+      "equipment": "Máquina",
+      "unit": "reps",
+      "instructions": "Ajusta el eje de rodilla; extiende controlando el retorno.",
+      "loadUnit": "Máquina"
+    },
+    {
+      "id": "curl-femoral",
+      "name": "Curl femoral en máquina",
+      "muscle": "Isquiotibiales",
+      "equipment": "Máquina",
+      "unit": "reps",
+      "instructions": "Flexiona las rodillas sin levantar la cadera ni dar tirones.",
+      "loadUnit": "Máquina"
+    },
+    {
+      "id": "gemelos",
+      "name": "Elevación de gemelos en máquina",
+      "muscle": "Gemelos",
+      "equipment": "Máquina",
+      "unit": "reps",
+      "instructions": "Sube sobre la punta del pie, pausa y baja lentamente.",
+      "loadUnit": "Máquina"
+    },
+    {
+      "id": "crunch-polea",
+      "name": "Crunch abdominal en polea",
+      "muscle": "Abdomen",
+      "equipment": "Polea",
+      "unit": "reps",
+      "instructions": "Flexiona el tronco acercando costillas a pelvis, sin tirar con brazos.",
+      "loadUnit": "Máquina"
+    },
+    {
+      "id": "jalon",
+      "name": "Jalón al pecho",
+      "muscle": "Espalda",
+      "equipment": "Polea",
+      "unit": "reps",
+      "instructions": "Lleva el agarre al pecho alto y baja los hombros lejos de las orejas.",
+      "loadUnit": "Máquina"
+    },
+    {
+      "id": "remo-sentado",
+      "name": "Remo sentado",
+      "muscle": "Espalda",
+      "equipment": "Polea",
+      "unit": "reps",
+      "instructions": "Lleva codos atrás, mantén torso estable y controla la vuelta.",
+      "loadUnit": "Máquina"
+    },
+    {
+      "id": "remo-alto",
+      "name": "Remo alto en máquina",
+      "muscle": "Espalda",
+      "equipment": "Máquina",
+      "unit": "reps",
+      "instructions": "Tira hacia la parte superior del torso, sin encoger hombros.",
+      "loadUnit": "Máquina"
+    },
+    {
+      "id": "peck-inverso",
+      "name": "Peck deck inverso",
+      "muscle": "Hombros",
+      "equipment": "Máquina",
+      "unit": "reps",
+      "instructions": "Separa brazos a la altura de los hombros sin impulso.",
+      "loadUnit": "Máquina"
+    },
+    {
+      "id": "curl-biceps",
+      "name": "Curl de bíceps",
+      "muscle": "Bíceps",
+      "equipment": "Mancuernas",
+      "unit": "reps",
+      "instructions": "Mantén codos junto al tronco y evita balancearte.",
+      "loadUnit": "Por mancuerna"
+    },
+    {
+      "id": "press-inclinado-maq",
+      "name": "Press inclinado en máquina",
+      "muscle": "Pecho",
+      "equipment": "Máquina",
+      "unit": "reps",
+      "instructions": "Alinea agarres con pecho superior y empuja sin rebotar.",
+      "loadUnit": "Máquina"
+    },
+    {
+      "id": "jalon-neutro",
+      "name": "Jalón al pecho agarre neutro",
+      "muscle": "Espalda",
+      "equipment": "Polea",
+      "unit": "reps",
+      "instructions": "Dirige codos hacia abajo, tronco firme y recorrido completo cómodo.",
+      "loadUnit": "Máquina"
+    },
+    {
+      "id": "aperturas-polea",
+      "name": "Aperturas de pecho en polea",
+      "muscle": "Pecho",
+      "equipment": "Polea",
+      "unit": "reps",
+      "instructions": "Acerca las manos en arco suave, manteniendo ligera flexión de codo.",
+      "loadUnit": "Máquina"
+    },
+    {
+      "id": "curl-martillo",
+      "name": "Curl martillo",
+      "muscle": "Bíceps",
+      "equipment": "Mancuernas",
+      "unit": "reps",
+      "instructions": "Palmas enfrentadas; sube y baja sin balancear el cuerpo.",
+      "loadUnit": "Por mancuerna"
+    },
+    {
+      "id": "triceps-cuerda",
+      "name": "Extensión de tríceps con cuerda",
+      "muscle": "Tríceps",
+      "equipment": "Polea",
+      "unit": "reps",
+      "instructions": "Extiende los codos y separa la cuerda al final.",
+      "loadUnit": "Máquina"
+    },
+    {
+      "id": "peso-muerto-rumano",
+      "name": "Peso muerto rumano con mancuernas",
+      "muscle": "Isquiotibiales",
+      "equipment": "Mancuernas",
+      "unit": "reps",
+      "instructions": "Lleva cadera atrás con espalda neutra y mancuernas cerca de las piernas.",
+      "loadUnit": "Por mancuerna"
+    },
+    {
+      "id": "hip-thrust",
+      "name": "Hip thrust en máquina",
+      "muscle": "Glúteos",
+      "equipment": "Máquina",
+      "unit": "reps",
+      "instructions": "Empuja con talones y extiende cadera sin hiperextender la espalda.",
+      "loadUnit": "Máquina"
+    },
+    {
+      "id": "zancadas",
+      "name": "Zancadas",
+      "muscle": "Cuádriceps",
+      "equipment": "Peso corporal",
+      "unit": "reps",
+      "instructions": "Da un paso y flexiona ambas rodillas manteniendo el equilibrio.",
+      "loadUnit": "Peso corporal"
+    },
+    {
+      "id": "pallof",
+      "name": "Pallof press en polea",
+      "muscle": "Abdomen",
+      "equipment": "Polea",
+      "unit": "reps",
+      "instructions": "Aleja las manos del pecho sin permitir que el tronco rote.",
+      "loadUnit": "Máquina"
+    },
+    {
+      "id": "plancha",
+      "name": "Plancha abdominal",
+      "muscle": "Abdomen",
+      "equipment": "Peso corporal",
+      "unit": "seconds",
+      "instructions": "Alinea hombros, cadera y tobillos; respira sin hundir zona lumbar.",
+      "loadUnit": "Peso corporal"
+    },
+    {
+      "id": "sentadilla-goblet",
+      "name": "Sentadilla goblet",
+      "muscle": "Cuádriceps",
+      "equipment": "Mancuernas",
+      "unit": "reps",
+      "instructions": "Sujeta una mancuerna delante del pecho y baja sin perder postura.",
+      "loadUnit": "Total"
+    },
+    {
+      "id": "sentadilla-smith",
+      "name": "Sentadilla en multipower",
+      "muscle": "Cuádriceps",
+      "equipment": "Máquina",
+      "unit": "reps",
+      "instructions": "Coloca pies cómodos y desciende manteniendo control de rodillas.",
+      "loadUnit": "Máquina"
+    },
+    {
+      "id": "abductores",
+      "name": "Abductores en máquina",
+      "muscle": "Glúteos",
+      "equipment": "Máquina",
+      "unit": "reps",
+      "instructions": "Separa las rodillas sin impulso, con tronco estable.",
+      "loadUnit": "Máquina"
+    },
+    {
+      "id": "aductores",
+      "name": "Aductores en máquina",
+      "muscle": "Aductores",
+      "equipment": "Máquina",
+      "unit": "reps",
+      "instructions": "Junta las piernas controladamente, sin tirones.",
+      "loadUnit": "Máquina"
+    },
+    {
+      "id": "dominadas",
+      "name": "Dominadas asistidas",
+      "muscle": "Espalda",
+      "equipment": "Máquina",
+      "unit": "reps",
+      "instructions": "Sube llevando el pecho al agarre y baja con control.",
+      "loadUnit": "Máquina"
+    },
+    {
+      "id": "remo-manc",
+      "name": "Remo con mancuerna",
+      "muscle": "Espalda",
+      "equipment": "Mancuernas",
+      "unit": "reps",
+      "instructions": "Apoya una mano, tira del codo hacia la cadera.",
+      "loadUnit": "Por mancuerna"
+    },
+    {
+      "id": "facepull",
+      "name": "Face pull",
+      "muscle": "Hombros",
+      "equipment": "Polea",
+      "unit": "reps",
+      "instructions": "Tira de la cuerda hacia la cara con codos altos y control.",
+      "loadUnit": "Máquina"
+    },
+    {
+      "id": "press-banca",
+      "name": "Press banca con barra",
+      "muscle": "Pecho",
+      "equipment": "Barra",
+      "unit": "reps",
+      "instructions": "Pies firmes, controla la bajada al pecho y sube sin rebotar.",
+      "loadUnit": "Total"
+    },
+    {
+      "id": "flexiones",
+      "name": "Flexiones",
+      "muscle": "Pecho",
+      "equipment": "Peso corporal",
+      "unit": "reps",
+      "instructions": "Tronco alineado, baja el pecho y empuja el suelo.",
+      "loadUnit": "Peso corporal"
+    },
+    {
+      "id": "fondos-asistidos",
+      "name": "Fondos asistidos",
+      "muscle": "Tríceps",
+      "equipment": "Máquina",
+      "unit": "reps",
+      "instructions": "Desciende sin molestias de hombro y extiende de forma controlada.",
+      "loadUnit": "Máquina"
+    },
+    {
+      "id": "curl-scott",
+      "name": "Curl de bíceps en banco Scott",
+      "muscle": "Bíceps",
+      "equipment": "Máquina",
+      "unit": "reps",
+      "instructions": "Brazos apoyados y descenso lento sin bloquear de golpe.",
+      "loadUnit": "Máquina"
+    },
+    {
+      "id": "curl-polea",
+      "name": "Curl de bíceps en polea",
+      "muscle": "Bíceps",
+      "equipment": "Polea",
+      "unit": "reps",
+      "instructions": "Mantén codos fijos y evita mover el tronco.",
+      "loadUnit": "Máquina"
+    },
+    {
+      "id": "ext-triceps-cabeza",
+      "name": "Extensión tríceps sobre cabeza",
+      "muscle": "Tríceps",
+      "equipment": "Polea",
+      "unit": "reps",
+      "instructions": "Mantén húmeros quietos y extiende los codos.",
+      "loadUnit": "Máquina"
+    },
+    {
+      "id": "peso-muerto-maquina",
+      "name": "Peso muerto en máquina",
+      "muscle": "Isquiotibiales",
+      "equipment": "Máquina",
+      "unit": "reps",
+      "instructions": "Empuja el suelo y extiende la cadera conservando la espalda neutra.",
+      "loadUnit": "Máquina"
+    },
+    {
+      "id": "puente-gluteo",
+      "name": "Puente de glúteos",
+      "muscle": "Glúteos",
+      "equipment": "Peso corporal",
+      "unit": "reps",
+      "instructions": "Sube la pelvis y aprieta glúteos evitando arquear la lumbar.",
+      "loadUnit": "Peso corporal"
+    },
+    {
+      "id": "step-up",
+      "name": "Subida al cajón",
+      "muscle": "Cuádriceps",
+      "equipment": "Peso corporal",
+      "unit": "reps",
+      "instructions": "Sube al cajón con control y evita impulsarte con la pierna inferior.",
+      "loadUnit": "Peso corporal"
+    },
+    {
+      "id": "crunch-maquina",
+      "name": "Crunch en máquina",
+      "muscle": "Abdomen",
+      "equipment": "Máquina",
+      "unit": "reps",
+      "instructions": "Acerca costillas y pelvis con movimiento lento.",
+      "loadUnit": "Máquina"
+    },
+    {
+      "id": "elev-rodillas",
+      "name": "Elevación de rodillas colgado",
+      "muscle": "Abdomen",
+      "equipment": "Peso corporal",
+      "unit": "reps",
+      "instructions": "Eleva rodillas con pelvis controlada, sin balanceos.",
+      "loadUnit": "Peso corporal"
+    },
+    {
+      "id": "bird-dog",
+      "name": "Bird dog",
+      "muscle": "Abdomen",
+      "equipment": "Peso corporal",
+      "unit": "reps",
+      "instructions": "Extiende brazo y pierna contrarios sin girar la cadera.",
+      "loadUnit": "Peso corporal"
+    },
+    {
+      "id": "cardio-cinta",
+      "name": "Caminadora inclinada",
+      "muscle": "Cardio",
+      "equipment": "Cardio",
+      "unit": "minutes",
+      "instructions": "Camina a ritmo sostenible, respiración algo elevada y controlada.",
+      "loadUnit": "Sin carga"
+    },
+    {
+      "id": "bicicleta",
+      "name": "Bicicleta estática",
+      "muscle": "Cardio",
+      "equipment": "Cardio",
+      "unit": "minutes",
+      "instructions": "Pedalea a ritmo moderado, ajustando bien altura de asiento.",
+      "loadUnit": "Sin carga"
+    },
+    {
+      "id": "eliptica",
+      "name": "Elíptica",
+      "muscle": "Cardio",
+      "equipment": "Cardio",
+      "unit": "minutes",
+      "instructions": "Movimiento continuo a intensidad moderada, sin impactos fuertes.",
+      "loadUnit": "Sin carga"
+    },
+    {
+      "id": "remo-ergometro",
+      "name": "Remo ergómetro",
+      "muscle": "Cardio",
+      "equipment": "Cardio",
+      "unit": "minutes",
+      "instructions": "Empuja con piernas, inclina el tronco ligeramente y termina con brazos.",
+      "loadUnit": "Sin carga"
+    }
+  ],
+  "routines": [
+    {
+      "id": "miami-inicial",
+      "name": "Plan 5 días · Miami",
+      "createdAt": "2026-11-19",
+      "days": {
+        "1": {
+          "title": "Push · Pecho, hombros y tríceps",
+          "rest": false,
+          "exercises": [
+            {
+              "exerciseId": "press-pecho",
+              "sets": 3,
+              "min": 8,
+              "max": 12,
+              "suggestedKg": 25,
+              "perSide": false,
+              "optional": false,
+              "notes": ""
+            },
+            {
+              "exerciseId": "press-inclinado-manc",
+              "sets": 3,
+              "min": 8,
+              "max": 12,
+              "suggestedKg": null,
+              "perSide": false,
+              "optional": false,
+              "notes": ""
+            },
+            {
+              "exerciseId": "press-hombro-maq",
+              "sets": 2,
+              "min": 8,
+              "max": 12,
+              "suggestedKg": 6,
+              "perSide": false,
+              "optional": false,
+              "notes": ""
+            },
+            {
+              "exerciseId": "elev-lateral",
+              "sets": 3,
+              "min": 12,
+              "max": 20,
+              "suggestedKg": null,
+              "perSide": false,
+              "optional": false,
+              "notes": ""
+            },
+            {
+              "exerciseId": "triceps-polea",
+              "sets": 3,
+              "min": 10,
+              "max": 15,
+              "suggestedKg": null,
+              "perSide": false,
+              "optional": false,
+              "notes": ""
+            },
+            {
+              "exerciseId": "cardio-cinta",
+              "sets": 1,
+              "min": 20,
+              "max": 20,
+              "suggestedKg": null,
+              "perSide": false,
+              "optional": true,
+              "notes": ""
+            }
+          ]
+        },
+        "2": {
+          "title": "Piernas y abdomen",
+          "rest": false,
+          "exercises": [
+            {
+              "exerciseId": "prensa",
+              "sets": 3,
+              "min": 10,
+              "max": 12,
+              "suggestedKg": 35,
+              "perSide": false,
+              "optional": false,
+              "notes": ""
+            },
+            {
+              "exerciseId": "split-squat",
+              "sets": 2,
+              "min": 10,
+              "max": 10,
+              "suggestedKg": null,
+              "perSide": true,
+              "optional": false,
+              "notes": ""
+            },
+            {
+              "exerciseId": "extension-cuadriceps",
+              "sets": 2,
+              "min": 12,
+              "max": 15,
+              "suggestedKg": null,
+              "perSide": false,
+              "optional": false,
+              "notes": ""
+            },
+            {
+              "exerciseId": "curl-femoral",
+              "sets": 3,
+              "min": 10,
+              "max": 15,
+              "suggestedKg": null,
+              "perSide": false,
+              "optional": false,
+              "notes": ""
+            },
+            {
+              "exerciseId": "gemelos",
+              "sets": 3,
+              "min": 12,
+              "max": 20,
+              "suggestedKg": null,
+              "perSide": false,
+              "optional": false,
+              "notes": ""
+            },
+            {
+              "exerciseId": "crunch-polea",
+              "sets": 3,
+              "min": 12,
+              "max": 15,
+              "suggestedKg": null,
+              "perSide": false,
+              "optional": false,
+              "notes": ""
+            }
+          ]
+        },
+        "3": {
+          "title": "Espalda y bíceps",
+          "rest": false,
+          "exercises": [
+            {
+              "exerciseId": "jalon",
+              "sets": 3,
+              "min": 10,
+              "max": 12,
+              "suggestedKg": 10,
+              "perSide": false,
+              "optional": false,
+              "notes": ""
+            },
+            {
+              "exerciseId": "remo-sentado",
+              "sets": 3,
+              "min": 10,
+              "max": 12,
+              "suggestedKg": 15,
+              "perSide": false,
+              "optional": false,
+              "notes": ""
+            },
+            {
+              "exerciseId": "remo-alto",
+              "sets": 2,
+              "min": 10,
+              "max": 12,
+              "suggestedKg": null,
+              "perSide": false,
+              "optional": false,
+              "notes": ""
+            },
+            {
+              "exerciseId": "peck-inverso",
+              "sets": 3,
+              "min": 12,
+              "max": 20,
+              "suggestedKg": null,
+              "perSide": false,
+              "optional": false,
+              "notes": ""
+            },
+            {
+              "exerciseId": "curl-biceps",
+              "sets": 3,
+              "min": 10,
+              "max": 15,
+              "suggestedKg": 6,
+              "perSide": false,
+              "optional": false,
+              "notes": ""
+            },
+            {
+              "exerciseId": "cardio-cinta",
+              "sets": 1,
+              "min": 20,
+              "max": 25,
+              "suggestedKg": null,
+              "perSide": false,
+              "optional": true,
+              "notes": ""
+            }
+          ]
+        },
+        "4": {
+          "title": "Recuperación",
+          "rest": true,
+          "exercises": []
+        },
+        "5": {
+          "title": "Torso · Énfasis estético",
+          "rest": false,
+          "exercises": [
+            {
+              "exerciseId": "press-inclinado-maq",
+              "sets": 3,
+              "min": 8,
+              "max": 12,
+              "suggestedKg": null,
+              "perSide": false,
+              "optional": false,
+              "notes": ""
+            },
+            {
+              "exerciseId": "jalon-neutro",
+              "sets": 3,
+              "min": 10,
+              "max": 12,
+              "suggestedKg": 10,
+              "perSide": false,
+              "optional": false,
+              "notes": ""
+            },
+            {
+              "exerciseId": "remo-sentado",
+              "sets": 2,
+              "min": 10,
+              "max": 12,
+              "suggestedKg": 15,
+              "perSide": false,
+              "optional": false,
+              "notes": ""
+            },
+            {
+              "exerciseId": "aperturas-polea",
+              "sets": 2,
+              "min": 12,
+              "max": 15,
+              "suggestedKg": null,
+              "perSide": false,
+              "optional": false,
+              "notes": ""
+            },
+            {
+              "exerciseId": "elev-lateral",
+              "sets": 3,
+              "min": 12,
+              "max": 20,
+              "suggestedKg": null,
+              "perSide": false,
+              "optional": false,
+              "notes": ""
+            },
+            {
+              "exerciseId": "curl-martillo",
+              "sets": 2,
+              "min": 10,
+              "max": 15,
+              "suggestedKg": null,
+              "perSide": false,
+              "optional": false,
+              "notes": ""
+            },
+            {
+              "exerciseId": "triceps-cuerda",
+              "sets": 2,
+              "min": 10,
+              "max": 15,
+              "suggestedKg": null,
+              "perSide": false,
+              "optional": false,
+              "notes": ""
+            },
+            {
+              "exerciseId": "cardio-cinta",
+              "sets": 1,
+              "min": 20,
+              "max": 20,
+              "suggestedKg": null,
+              "perSide": false,
+              "optional": true,
+              "notes": ""
+            }
+          ]
+        },
+        "6": {
+          "title": "Posterior, glúteos y core",
+          "rest": false,
+          "exercises": [
+            {
+              "exerciseId": "peso-muerto-rumano",
+              "sets": 3,
+              "min": 8,
+              "max": 10,
+              "suggestedKg": null,
+              "perSide": false,
+              "optional": false,
+              "notes": ""
+            },
+            {
+              "exerciseId": "hip-thrust",
+              "sets": 3,
+              "min": 8,
+              "max": 12,
+              "suggestedKg": null,
+              "perSide": false,
+              "optional": false,
+              "notes": ""
+            },
+            {
+              "exerciseId": "curl-femoral",
+              "sets": 3,
+              "min": 10,
+              "max": 15,
+              "suggestedKg": null,
+              "perSide": false,
+              "optional": false,
+              "notes": ""
+            },
+            {
+              "exerciseId": "zancadas",
+              "sets": 2,
+              "min": 10,
+              "max": 10,
+              "suggestedKg": null,
+              "perSide": true,
+              "optional": false,
+              "notes": ""
+            },
+            {
+              "exerciseId": "gemelos",
+              "sets": 3,
+              "min": 12,
+              "max": 20,
+              "suggestedKg": null,
+              "perSide": false,
+              "optional": false,
+              "notes": ""
+            },
+            {
+              "exerciseId": "pallof",
+              "sets": 3,
+              "min": 12,
+              "max": 12,
+              "suggestedKg": null,
+              "perSide": true,
+              "optional": false,
+              "notes": ""
+            },
+            {
+              "exerciseId": "plancha",
+              "sets": 2,
+              "min": 30,
+              "max": 45,
+              "suggestedKg": null,
+              "perSide": false,
+              "optional": false,
+              "notes": ""
+            }
+          ]
+        },
+        "7": {
+          "title": "Descanso",
+          "rest": true,
+          "exercises": []
+        }
+      }
+    }
+  ],
+  "activeRoutineId": "miami-inicial"
+}
