@@ -1698,18 +1698,7 @@
     }
   ],
   "activeRoutineId": "miami-inicial",
-  "goals": [
-    {
-      "id": "goal-miami",
-      "name": "Viaje a Miami",
-      "description": "Reducir grasa abdominal y mejorar definición muscular, de manera sostenible.",
-      "targetDate": "2026-12-30",
-      "metric": "none",
-      "targetValue": null,
-      "createdAt": "2026-11-20T00:00:00Z",
-      "done": false
-    }
-  ],
+  "goals": [],
   "planner": {
     "availableDays": [
       1,
@@ -1722,5 +1711,6 @@
     "focus": "equilibrado",
     "minutesPerSession": 65,
     "level": "intermedio"
-  }
+  },
+  "exportedAt": "2026-11-20T23:07:27.795Z"
 }
