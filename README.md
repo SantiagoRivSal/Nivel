@@ -1,54 +1,72 @@
-# NIVEL — Entrena. Registra. Evoluciona.
+# NIVEL 4 — Entrena · Registra · Evoluciona
 
-Aplicación web estática, de código sencillo (HTML + CSS + JavaScript), lista para **GitHub Pages**. No necesita `npm`, compiladores ni servidor. Es adaptable a móvil y se puede instalar como acceso directo (PWA).
+Web estática para **GitHub Pages** (HTML, CSS, JavaScript y JSON), optimizada para teléfono. No necesita Node, NPM ni servidor de aplicación.
 
-## Qué incluye
+## Novedades de NIVEL 4
 
-- Registro de peso y de 10 medidas corporales, con fecha y notas; admite registrar **solo peso, solo una medida o varias a la vez**.
-- Historial editable, eliminación de registros y gráficos de progreso.
-- Rutina de fuerza de cinco días precargada y editable, con referencias de carga que **no son sesiones reales**.
-- Registro de entrenamientos por series, kilos, repeticiones/tiempos, borradores y sesiones terminadas.
-- Banco de 49 ejercicios, instrucciones y posibilidad de crear otros.
-- Duplicar versiones de rutina sin perder el historial.
-- Memoria local automática + descargar/restaurar respaldos **JSON**.
+1. **Interfaz móvil mejorada**: botones principales más amplios y separados de las tarjetas (especialmente «Rutina del día» y «Sesión libre»); separación uniforme entre acciones, campos, tarjetas y series; controles táctiles de al menos 44–48 px.
+2. **Selectores desplegables renovados**: fondo oscuro, contraste, flecha visible, estados de foco; conservan los selectores nativos del móvil por accesibilidad.
+3. **Cargas utilizadas en pantalla independiente**: desde Entrenar → «Abrir cargas». Se listan los últimos pesos **realmente guardados** por ejercicio; al pulsar uno se abre su historial de series y fechas. Ya no se repite el historial de kilos en cada ejercicio programado.
+4. **Las cargas siguen siendo sugerencia automática**: cuando inicias una sesión, el último peso usado se ofrece en la **primera serie** del mismo ejercicio, sin sobrescribir tu historial ni obligarte a usarlo.
+5. **«Ver más» abre otra pantalla**: el historial completo de mediciones, el historial completo de sesiones y la lista completa de cargas son vistas separadas con botón de regreso. Se pueden consultar con enlaces `#/measurements`, `#/sessions` y `#/loads`; también funciona el botón Atrás del navegador.
+6. **Nuevo mapa corporal anatómico**: biblioteca externa [Body Muscles (`@emmorts/body-muscles`)](https://github.com/emmorts/body-muscles), versión 2.1.1, con zonas musculares SVG interactivas y vistas delante/detrás. Tocar una región selecciona la medida corporal relacionada y la marca visualmente. Tocar una tarjeta de medida selecciona su valor y actualiza el gráfico de evolución. **La anatomía es ilustrativa**: una medida de cintura, por ejemplo, es un perímetro, no el tamaño de un músculo.
+7. **Ventanas**: botón rojo `×` destacado arriba a la derecha, separado del título y cómodo para tocar.
+
+Se mantienen las funciones de NIVEL 3: 130 ejercicios, cinco días de rutina, sesiones libres, registrar ejercicios de uno en uno y en orden real, kilómetros/minutos/inclinación en caminadora, composición grasa/magra si registras porcentaje de grasa, varios objetivos, asistente local, exportación e importación JSON.
+
+## Antes de actualizar: protege tus registros
+
+**Primero abre tu app anterior, ve a Perfil → Descargar memoria (.json) y guarda el archivo en privado.**
+
+La nueva versión reutiliza `localStorage` con la **misma clave** `nivel_fitness_data_v1` y acepta copias antiguas (`schemaVersion` 1, 2 y 3), migrándolas a la versión 4. No borra medidas, sesiones ni ejercicios personales. El `data.json` incluido es **solo la plantilla**: no sustituye tu historial personal.
+
+- Si mantienes exactamente la **misma dirección de GitHub Pages y el mismo navegador**, los registros existentes deberían reaparecer automáticamente.
+- Si cambias de dispositivo/navegador, usa Perfil → Restaurar memoria JSON. Restaurar **sustituye** lo guardado en el dispositivo destino.
+- GitHub Pages **no sincroniza** automáticamente datos entre teléfonos ni puede reescribir el JSON alojado en el repositorio. Evita subir tus respaldos personales a un repositorio público.
+- Al actualizar es posible que tu navegador muestre contenido antiguo por la caché PWA. Cierra y reabre la aplicación; si no cambia, recarga en el navegador. **No borres los datos de navegación** sin tener tu copia.
+
+## Atlas anatómico: funcionamiento y conexión
+
+El mapa usa un módulo de terceros de código abierto, **[@emmorts/body-muscles 2.1.1](https://www.npmjs.com/package/@emmorts/body-muscles)**, distribuido bajo **Apache-2.0**, cargado de forma diferida desde `unpkg.com`. La primera vez requiere conexión a internet. Si el servicio/CDN no está disponible, los registros y las tarjetas de medidas continúan funcionando, y verás un aviso en lugar del mapa. El mapa no es un escaneo médico, un modelo de tu cuerpo ni una medición automática.
+
+El script se carga en la página, por lo que el proveedor de la biblioteca debe ser de confianza, como ocurre con cualquier librería JavaScript de terceros. Si quieres una versión totalmente independiente de CDN, puedes instalar/incorporar localmente la versión empaquetada en una futura actualización.
+
+## Cómo ejecutarlo en VS Code
+
+Abre la carpeta en VS Code y ejecuta:
+
+```bash
+python -m http.server 5500
+```
+
+Si `python` no existe en Windows, prueba `py -m http.server 5500`. Abre `http://localhost:5500` en Chrome. También funciona con la extensión **Live Server**.
 
 ## Publicar en GitHub Pages
 
-1. Crea un repositorio nuevo en GitHub (por ejemplo `nivel`).
-2. Sube **todos** los archivos y carpetas de este ZIP a la **raíz** del repositorio, incluida `.github/workflows/pages.yml`. Debe quedar `index.html` en la raíz, no dentro de una carpeta adicional.
-3. Asegúrate de que la rama principal se llama `main`. Haz commit de los archivos.
-4. En **Settings → Pages → Build and deployment**, selecciona **GitHub Actions**.
-5. El flujo **Deploy NIVEL to GitHub Pages** publica el sitio. La dirección generalmente será `https://TU-USUARIO.github.io/nivel/`, según el nombre del repositorio. Comprueba la URL exacta en Settings → Pages.
-6. En el móvil, abre la dirección y usa *Añadir a pantalla de inicio* (Safari/Chrome, según el dispositivo).
-
-## Cómo funciona la memoria JSON
-
-`data.json` es la **plantilla inicial** (perfil, plan de entrenamiento y 49 ejercicios); **no contiene mediciones ficticias**. La primera vez que abres NIVEL, la app lee ese archivo. A partir de ahí guarda automáticamente las modificaciones en `localStorage` del navegador.
-
-**Importante:** GitHub Pages sirve archivos de forma estática. Por seguridad, un sitio web no puede modificar el `data.json` alojado en tu repositorio con cada medición. Por eso los datos se guardan en **ese navegador y dispositivo** y no se comparten con otros automáticamente.
-
-Desde **Perfil → Descargar mi memoria (.json)** obtendrás un respaldo completo de tus datos; desde **Restaurar memoria JSON** puedes subir ese archivo en otro móvil o después de reinstalar el navegador. La importación sustituye todo el estado local y pide confirmación. Se recomienda descargar una copia semanal.
-
-**Privacidad:** no publiques en tu repositorio de GitHub los respaldos JSON con medidas personales. Si borras los datos del navegador o abres NIVEL en otro dispositivo sin importar tu JSON, los datos anteriores no aparecerán. Para sincronización automática haría falta añadir autenticación y una base de datos externa.
-
-## Archivos
-
-- `index.html` — estructura y metadatos de la app.
-- `styles.css` — todos los estilos para móvil y escritorio.
-- `app.js` — lógica de mediciones, entrenamientos, rutinas, historial y JSON.
-- `data.json` — plantilla inicial con 49 ejercicios y tu rutina de cinco días.
-- `manifest.webmanifest` y `icons/icon.svg` — icono e instalación en pantalla de inicio.
-- `sw.js` — cache de archivos estáticos para acceso offline tras la primera visita.
-- `.github/workflows/pages.yml` — despliegue automático en GitHub Pages.
-
-## Pruebas locales
-
-Desde la carpeta del proyecto ejecuta:
+1. Sube **todos los archivos y carpetas a la raíz** del repositorio, incluyendo `.github/workflows/pages.yml`, `icons/`, `data.json`, `index.html`, `styles.css` y `app.js`.
+2. En GitHub: **Settings → Pages → Build and deployment → GitHub Actions**.
+3. Si ya tienes el repo conectado desde VS Code:
 
 ```bash
-python -m http.server 8000
+git add .
+git commit -m "NIVEL 4 - interfaz responsive e historial por pantallas"
+git push origin main
 ```
 
-Visita `http://localhost:8000`. Evita abrir `index.html` con doble clic, porque el navegador puede bloquear la lectura local de `data.json`.
+4. Abre la misma URL habitual de NIVEL desde tu teléfono.
 
-Los archivos se ofrecen tal cual para un proyecto personal. Si más adelante utilizas datos sensibles de varias personas o necesitas sincronización y recuperación de cuenta, incorpora backend autenticado, cifrado en tránsito y controles de acceso.
+## Revisión recomendada después de publicar
+
+- Comprobar que siguen tus mediciones y sesiones anteriores.
+- Entrar en **Entrenar → Abrir cargas** y consultar una carga anterior.
+- Iniciar una rutina y confirmar que la **primera serie** sugiere el último peso real.
+- En **Progreso**, entrar en **Ver todas las mediciones** y regresar.
+- En **Entrenar**, entrar en **Ver todas las sesiones** y regresar.
+- En **Progreso**, tocar **Delante/Detrás**, una región muscular y una tarjeta de medida; comprobar que se ve seleccionada.
+- Probar en un móvil estrecho que los botones verdes no toquen las tarjetas y los selectores sean legibles.
+
+## Qué he comprobado en esta entrega
+
+- Sintaxis de `app.js` (`node --check`).
+- Pruebas de lógica: migración desde esquema 3 preservando una medición; primera serie prellenada desde la última carga; separación de las páginas de medidas/sesiones/cargas; navegación por hash; correspondencia de regiones anatómicas.
+- **No se ha podido completar una prueba visual automatizada en un navegador real en este entorno.** Revisa la apariencia definitiva después de desplegar, especialmente el atlas externo.

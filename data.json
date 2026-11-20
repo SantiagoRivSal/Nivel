@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 4,
   "profile": {
     "heightCm": 155,
     "referenceWeightKg": 60,
@@ -14,12 +14,13 @@
   "exercises": [
     {
       "id": "press-pecho",
-      "name": "Press de pecho en máquina",
+      "name": "Chest Press",
       "muscle": "Pecho",
       "equipment": "Máquina",
       "unit": "reps",
       "instructions": "Espalda pegada al respaldo; empuja sin bloquear los codos.",
-      "loadUnit": "Máquina"
+      "loadUnit": "Máquina",
+      "level": "Principiante"
     },
     {
       "id": "press-inclinado-manc",
@@ -28,16 +29,18 @@
       "equipment": "Mancuernas",
       "unit": "reps",
       "instructions": "Banco a 20–35°, baja controlado y empuja sobre el pecho alto.",
-      "loadUnit": "Por mancuerna"
+      "loadUnit": "Por mancuerna",
+      "level": "Principiante"
     },
     {
       "id": "press-hombro-maq",
-      "name": "Press de hombros en máquina",
+      "name": "Shoulder Press",
       "muscle": "Hombros",
       "equipment": "Máquina",
       "unit": "reps",
       "instructions": "Ajusta el asiento; empuja sin arquear la espalda.",
-      "loadUnit": "Máquina"
+      "loadUnit": "Máquina",
+      "level": "Principiante"
     },
     {
       "id": "elev-lateral",
@@ -46,7 +49,8 @@
       "equipment": "Mancuernas",
       "unit": "reps",
       "instructions": "Brazos ligeramente flexionados, eleva hasta la altura del hombro.",
-      "loadUnit": "Por mancuerna"
+      "loadUnit": "Por mancuerna",
+      "level": "Principiante"
     },
     {
       "id": "triceps-polea",
@@ -55,16 +59,18 @@
       "equipment": "Polea",
       "unit": "reps",
       "instructions": "Codos pegados al cuerpo, extiende sin mover los hombros.",
-      "loadUnit": "Máquina"
+      "loadUnit": "Máquina",
+      "level": "Principiante"
     },
     {
       "id": "prensa",
-      "name": "Prensa de piernas",
+      "name": "Leg Press",
       "muscle": "Cuádriceps",
       "equipment": "Máquina",
       "unit": "reps",
       "instructions": "Apoya pies enteros, baja sin despegar cadera y empuja de forma controlada.",
-      "loadUnit": "Máquina"
+      "loadUnit": "Máquina",
+      "level": "Principiante"
     },
     {
       "id": "split-squat",
@@ -73,34 +79,38 @@
       "equipment": "Peso corporal",
       "unit": "reps",
       "instructions": "Separa los pies, desciende vertical manteniendo estabilidad.",
-      "loadUnit": "Peso corporal"
+      "loadUnit": "Peso corporal",
+      "level": "Principiante"
     },
     {
       "id": "extension-cuadriceps",
-      "name": "Extensión de cuádriceps",
+      "name": "Leg Extension",
       "muscle": "Cuádriceps",
       "equipment": "Máquina",
       "unit": "reps",
       "instructions": "Ajusta el eje de rodilla; extiende controlando el retorno.",
-      "loadUnit": "Máquina"
+      "loadUnit": "Máquina",
+      "level": "Principiante"
     },
     {
       "id": "curl-femoral",
-      "name": "Curl femoral en máquina",
+      "name": "Seated Leg Curl",
       "muscle": "Isquiotibiales",
       "equipment": "Máquina",
       "unit": "reps",
       "instructions": "Flexiona las rodillas sin levantar la cadera ni dar tirones.",
-      "loadUnit": "Máquina"
+      "loadUnit": "Máquina",
+      "level": "Principiante"
     },
     {
       "id": "gemelos",
-      "name": "Elevación de gemelos en máquina",
+      "name": "Calf Raise",
       "muscle": "Gemelos",
       "equipment": "Máquina",
       "unit": "reps",
       "instructions": "Sube sobre la punta del pie, pausa y baja lentamente.",
-      "loadUnit": "Máquina"
+      "loadUnit": "Máquina",
+      "level": "Principiante"
     },
     {
       "id": "crunch-polea",
@@ -109,7 +119,8 @@
       "equipment": "Polea",
       "unit": "reps",
       "instructions": "Flexiona el tronco acercando costillas a pelvis, sin tirar con brazos.",
-      "loadUnit": "Máquina"
+      "loadUnit": "Máquina",
+      "level": "Principiante"
     },
     {
       "id": "jalon",
@@ -118,7 +129,8 @@
       "equipment": "Polea",
       "unit": "reps",
       "instructions": "Lleva el agarre al pecho alto y baja los hombros lejos de las orejas.",
-      "loadUnit": "Máquina"
+      "loadUnit": "Máquina",
+      "level": "Principiante"
     },
     {
       "id": "remo-sentado",
@@ -127,25 +139,28 @@
       "equipment": "Polea",
       "unit": "reps",
       "instructions": "Lleva codos atrás, mantén torso estable y controla la vuelta.",
-      "loadUnit": "Máquina"
+      "loadUnit": "Máquina",
+      "level": "Principiante"
     },
     {
       "id": "remo-alto",
-      "name": "Remo alto en máquina",
+      "name": "High Row",
       "muscle": "Espalda",
       "equipment": "Máquina",
       "unit": "reps",
       "instructions": "Tira hacia la parte superior del torso, sin encoger hombros.",
-      "loadUnit": "Máquina"
+      "loadUnit": "Máquina",
+      "level": "Principiante"
     },
     {
       "id": "peck-inverso",
-      "name": "Peck deck inverso",
+      "name": "Reverse Pec Deck",
       "muscle": "Hombros",
       "equipment": "Máquina",
       "unit": "reps",
       "instructions": "Separa brazos a la altura de los hombros sin impulso.",
-      "loadUnit": "Máquina"
+      "loadUnit": "Máquina",
+      "level": "Principiante"
     },
     {
       "id": "curl-biceps",
@@ -154,16 +169,18 @@
       "equipment": "Mancuernas",
       "unit": "reps",
       "instructions": "Mantén codos junto al tronco y evita balancearte.",
-      "loadUnit": "Por mancuerna"
+      "loadUnit": "Por mancuerna",
+      "level": "Principiante"
     },
     {
       "id": "press-inclinado-maq",
-      "name": "Press inclinado en máquina",
+      "name": "Incline Chest Press",
       "muscle": "Pecho",
       "equipment": "Máquina",
       "unit": "reps",
       "instructions": "Alinea agarres con pecho superior y empuja sin rebotar.",
-      "loadUnit": "Máquina"
+      "loadUnit": "Máquina",
+      "level": "Principiante"
     },
     {
       "id": "jalon-neutro",
@@ -172,7 +189,8 @@
       "equipment": "Polea",
       "unit": "reps",
       "instructions": "Dirige codos hacia abajo, tronco firme y recorrido completo cómodo.",
-      "loadUnit": "Máquina"
+      "loadUnit": "Máquina",
+      "level": "Principiante"
     },
     {
       "id": "aperturas-polea",
@@ -181,7 +199,8 @@
       "equipment": "Polea",
       "unit": "reps",
       "instructions": "Acerca las manos en arco suave, manteniendo ligera flexión de codo.",
-      "loadUnit": "Máquina"
+      "loadUnit": "Máquina",
+      "level": "Principiante"
     },
     {
       "id": "curl-martillo",
@@ -190,7 +209,8 @@
       "equipment": "Mancuernas",
       "unit": "reps",
       "instructions": "Palmas enfrentadas; sube y baja sin balancear el cuerpo.",
-      "loadUnit": "Por mancuerna"
+      "loadUnit": "Por mancuerna",
+      "level": "Principiante"
     },
     {
       "id": "triceps-cuerda",
@@ -199,7 +219,8 @@
       "equipment": "Polea",
       "unit": "reps",
       "instructions": "Extiende los codos y separa la cuerda al final.",
-      "loadUnit": "Máquina"
+      "loadUnit": "Máquina",
+      "level": "Principiante"
     },
     {
       "id": "peso-muerto-rumano",
@@ -208,16 +229,18 @@
       "equipment": "Mancuernas",
       "unit": "reps",
       "instructions": "Lleva cadera atrás con espalda neutra y mancuernas cerca de las piernas.",
-      "loadUnit": "Por mancuerna"
+      "loadUnit": "Por mancuerna",
+      "level": "Intermedio"
     },
     {
       "id": "hip-thrust",
-      "name": "Hip thrust en máquina",
+      "name": "Hip Thrust Machine",
       "muscle": "Glúteos",
       "equipment": "Máquina",
       "unit": "reps",
       "instructions": "Empuja con talones y extiende cadera sin hiperextender la espalda.",
-      "loadUnit": "Máquina"
+      "loadUnit": "Máquina",
+      "level": "Intermedio"
     },
     {
       "id": "zancadas",
@@ -226,7 +249,8 @@
       "equipment": "Peso corporal",
       "unit": "reps",
       "instructions": "Da un paso y flexiona ambas rodillas manteniendo el equilibrio.",
-      "loadUnit": "Peso corporal"
+      "loadUnit": "Peso corporal",
+      "level": "Principiante"
     },
     {
       "id": "pallof",
@@ -235,7 +259,8 @@
       "equipment": "Polea",
       "unit": "reps",
       "instructions": "Aleja las manos del pecho sin permitir que el tronco rote.",
-      "loadUnit": "Máquina"
+      "loadUnit": "Máquina",
+      "level": "Intermedio"
     },
     {
       "id": "plancha",
@@ -244,7 +269,8 @@
       "equipment": "Peso corporal",
       "unit": "seconds",
       "instructions": "Alinea hombros, cadera y tobillos; respira sin hundir zona lumbar.",
-      "loadUnit": "Peso corporal"
+      "loadUnit": "Peso corporal",
+      "level": "Principiante"
     },
     {
       "id": "sentadilla-goblet",
@@ -253,43 +279,48 @@
       "equipment": "Mancuernas",
       "unit": "reps",
       "instructions": "Sujeta una mancuerna delante del pecho y baja sin perder postura.",
-      "loadUnit": "Total"
+      "loadUnit": "Total",
+      "level": "Principiante"
     },
     {
       "id": "sentadilla-smith",
-      "name": "Sentadilla en multipower",
+      "name": "Smith Machine Squat",
       "muscle": "Cuádriceps",
       "equipment": "Máquina",
       "unit": "reps",
       "instructions": "Coloca pies cómodos y desciende manteniendo control de rodillas.",
-      "loadUnit": "Máquina"
+      "loadUnit": "Máquina",
+      "level": "Intermedio"
     },
     {
       "id": "abductores",
-      "name": "Abductores en máquina",
+      "name": "Hip Abductor",
       "muscle": "Glúteos",
       "equipment": "Máquina",
       "unit": "reps",
       "instructions": "Separa las rodillas sin impulso, con tronco estable.",
-      "loadUnit": "Máquina"
+      "loadUnit": "Máquina",
+      "level": "Principiante"
     },
     {
       "id": "aductores",
-      "name": "Aductores en máquina",
+      "name": "Hip Adductor",
       "muscle": "Aductores",
       "equipment": "Máquina",
       "unit": "reps",
       "instructions": "Junta las piernas controladamente, sin tirones.",
-      "loadUnit": "Máquina"
+      "loadUnit": "Máquina",
+      "level": "Principiante"
     },
     {
       "id": "dominadas",
-      "name": "Dominadas asistidas",
+      "name": "Assisted Pull-Up",
       "muscle": "Espalda",
       "equipment": "Máquina",
       "unit": "reps",
       "instructions": "Sube llevando el pecho al agarre y baja con control.",
-      "loadUnit": "Máquina"
+      "loadUnit": "Máquina",
+      "level": "Intermedio"
     },
     {
       "id": "remo-manc",
@@ -298,7 +329,8 @@
       "equipment": "Mancuernas",
       "unit": "reps",
       "instructions": "Apoya una mano, tira del codo hacia la cadera.",
-      "loadUnit": "Por mancuerna"
+      "loadUnit": "Por mancuerna",
+      "level": "Principiante"
     },
     {
       "id": "facepull",
@@ -307,7 +339,8 @@
       "equipment": "Polea",
       "unit": "reps",
       "instructions": "Tira de la cuerda hacia la cara con codos altos y control.",
-      "loadUnit": "Máquina"
+      "loadUnit": "Máquina",
+      "level": "Principiante"
     },
     {
       "id": "press-banca",
@@ -316,7 +349,8 @@
       "equipment": "Barra",
       "unit": "reps",
       "instructions": "Pies firmes, controla la bajada al pecho y sube sin rebotar.",
-      "loadUnit": "Total"
+      "loadUnit": "Total",
+      "level": "Principiante"
     },
     {
       "id": "flexiones",
@@ -325,25 +359,28 @@
       "equipment": "Peso corporal",
       "unit": "reps",
       "instructions": "Tronco alineado, baja el pecho y empuja el suelo.",
-      "loadUnit": "Peso corporal"
+      "loadUnit": "Peso corporal",
+      "level": "Principiante"
     },
     {
       "id": "fondos-asistidos",
-      "name": "Fondos asistidos",
+      "name": "Assisted Dip",
       "muscle": "Tríceps",
       "equipment": "Máquina",
       "unit": "reps",
       "instructions": "Desciende sin molestias de hombro y extiende de forma controlada.",
-      "loadUnit": "Máquina"
+      "loadUnit": "Máquina",
+      "level": "Intermedio"
     },
     {
       "id": "curl-scott",
-      "name": "Curl de bíceps en banco Scott",
+      "name": "Biceps Curl Machine",
       "muscle": "Bíceps",
       "equipment": "Máquina",
       "unit": "reps",
       "instructions": "Brazos apoyados y descenso lento sin bloquear de golpe.",
-      "loadUnit": "Máquina"
+      "loadUnit": "Máquina",
+      "level": "Principiante"
     },
     {
       "id": "curl-polea",
@@ -352,7 +389,8 @@
       "equipment": "Polea",
       "unit": "reps",
       "instructions": "Mantén codos fijos y evita mover el tronco.",
-      "loadUnit": "Máquina"
+      "loadUnit": "Máquina",
+      "level": "Principiante"
     },
     {
       "id": "ext-triceps-cabeza",
@@ -361,16 +399,18 @@
       "equipment": "Polea",
       "unit": "reps",
       "instructions": "Mantén húmeros quietos y extiende los codos.",
-      "loadUnit": "Máquina"
+      "loadUnit": "Máquina",
+      "level": "Principiante"
     },
     {
       "id": "peso-muerto-maquina",
-      "name": "Peso muerto en máquina",
+      "name": "Deadlift Machine",
       "muscle": "Isquiotibiales",
       "equipment": "Máquina",
       "unit": "reps",
       "instructions": "Empuja el suelo y extiende la cadera conservando la espalda neutra.",
-      "loadUnit": "Máquina"
+      "loadUnit": "Máquina",
+      "level": "Principiante"
     },
     {
       "id": "puente-gluteo",
@@ -379,7 +419,8 @@
       "equipment": "Peso corporal",
       "unit": "reps",
       "instructions": "Sube la pelvis y aprieta glúteos evitando arquear la lumbar.",
-      "loadUnit": "Peso corporal"
+      "loadUnit": "Peso corporal",
+      "level": "Principiante"
     },
     {
       "id": "step-up",
@@ -388,16 +429,18 @@
       "equipment": "Peso corporal",
       "unit": "reps",
       "instructions": "Sube al cajón con control y evita impulsarte con la pierna inferior.",
-      "loadUnit": "Peso corporal"
+      "loadUnit": "Peso corporal",
+      "level": "Principiante"
     },
     {
       "id": "crunch-maquina",
-      "name": "Crunch en máquina",
+      "name": "Abdominal Crunch",
       "muscle": "Abdomen",
       "equipment": "Máquina",
       "unit": "reps",
       "instructions": "Acerca costillas y pelvis con movimiento lento.",
-      "loadUnit": "Máquina"
+      "loadUnit": "Máquina",
+      "level": "Principiante"
     },
     {
       "id": "elev-rodillas",
@@ -406,7 +449,8 @@
       "equipment": "Peso corporal",
       "unit": "reps",
       "instructions": "Eleva rodillas con pelvis controlada, sin balanceos.",
-      "loadUnit": "Peso corporal"
+      "loadUnit": "Peso corporal",
+      "level": "Principiante"
     },
     {
       "id": "bird-dog",
@@ -415,16 +459,19 @@
       "equipment": "Peso corporal",
       "unit": "reps",
       "instructions": "Extiende brazo y pierna contrarios sin girar la cadera.",
-      "loadUnit": "Peso corporal"
+      "loadUnit": "Peso corporal",
+      "level": "Principiante"
     },
     {
       "id": "cardio-cinta",
-      "name": "Caminadora inclinada",
+      "name": "Treadmill (caminadora)",
       "muscle": "Cardio",
       "equipment": "Cardio",
       "unit": "minutes",
-      "instructions": "Camina a ritmo sostenible, respiración algo elevada y controlada.",
-      "loadUnit": "Sin carga"
+      "instructions": "Registra tiempo en minutos y distancia en kilómetros. La inclinación es opcional.",
+      "loadUnit": "Sin carga",
+      "supportsDistance": true,
+      "level": "Principiante"
     },
     {
       "id": "bicicleta",
@@ -433,7 +480,9 @@
       "equipment": "Cardio",
       "unit": "minutes",
       "instructions": "Pedalea a ritmo moderado, ajustando bien altura de asiento.",
-      "loadUnit": "Sin carga"
+      "loadUnit": "Sin carga",
+      "supportsDistance": true,
+      "level": "Principiante"
     },
     {
       "id": "eliptica",
@@ -442,7 +491,9 @@
       "equipment": "Cardio",
       "unit": "minutes",
       "instructions": "Movimiento continuo a intensidad moderada, sin impactos fuertes.",
-      "loadUnit": "Sin carga"
+      "loadUnit": "Sin carga",
+      "supportsDistance": true,
+      "level": "Principiante"
     },
     {
       "id": "remo-ergometro",
@@ -451,7 +502,820 @@
       "equipment": "Cardio",
       "unit": "minutes",
       "instructions": "Empuja con piernas, inclina el tronco ligeramente y termina con brazos.",
-      "loadUnit": "Sin carga"
+      "loadUnit": "Sin carga",
+      "supportsDistance": true,
+      "level": "Principiante"
+    },
+    {
+      "id": "crunch-suelo",
+      "name": "Crunch abdominal en el suelo",
+      "muscle": "Abdomen",
+      "equipment": "Peso corporal",
+      "unit": "reps",
+      "instructions": "Tumbado boca arriba, acerca las costillas a la pelvis levantando ligeramente los hombros, sin tirar del cuello.",
+      "loadUnit": "Sin carga",
+      "level": "Principiante"
+    },
+    {
+      "id": "crunch-inverso",
+      "name": "Crunch inverso",
+      "muscle": "Abdomen",
+      "equipment": "Peso corporal",
+      "unit": "reps",
+      "instructions": "Tumbado boca arriba con piernas flexionadas, acerca rodillas al pecho elevando suavemente la pelvis.",
+      "loadUnit": "Sin carga",
+      "level": "Principiante"
+    },
+    {
+      "id": "bicicleta-abd",
+      "name": "Abdominal bicicleta",
+      "muscle": "Abdomen",
+      "equipment": "Peso corporal",
+      "unit": "reps",
+      "instructions": "Alterna codo y rodilla contraria de forma controlada, sin forzar el cuello.",
+      "loadUnit": "Sin carga",
+      "level": "Principiante"
+    },
+    {
+      "id": "dead-bug",
+      "name": "Dead bug",
+      "muscle": "Abdomen",
+      "equipment": "Peso corporal",
+      "unit": "reps",
+      "instructions": "Con espalda baja estable en el suelo, extiende brazo y pierna opuestos sin arquear las lumbares.",
+      "loadUnit": "Sin carga",
+      "level": "Principiante"
+    },
+    {
+      "id": "plancha-lateral",
+      "name": "Plancha lateral",
+      "muscle": "Abdomen",
+      "equipment": "Peso corporal",
+      "unit": "seconds",
+      "instructions": "Apoya antebrazo y lado del pie, alinea cadera, tronco y cabeza sin hundirte.",
+      "loadUnit": "Sin carga",
+      "level": "Intermedio"
+    },
+    {
+      "id": "hollow-hold",
+      "name": "Hollow body hold",
+      "muscle": "Abdomen",
+      "equipment": "Peso corporal",
+      "unit": "seconds",
+      "instructions": "Mantén zona lumbar apoyada y piernas y hombros ligeramente elevados, ajustando dificultad.",
+      "loadUnit": "Sin carga",
+      "level": "Principiante"
+    },
+    {
+      "id": "heel-taps",
+      "name": "Toques de talones",
+      "muscle": "Abdomen",
+      "equipment": "Peso corporal",
+      "unit": "reps",
+      "instructions": "Boca arriba con rodillas flexionadas, acerca una mano a cada talón alternando lados.",
+      "loadUnit": "Sin carga",
+      "level": "Principiante"
+    },
+    {
+      "id": "mountain-climbers",
+      "name": "Escaladores",
+      "muscle": "Abdomen",
+      "equipment": "Peso corporal",
+      "unit": "reps",
+      "instructions": "Desde plancha alta, acerca rodillas al pecho alternando y manteniendo el tronco estable.",
+      "loadUnit": "Sin carga",
+      "level": "Principiante"
+    },
+    {
+      "id": "elev-piernas-suelo",
+      "name": "Elevaciones de piernas tumbado",
+      "muscle": "Abdomen",
+      "equipment": "Peso corporal",
+      "unit": "reps",
+      "instructions": "Desde el suelo eleva y baja piernas lentamente sin despegar la zona lumbar.",
+      "loadUnit": "Sin carga",
+      "level": "Principiante"
+    },
+    {
+      "id": "tijeras",
+      "name": "Tijeras abdominales",
+      "muscle": "Abdomen",
+      "equipment": "Peso corporal",
+      "unit": "seconds",
+      "instructions": "Boca arriba y con abdomen activo, alterna las piernas sin arquear la zona lumbar.",
+      "loadUnit": "Sin carga",
+      "level": "Principiante"
+    },
+    {
+      "id": "plancha-toque-hombro",
+      "name": "Plancha con toques al hombro",
+      "muscle": "Abdomen",
+      "equipment": "Peso corporal",
+      "unit": "reps",
+      "instructions": "Desde plancha alta, toca el hombro opuesto con una mano, minimizando el balanceo de caderas.",
+      "loadUnit": "Sin carga",
+      "level": "Principiante"
+    },
+    {
+      "id": "superman",
+      "name": "Superman",
+      "muscle": "Zona lumbar",
+      "equipment": "Peso corporal",
+      "unit": "reps",
+      "instructions": "Tumbado boca abajo, eleva suavemente brazos y piernas sin hiperextender la espalda.",
+      "loadUnit": "Sin carga",
+      "level": "Principiante"
+    },
+    {
+      "id": "sentadilla-corporal",
+      "name": "Sentadilla con peso corporal",
+      "muscle": "Cuádriceps",
+      "equipment": "Peso corporal",
+      "unit": "reps",
+      "instructions": "Desciende de forma controlada, manteniendo rodillas alineadas con pies y tronco estable.",
+      "loadUnit": "Sin carga",
+      "level": "Principiante"
+    },
+    {
+      "id": "wall-sit",
+      "name": "Sentadilla isométrica en pared",
+      "muscle": "Cuádriceps",
+      "equipment": "Peso corporal",
+      "unit": "seconds",
+      "instructions": "Espalda apoyada contra la pared, mantén flexión cómoda de rodilla y respira.",
+      "loadUnit": "Sin carga",
+      "level": "Principiante"
+    },
+    {
+      "id": "elev-gemelos-corporal",
+      "name": "Elevaciones de gemelos de pie",
+      "muscle": "Gemelos",
+      "equipment": "Peso corporal",
+      "unit": "reps",
+      "instructions": "Eleva los talones sin impulso y baja lentamente; apóyate si necesitas equilibrio.",
+      "loadUnit": "Sin carga",
+      "level": "Principiante"
+    },
+    {
+      "id": "puente-gluteo-una-pierna",
+      "name": "Puente de glúteos a una pierna",
+      "muscle": "Glúteos",
+      "equipment": "Peso corporal",
+      "unit": "reps",
+      "instructions": "Desde el suelo, eleva la pelvis apoyando un pie y mantén el tronco nivelado.",
+      "loadUnit": "Sin carga",
+      "level": "Principiante"
+    },
+    {
+      "id": "jumping-jacks",
+      "name": "Saltos de tijera",
+      "muscle": "Cardio",
+      "equipment": "Peso corporal",
+      "unit": "reps",
+      "instructions": "Abre y cierra brazos y piernas con saltos suaves; evita si provoca molestias de rodilla.",
+      "loadUnit": "Sin carga",
+      "level": "Principiante"
+    },
+    {
+      "id": "burpees",
+      "name": "Burpees sin material",
+      "muscle": "Cardio",
+      "equipment": "Peso corporal",
+      "unit": "reps",
+      "instructions": "Desde de pie baja al suelo y vuelve a incorporarte; adapta el salto y la flexión a tu nivel.",
+      "loadUnit": "Sin carga",
+      "level": "Intermedio"
+    },
+    {
+      "id": "movilidad-cadera",
+      "name": "Movilidad de cadera",
+      "muscle": "Movilidad",
+      "equipment": "Peso corporal",
+      "unit": "minutes",
+      "instructions": "Secuencia suave de movilidad activa, sin forzar rangos dolorosos.",
+      "loadUnit": "Sin carga",
+      "level": "Principiante"
+    },
+    {
+      "id": "marcha-sitio",
+      "name": "Marcha activa en el sitio",
+      "muscle": "Cardio",
+      "equipment": "Peso corporal",
+      "unit": "minutes",
+      "instructions": "Marcha a ritmo constante elevando rodillas a una altura cómoda.",
+      "loadUnit": "Sin carga",
+      "level": "Principiante"
+    },
+    {
+      "id": "press-banca-barra",
+      "name": "Press de banca con barra",
+      "muscle": "Pecho",
+      "equipment": "Barra",
+      "unit": "reps",
+      "loadUnit": "Total",
+      "level": "Avanzado",
+      "instructions": "Pies apoyados, omóplatos estables y baja la barra al pecho bajo control; utiliza soportes de seguridad."
+    },
+    {
+      "id": "sentadilla-barra",
+      "name": "Sentadilla con barra",
+      "muscle": "Cuádriceps",
+      "equipment": "Barra",
+      "unit": "reps",
+      "loadUnit": "Total",
+      "level": "Avanzado",
+      "instructions": "Coloca la barra estable en la parte alta de la espalda; desciende con el tronco firme y rodillas alineadas."
+    },
+    {
+      "id": "peso-muerto-barra",
+      "name": "Peso muerto convencional con barra",
+      "muscle": "Isquiotibiales",
+      "equipment": "Barra",
+      "unit": "reps",
+      "loadUnit": "Total",
+      "level": "Avanzado",
+      "instructions": "Mantén la espalda neutra, barra cerca del cuerpo y empuja el suelo con pies firmes."
+    },
+    {
+      "id": "remo-barra",
+      "name": "Remo inclinado con barra",
+      "muscle": "Espalda",
+      "equipment": "Barra",
+      "unit": "reps",
+      "loadUnit": "Total",
+      "level": "Avanzado",
+      "instructions": "Bisagra de cadera con espalda estable; lleva la barra al abdomen sin balancearte."
+    },
+    {
+      "id": "dominadas-lastradas",
+      "name": "Dominadas lastradas",
+      "muscle": "Espalda",
+      "equipment": "Peso corporal",
+      "unit": "reps",
+      "loadUnit": "Peso corporal",
+      "level": "Avanzado",
+      "instructions": "Añade lastre solo cuando domines las dominadas estrictas; evita balancearte."
+    },
+    {
+      "id": "fondos-paralelas",
+      "name": "Fondos en paralelas",
+      "muscle": "Tríceps",
+      "equipment": "Peso corporal",
+      "unit": "reps",
+      "loadUnit": "Peso corporal",
+      "level": "Intermedio",
+      "instructions": "Desciende con control entre barras paralelas sin forzar los hombros."
+    },
+    {
+      "id": "fondos-lastrados",
+      "name": "Fondos lastrados",
+      "muscle": "Tríceps",
+      "equipment": "Peso corporal",
+      "unit": "reps",
+      "loadUnit": "Peso corporal",
+      "level": "Avanzado",
+      "instructions": "Usa lastre solo con fondos estrictos dominados; controla hombros y recorrido."
+    },
+    {
+      "id": "bulgaras-manc",
+      "name": "Sentadilla búlgara con mancuernas",
+      "muscle": "Cuádriceps",
+      "equipment": "Mancuernas",
+      "unit": "reps",
+      "loadUnit": "Por mancuerna",
+      "level": "Intermedio",
+      "instructions": "Pie trasero sobre un banco, torso firme y descenso vertical sin perder equilibrio."
+    },
+    {
+      "id": "plancha-copenhague",
+      "name": "Plancha de Copenhague",
+      "muscle": "Abdomen",
+      "equipment": "Peso corporal",
+      "unit": "seconds",
+      "loadUnit": "Peso corporal",
+      "level": "Avanzado",
+      "instructions": "Apoya la pierna superior en un banco y mantén pelvis elevada sin arquear la espalda."
+    },
+    {
+      "id": "elev-piernas-colgado",
+      "name": "Elevación de piernas colgado",
+      "muscle": "Abdomen",
+      "equipment": "Peso corporal",
+      "unit": "reps",
+      "loadUnit": "Peso corporal",
+      "level": "Avanzado",
+      "instructions": "Sujeta la barra y eleva piernas desde la pelvis evitando balanceo."
+    },
+    {
+      "id": "hack-squat-maquina",
+      "name": "Hack Squat",
+      "muscle": "Cuádriceps",
+      "equipment": "Máquina",
+      "unit": "reps",
+      "loadUnit": "Máquina",
+      "level": "Intermedio",
+      "instructions": "Apoya la espalda y desciende dentro de un rango cómodo; controla rodillas y talones."
+    },
+    {
+      "id": "elev-lateral-polea",
+      "name": "Elevación lateral unilateral en polea",
+      "muscle": "Hombros",
+      "equipment": "Polea",
+      "unit": "reps",
+      "loadUnit": "Máquina",
+      "level": "Intermedio",
+      "instructions": "Con el cable bajo, eleva el brazo lateralmente sin inclinarte ni encoger el hombro."
+    },
+    {
+      "id": "press-arnold",
+      "name": "Press Arnold con mancuernas",
+      "muscle": "Hombros",
+      "equipment": "Mancuernas",
+      "unit": "reps",
+      "loadUnit": "Por mancuerna",
+      "level": "Intermedio",
+      "instructions": "Desde delante de los hombros rota gradualmente y presiona sobre la cabeza sin arquear la espalda."
+    },
+    {
+      "id": "face-pull-cuerda",
+      "name": "Face pull con cuerda",
+      "muscle": "Hombros",
+      "equipment": "Polea",
+      "unit": "reps",
+      "loadUnit": "Máquina",
+      "level": "Principiante",
+      "instructions": "Tira de la cuerda hacia los ojos, codos altos y omóplatos controlados."
+    },
+    {
+      "id": "reverse-fly-manc",
+      "name": "Pájaros con mancuernas",
+      "muscle": "Hombros",
+      "equipment": "Mancuernas",
+      "unit": "reps",
+      "loadUnit": "Por mancuerna",
+      "level": "Intermedio",
+      "instructions": "Inclina el tronco y abre los brazos manteniendo codos suaves y hombros estables."
+    },
+    {
+      "id": "landmine-press",
+      "name": "Press landmine unilateral",
+      "muscle": "Hombros",
+      "equipment": "Barra",
+      "unit": "reps",
+      "loadUnit": "Total",
+      "level": "Intermedio",
+      "instructions": "Empuja la barra en diagonal desde el hombro sin compensar con la espalda."
+    },
+    {
+      "id": "crunch-ab-wheel",
+      "name": "Rueda abdominal desde rodillas",
+      "muscle": "Abdomen",
+      "equipment": "Otro",
+      "unit": "reps",
+      "loadUnit": "Sin carga",
+      "level": "Intermedio",
+      "instructions": "Desde rodillas desliza la rueda manteniendo las costillas hacia abajo y sin arquear lumbar."
+    },
+    {
+      "id": "crunch-piernas-90",
+      "name": "Crunch con piernas a 90 grados",
+      "muscle": "Abdomen",
+      "equipment": "Peso corporal",
+      "unit": "reps",
+      "loadUnit": "Peso corporal",
+      "level": "Principiante",
+      "instructions": "Acostado con rodillas a noventa grados, acerca costillas a pelvis sin tirar del cuello."
+    },
+    {
+      "id": "plancha-antebrazos",
+      "name": "Plancha en antebrazos",
+      "muscle": "Abdomen",
+      "equipment": "Peso corporal",
+      "unit": "seconds",
+      "loadUnit": "Peso corporal",
+      "level": "Principiante",
+      "instructions": "Apoya antebrazos, activa abdomen y glúteos y mantén línea recta sin hundir cadera."
+    },
+    {
+      "id": "hollow-rock",
+      "name": "Balanceo hollow body",
+      "muscle": "Abdomen",
+      "equipment": "Peso corporal",
+      "unit": "seconds",
+      "loadUnit": "Peso corporal",
+      "level": "Avanzado",
+      "instructions": "Mantén zona lumbar apoyada mientras balanceas suavemente cuerpo compacto."
+    },
+    {
+      "id": "v-up",
+      "name": "Abdominal en V",
+      "muscle": "Abdomen",
+      "equipment": "Peso corporal",
+      "unit": "reps",
+      "loadUnit": "Peso corporal",
+      "level": "Intermedio",
+      "instructions": "Eleva brazos y piernas juntos con control, evitando tirar del cuello."
+    },
+    {
+      "id": "tuck-up",
+      "name": "Encogimientos en V con rodillas",
+      "muscle": "Abdomen",
+      "equipment": "Peso corporal",
+      "unit": "reps",
+      "loadUnit": "Peso corporal",
+      "level": "Principiante",
+      "instructions": "Acerca rodillas al pecho mientras elevas el tronco sin impulso."
+    },
+    {
+      "id": "flutter-kicks",
+      "name": "Aleteos de piernas",
+      "muscle": "Abdomen",
+      "equipment": "Peso corporal",
+      "unit": "seconds",
+      "loadUnit": "Peso corporal",
+      "level": "Intermedio",
+      "instructions": "Con zona lumbar controlada alterna elevaciones cortas de piernas."
+    },
+    {
+      "id": "sit-through",
+      "name": "Rotaciones sit-through en cuadrupedia",
+      "muscle": "Abdomen",
+      "equipment": "Peso corporal",
+      "unit": "reps",
+      "loadUnit": "Peso corporal",
+      "level": "Intermedio",
+      "instructions": "Desde cuadrupedia con rodillas despegadas gira pasando una pierna bajo el cuerpo."
+    },
+    {
+      "id": "bear-crawl",
+      "name": "Caminata del oso",
+      "muscle": "Abdomen",
+      "equipment": "Peso corporal",
+      "unit": "seconds",
+      "loadUnit": "Peso corporal",
+      "level": "Intermedio",
+      "instructions": "Avanza con manos y pies, rodillas cerca del suelo y tronco estable."
+    },
+    {
+      "id": "plank-updown",
+      "name": "Plancha de codos a manos",
+      "muscle": "Abdomen",
+      "equipment": "Peso corporal",
+      "unit": "reps",
+      "loadUnit": "Peso corporal",
+      "level": "Intermedio",
+      "instructions": "Alterna apoyo de antebrazos y manos sin rotar la pelvis."
+    },
+    {
+      "id": "crunch-oblicuo",
+      "name": "Crunch oblicuo tumbado",
+      "muscle": "Abdomen",
+      "equipment": "Peso corporal",
+      "unit": "reps",
+      "loadUnit": "Peso corporal",
+      "level": "Principiante",
+      "instructions": "Acerca costillas al costado de la pelvis con pequeño recorrido controlado."
+    },
+    {
+      "id": "reverse-tabletop",
+      "name": "Mesa invertida estática",
+      "muscle": "Abdomen",
+      "equipment": "Peso corporal",
+      "unit": "seconds",
+      "loadUnit": "Peso corporal",
+      "level": "Principiante",
+      "instructions": "Desde manos y pies eleva la cadera y mantén hombros estables."
+    },
+    {
+      "id": "hollow-knee",
+      "name": "Hollow hold con rodillas flexionadas",
+      "muscle": "Abdomen",
+      "equipment": "Peso corporal",
+      "unit": "seconds",
+      "loadUnit": "Peso corporal",
+      "level": "Principiante",
+      "instructions": "Mantén lumbares apoyadas, hombros ligeramente elevados y rodillas flexionadas."
+    },
+    {
+      "id": "pushup-diamond",
+      "name": "Flexiones diamante",
+      "muscle": "Tríceps",
+      "equipment": "Peso corporal",
+      "unit": "reps",
+      "loadUnit": "Peso corporal",
+      "level": "Avanzado",
+      "instructions": "Manos juntas bajo el pecho, codos bajo control y tronco alineado."
+    },
+    {
+      "id": "pushup-inclinadas",
+      "name": "Flexiones inclinadas",
+      "muscle": "Pecho",
+      "equipment": "Peso corporal",
+      "unit": "reps",
+      "loadUnit": "Peso corporal",
+      "level": "Principiante",
+      "instructions": "Apoya las manos sobre un banco estable y baja el pecho manteniendo cuerpo recto."
+    },
+    {
+      "id": "pushup-declinadas",
+      "name": "Flexiones declinadas",
+      "muscle": "Pecho",
+      "equipment": "Peso corporal",
+      "unit": "reps",
+      "loadUnit": "Peso corporal",
+      "level": "Avanzado",
+      "instructions": "Coloca pies elevados y controla el descenso sin hundir la cadera."
+    },
+    {
+      "id": "press-piso-manc",
+      "name": "Press de suelo con mancuernas",
+      "muscle": "Pecho",
+      "equipment": "Mancuernas",
+      "unit": "reps",
+      "loadUnit": "Por mancuerna",
+      "level": "Principiante",
+      "instructions": "Desde el suelo empuja mancuernas y detén el descenso cuando los brazos toquen suavemente el suelo."
+    },
+    {
+      "id": "press-cerrado-barra",
+      "name": "Press de banca agarre cerrado",
+      "muscle": "Tríceps",
+      "equipment": "Barra",
+      "unit": "reps",
+      "loadUnit": "Total",
+      "level": "Avanzado",
+      "instructions": "Utiliza un agarre ligeramente más cerrado y codos controlados para enfatizar tríceps."
+    },
+    {
+      "id": "cruces-poleas-bajas",
+      "name": "Cruces de poleas bajas",
+      "muscle": "Pecho",
+      "equipment": "Polea",
+      "unit": "reps",
+      "loadUnit": "Máquina",
+      "level": "Intermedio",
+      "instructions": "Lleva manos desde abajo hacia el centro del pecho sin elevar hombros."
+    },
+    {
+      "id": "curl-inclinado",
+      "name": "Curl de bíceps inclinado con mancuernas",
+      "muscle": "Bíceps",
+      "equipment": "Mancuernas",
+      "unit": "reps",
+      "loadUnit": "Por mancuerna",
+      "level": "Intermedio",
+      "instructions": "Desde banco inclinado flexiona los codos sin adelantarlos ni balancearte."
+    },
+    {
+      "id": "curl-concentrado",
+      "name": "Curl concentrado de bíceps",
+      "muscle": "Bíceps",
+      "equipment": "Mancuernas",
+      "unit": "reps",
+      "loadUnit": "Por mancuerna",
+      "level": "Principiante",
+      "instructions": "Apoya la parte trasera del brazo en el muslo y flexiona el codo con control."
+    },
+    {
+      "id": "curl-reverso",
+      "name": "Curl de bíceps agarre prono",
+      "muscle": "Bíceps",
+      "equipment": "Barra",
+      "unit": "reps",
+      "loadUnit": "Total",
+      "level": "Intermedio",
+      "instructions": "Con palmas hacia abajo flexiona codos evitando mover el torso."
+    },
+    {
+      "id": "triceps-frances",
+      "name": "Extensión francesa con mancuernas",
+      "muscle": "Tríceps",
+      "equipment": "Mancuernas",
+      "unit": "reps",
+      "loadUnit": "Por mancuerna",
+      "level": "Intermedio",
+      "instructions": "Con brazos sobre la cabeza flexiona codos lentamente sin abrirlos demasiado."
+    },
+    {
+      "id": "ext-triceps-polea-una-mano",
+      "name": "Extensión unilateral de tríceps en polea",
+      "muscle": "Tríceps",
+      "equipment": "Polea",
+      "unit": "reps",
+      "loadUnit": "Máquina",
+      "level": "Principiante",
+      "instructions": "Mantén el codo cerca del cuerpo y extiende el antebrazo sin mover el hombro."
+    },
+    {
+      "id": "lat-pulldown-maquina",
+      "name": "Lat Pulldown",
+      "muscle": "Espalda",
+      "equipment": "Máquina",
+      "unit": "reps",
+      "loadUnit": "Máquina",
+      "level": "Principiante",
+      "instructions": "Ajusta el asiento y baja las asas al pecho superior sin inclinarte en exceso."
+    },
+    {
+      "id": "low-row-maquina",
+      "name": "Low Row",
+      "muscle": "Espalda",
+      "equipment": "Máquina",
+      "unit": "reps",
+      "loadUnit": "Máquina",
+      "level": "Principiante",
+      "instructions": "Pecho estable contra apoyo; rema acercando codos a costados sin encoger hombros."
+    },
+    {
+      "id": "seated-leg-curl-maquina",
+      "name": "Seated Leg Curl",
+      "muscle": "Isquiotibiales",
+      "equipment": "Máquina",
+      "unit": "reps",
+      "loadUnit": "Máquina",
+      "level": "Principiante",
+      "instructions": "Ajusta rodillos, mantén caderas apoyadas y flexiona rodillas con control."
+    },
+    {
+      "id": "lying-leg-curl-maquina",
+      "name": "Lying Leg Curl",
+      "muscle": "Isquiotibiales",
+      "equipment": "Máquina",
+      "unit": "reps",
+      "loadUnit": "Máquina",
+      "level": "Principiante",
+      "instructions": "Coloca rodillo sobre tobillos, mantén pelvis apoyada y flexiona rodillas despacio."
+    },
+    {
+      "id": "smith-squat-maquina",
+      "name": "Smith Machine Squat",
+      "muscle": "Cuádriceps",
+      "equipment": "Máquina",
+      "unit": "reps",
+      "loadUnit": "Máquina",
+      "level": "Intermedio",
+      "instructions": "Coloca pies y barra en posición cómoda, desciende controlado y no bloquees rodillas."
+    },
+    {
+      "id": "pec-deck-maquina",
+      "name": "Pec Deck Fly",
+      "muscle": "Pecho",
+      "equipment": "Máquina",
+      "unit": "reps",
+      "loadUnit": "Máquina",
+      "level": "Principiante",
+      "instructions": "Ajusta agarres al pecho y junta brazos sin despegar el respaldo."
+    },
+    {
+      "id": "shoulder-lateral-maquina",
+      "name": "Lateral Raise Machine",
+      "muscle": "Hombros",
+      "equipment": "Máquina",
+      "unit": "reps",
+      "loadUnit": "Máquina",
+      "level": "Principiante",
+      "instructions": "Apoya brazos en rodillos y eleva a altura cómoda sin encoger hombros."
+    },
+    {
+      "id": "calf-press-maquina",
+      "name": "Seated Calf Raise",
+      "muscle": "Gemelos",
+      "equipment": "Máquina",
+      "unit": "reps",
+      "loadUnit": "Máquina",
+      "level": "Principiante",
+      "instructions": "Eleva y baja talones en recorrido controlado sin rebotar."
+    },
+    {
+      "id": "glute-kickback-maquina",
+      "name": "Glute Kickback",
+      "muscle": "Glúteos",
+      "equipment": "Máquina",
+      "unit": "reps",
+      "loadUnit": "Máquina",
+      "level": "Principiante",
+      "instructions": "Empuja la plataforma hacia atrás desde la cadera sin arquear lumbar."
+    },
+    {
+      "id": "hip-abduction-maquina",
+      "name": "Hip Abduction",
+      "muscle": "Glúteos",
+      "equipment": "Máquina",
+      "unit": "reps",
+      "loadUnit": "Máquina",
+      "level": "Principiante",
+      "instructions": "Separa muslos con control manteniendo pelvis estable."
+    },
+    {
+      "id": "hip-adduction-maquina",
+      "name": "Hip Adduction",
+      "muscle": "Aductores",
+      "equipment": "Máquina",
+      "unit": "reps",
+      "loadUnit": "Máquina",
+      "level": "Principiante",
+      "instructions": "Junta las piernas sin acelerar el movimiento ni despegar pelvis."
+    },
+    {
+      "id": "stepmill",
+      "name": "Stair Climber",
+      "muscle": "Cardio",
+      "equipment": "Máquina",
+      "unit": "minutes",
+      "loadUnit": "Sin carga",
+      "level": "Intermedio",
+      "instructions": "Camina en escaladora sin apoyar el peso del cuerpo sobre los pasamanos.",
+      "supportsDistance": true
+    },
+    {
+      "id": "caminata-aire-libre",
+      "name": "Caminata al aire libre",
+      "muscle": "Cardio",
+      "equipment": "Peso corporal",
+      "unit": "minutes",
+      "loadUnit": "Sin carga",
+      "level": "Principiante",
+      "instructions": "Camina a un ritmo cómodo sostenido y anota los minutos."
+    },
+    {
+      "id": "saltos-comba",
+      "name": "Saltar a la comba",
+      "muscle": "Cardio",
+      "equipment": "Peso corporal",
+      "unit": "minutes",
+      "loadUnit": "Sin carga",
+      "level": "Intermedio",
+      "instructions": "Salta bajo y suave, con rodillas ligeramente flexionadas, si tus articulaciones lo toleran."
+    },
+    {
+      "id": "movilidad-toracica",
+      "name": "Rotación torácica en cuadrupedia",
+      "muscle": "Movilidad",
+      "equipment": "Peso corporal",
+      "unit": "reps",
+      "loadUnit": "Peso corporal",
+      "level": "Principiante",
+      "instructions": "En cuatro apoyos lleva una mano a la nuca y gira el tórax sin mover la pelvis."
+    },
+    {
+      "id": "movilidad-hombros",
+      "name": "Deslizamientos de hombros en pared",
+      "muscle": "Movilidad",
+      "equipment": "Peso corporal",
+      "unit": "reps",
+      "loadUnit": "Peso corporal",
+      "level": "Principiante",
+      "instructions": "Apoya espalda y antebrazos en pared, desliza arriba manteniendo costillas abajo."
+    },
+    {
+      "id": "hip-airplane",
+      "name": "Equilibrio de cadera hip airplane",
+      "muscle": "Glúteos",
+      "equipment": "Peso corporal",
+      "unit": "reps",
+      "loadUnit": "Peso corporal",
+      "level": "Avanzado",
+      "instructions": "De pie sobre una pierna inclina el torso y rota la pelvis con control junto a un apoyo."
+    },
+    {
+      "id": "single-leg-rdl",
+      "name": "Peso muerto rumano a una pierna",
+      "muscle": "Isquiotibiales",
+      "equipment": "Mancuernas",
+      "unit": "reps",
+      "loadUnit": "Por mancuerna",
+      "level": "Intermedio",
+      "instructions": "Bisagra sobre una pierna con caderas cuadradas y espalda neutra."
+    },
+    {
+      "id": "press-pallof-rodillas",
+      "name": "Pallof press de rodillas",
+      "muscle": "Abdomen",
+      "equipment": "Polea",
+      "unit": "reps",
+      "loadUnit": "Máquina",
+      "level": "Intermedio",
+      "instructions": "Arrodillado de lado a la polea empuja el agarre al frente resistiendo rotación."
+    },
+    {
+      "id": "farmer-walk",
+      "name": "Paseo del granjero con mancuernas",
+      "muscle": "Abdomen",
+      "equipment": "Mancuernas",
+      "unit": "seconds",
+      "loadUnit": "Por mancuerna",
+      "level": "Intermedio",
+      "instructions": "Camina erguido con una mancuerna en cada mano sin inclinarte."
+    },
+    {
+      "id": "suitcase-carry",
+      "name": "Paseo unilateral con mancuerna",
+      "muscle": "Abdomen",
+      "equipment": "Mancuernas",
+      "unit": "seconds",
+      "loadUnit": "Por mancuerna",
+      "level": "Intermedio",
+      "instructions": "Camina con una sola carga evitando inclinarte hacia el lado cargado."
     }
   ],
   "routines": [
@@ -833,5 +1697,30 @@
       }
     }
   ],
-  "activeRoutineId": "miami-inicial"
+  "activeRoutineId": "miami-inicial",
+  "goals": [
+    {
+      "id": "goal-miami",
+      "name": "Viaje a Miami",
+      "description": "Reducir grasa abdominal y mejorar definición muscular, de manera sostenible.",
+      "targetDate": "2026-12-30",
+      "metric": "none",
+      "targetValue": null,
+      "createdAt": "2026-11-20T00:00:00Z",
+      "done": false
+    }
+  ],
+  "planner": {
+    "availableDays": [
+      1,
+      2,
+      3,
+      5,
+      6
+    ],
+    "sessionsPerWeek": 5,
+    "focus": "equilibrado",
+    "minutesPerSession": 65,
+    "level": "intermedio"
+  }
 }
