@@ -1,8 +1,8 @@
 {
   "schemaVersion": 4,
   "profile": {
-    "heightCm": 155,
-    "referenceWeightKg": 60,
+    "heightCm": [],
+    "referenceWeightKg": [],
     "gym": "Fitness Park Zubiarte",
     "goalDate": "2026-12-30",
     "goalName": "Viaje a Miami",

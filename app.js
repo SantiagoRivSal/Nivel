@@ -311,7 +311,7 @@ function sessionExerciseHTML(s,ex,orderNo){
  const ei=s.exercises.findIndex(x=>x.id===ex.id),finished=ex.completionOrder!=null,
  count=ex.sets.filter(t=>t.done).length,e=exercise(ex.exerciseId),name=e.name==='Ejercicio eliminado'?ex.name:e.name;
  return `<div class="card session-exercise ${finished?'exercise-finished':''}" data-session-card="${E(ex.id)}"><div class="row-between wrap"><div class="row"><span class="number ${finished?'finished-number':''}">${finished?orderNo:'·'}</span><div><div class="set-title">${E(name)}</div><span class="muscle-tag">${E(e.muscle)}</span> <small>· ${finished?`${count} series guardadas · orden real ${orderNo}`:`${unitLabel(ex.unit,ex.perSide)} · pendiente`}</small></div></div><span class="pill ${finished?'green':''}">${finished?'HECHO':'POR HACER'}</span></div>
- ${!finished?`<div class="set-list">${ex.sets.map((set,si)=>setInputs(ex,set,ei,si)).join('')}</div><div class="row-between wrap session-tools"><button class="btn small ghost" data-action="add-set" data-ex="${ei}">+ Serie</button><button class="btn small ghost" data-action="remove-set" data-ex="${ei}">− Última serie</button><button class="btn primary" data-action="finish-exercise" data-ex="${ei}">✓ Guardar este ejercicio</button></div>`:`<div class="row-between wrap session-tools"><p class="muted">${ex.sets.filter(t=>t.done).map(t=>ex.unit==='minutes'?`${fmtNum(t.minutes)} min${t.distanceKm!=null?` · ${fmtNum(t.distanceKm,2)} km`:''}`:`${fmtNum(t[ex.unit])} ${unitLabel(ex.unit)}${t.load!=null?` · ${fmtNum(t.load)} kg`:''}`).join(' / ')}</p><button class="btn small" data-action="reopen-exercise" data-ex="${ei}">Editar ejercicio</button></div>`}</div>`;
+ ${!finished?`<div class="set-list">${ex.sets.map((set,si)=>setInputs(ex,set,ei,si)).join('')}</div><div class="row-between wrap session-tools"><button class="btn small ghost" data-action="add-set" data-ex="${ei}">+ Serie</button><button class="btn small ghost" data-action="remove-set" data-ex="${ei}">− Última serie</button><button class="btn primary" data-action="finish-exercise" data-ex="${ei}">✓ Guardar este ejercicio</button></div>`:`<div class="exercise-result-box">${ex.sets.filter(t=>t.done).map((t,idx)=>`<div class="exercise-result-line"><strong>Serie ${idx+1}</strong><span>${ex.unit==='minutes'?`${fmtNum(t.minutes)} min${t.distanceKm!=null?` · ${fmtNum(t.distanceKm,2)} km`:''}${t.inclinePct!=null?` · ${fmtNum(t.inclinePct,1)}%`:''}`:`${fmtNum(t[ex.unit])} ${unitLabel(ex.unit)}${t.load!=null?` · ${fmtNum(t.load)} kg`:''}${t.rir!=null?` · RIR ${fmtNum(t.rir,0)}`:''}`}</span></div>`).join('')}</div><div class="session-tools session-tools-finished"><button class="btn block" data-action="reopen-exercise" data-ex="${ei}">Editar ejercicio</button></div>`}</div>`;
 }
 function sessionHTML(s){
  const done=orderedSessionExercises(s).filter(ex=>ex.completionOrder!=null),pending=orderedSessionExercises(s).filter(ex=>ex.completionOrder==null);
@@ -388,10 +388,62 @@ function plannerModal(){
 function modal(title,content){showingModal=true;document.getElementById('dialog-root')?.remove();const root=document.createElement('div');root.id='dialog-root';root.className='modal-backdrop';root.innerHTML=`<div class="modal" role="dialog" aria-modal="true" aria-label="${E(title)}"><div class="modal-head"><h2>${E(title)}</h2><button class="modal-close" data-action="close-modal" aria-label="Cerrar ventana" title="Cerrar">×</button></div>${content}</div>`;document.body.append(root);}
 function closeModal(){showingModal=false;document.getElementById('dialog-root')?.remove();}
 function measurementModal(id){const rec=db.measurements.find(m=>m.id===id);modal(rec?'Editar medición':'Nueva medición',`<form id="measureForm" data-id="${E(id||'')}"><label class="field"><span class="label">Fecha de medición</span><input type="date" name="date" required value="${E(rec?.date||madridToday())}" max="${madridToday()}"></label><div class="form-grid section">${FIELDS.map(f=>`<label class="field"><span class="label">${E(f[1])} (${f[2]})</span><input name="${f[0]}" inputmode="decimal" placeholder="Opcional" value="${rec?.[f[0]]==null?'':E(String(rec[f[0]]).replace('.',','))}"></label>`).join('')}<label class="field full"><span class="label">Notas (opcionales)</span><textarea name="notes" placeholder="Contexto de la medición">${E(rec?.notes||'')}</textarea></label></div><p class="footnote">Solo necesitas introducir al menos un valor. Los demás pueden quedar vacíos.</p><button class="btn primary block" type="submit">Guardar medición</button></form>`);}
-function routineModal(i,add=false){const day=activeRoutine().days[String(selectedDay)],rx=day.exercises[i];modal(add?'Añadir ejercicio':'Editar ejercicio',`<form id="routineForm" data-index="${add?'-1':i}"><div class="form-grid"><label class="field full"><span class="label">Ejercicio</span><select name="exerciseId">${db.exercises.map(e=>`<option value="${E(e.id)}" ${rx?.exerciseId===e.id?'selected':''}>${E(e.name)}</option>`).join('')}</select></label><label class="field"><span class="label">Series</span><input name="sets" type="number" min="1" max="20" value="${rx?.sets??3}"></label><label class="field"><span class="label">Reps mínimas / seg.</span><input name="min" type="number" min="1" max="600" value="${rx?.min??8}"></label><label class="field"><span class="label">Reps máximas / seg.</span><input name="max" type="number" min="1" max="600" value="${rx?.max??12}"></label><label class="field"><span class="label">Peso sugerido (kg)</span><input name="suggestedKg" inputmode="decimal" placeholder="Sin definir" value="${rx?.suggestedKg??''}"></label><label class="field full"><span class="label">Notas</span><textarea name="notes">${E(rx?.notes||'')}</textarea></label><label class="field full row"><input type="checkbox" style="width:auto" name="perSide" ${rx?.perSide?'checked':''}>Por cada lado / pierna</label><label class="field full row"><input type="checkbox" style="width:auto" name="optional" ${rx?.optional?'checked':''}>Ejercicio opcional</label></div><div class="row-between section"><button class="btn primary" type="submit">Guardar</button>${!add?`<button class="btn danger" type="button" data-action="routine-remove" data-index="${i}">Eliminar del día</button>`:''}</div></form>`);}
+// Selector de ejercicios: cerrado al entrar; al tocarlo ofrece todo el banco,
+// permite escribir para filtrar y guarda el ID estable del ejercicio elegido.
+function exerciseComboboxHTML(prefix,selectedId=''){
+ const current=db.exercises.find(e=>e.id===selectedId);
+ const display=current?current.name:'';
+ return `<div class="exercise-combobox" data-exercise-combobox>
+  <div class="exercise-combo-control">
+   <input id="${prefix}Search" class="exercise-combo-input" data-combo-search type="search" role="combobox" aria-autocomplete="list" aria-haspopup="listbox" aria-expanded="false" aria-controls="${prefix}Options" aria-label="Buscar o seleccionar ejercicio" autocomplete="off" spellcheck="false" placeholder="Selecciona un ejercicio o escribe para buscar…" value="${E(display)}">
+   <button type="button" class="exercise-combo-toggle" data-combo-toggle aria-label="Mostrar u ocultar ejercicios" aria-controls="${prefix}Options" aria-expanded="false"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>
+  </div>
+  <input type="hidden" name="exerciseId" data-combo-value value="${E(selectedId)}">
+  <div class="exercise-combo-menu" id="${prefix}Options" role="listbox" aria-label="Ejercicios disponibles" hidden>
+   ${db.exercises.map((e,i)=>`<button type="button" role="option" class="exercise-combo-option" id="${prefix}Option${i}" data-combo-option data-exercise-id="${E(e.id)}" data-exercise-name="${E(e.name)}" data-search="${E(e.name+' '+e.muscle+' '+e.equipment)}" aria-selected="${selectedId===e.id}"><span>${E(e.name)}</span><small>${E(e.muscle)} · ${E(e.equipment)}</small></button>`).join('')}
+   <p class="exercise-combo-empty" data-combo-empty hidden>No se encontraron ejercicios. Prueba con otro nombre o grupo muscular.</p>
+  </div>
+ </div>`;
+}
+function routineModal(i,add=false){const day=activeRoutine().days[String(selectedDay)],rx=day.exercises[i];modal(add?'Añadir ejercicio':'Editar ejercicio',`<form id="routineForm" data-index="${add?'-1':i}"><div class="form-grid"><div class="field full"><span class="label">Ejercicio</span>${exerciseComboboxHTML('routineExercise',rx?.exerciseId||'')}</div><label class="field"><span class="label">Series</span><input name="sets" type="number" min="1" max="20" value="${rx?.sets??3}"></label><label class="field"><span class="label">Reps mínimas / seg.</span><input name="min" type="number" min="1" max="600" value="${rx?.min??8}"></label><label class="field"><span class="label">Reps máximas / seg.</span><input name="max" type="number" min="1" max="600" value="${rx?.max??12}"></label><label class="field"><span class="label">Peso sugerido (kg)</span><input name="suggestedKg" inputmode="decimal" placeholder="Sin definir" value="${rx?.suggestedKg??''}"></label><label class="field full"><span class="label">Notas</span><textarea name="notes">${E(rx?.notes||'')}</textarea></label><label class="field full row"><input type="checkbox" style="width:auto" name="perSide" ${rx?.perSide?'checked':''}>Por cada lado / pierna</label><label class="field full row"><input type="checkbox" style="width:auto" name="optional" ${rx?.optional?'checked':''}>Ejercicio opcional</label></div><div class="row-between section wrap"><button class="btn primary" type="submit">Guardar</button>${!add?`<button class="btn danger" type="button" data-action="routine-remove" data-index="${i}">Eliminar del día</button>`:''}</div></form>`);}
 function sessionAddModal(){
  if(!db.activeSession){toast('Primero comienza una sesión.',true);return;}
- modal('Añadir ejercicio a esta sesión',`<form id="sessionAddForm"><label class="field"><span class="label">Busca y elige ejercicio</span><input id="sessionCatalogSearch" type="search" placeholder="Buscar en el banco (${db.exercises.length} ejercicios)…"><select name="exerciseId" id="sessionExerciseSelect" size="7" required style="height:220px;margin-top:10px">${db.exercises.map(e=>`<option value="${E(e.id)}" data-text="${E((e.name+' '+e.muscle).toLowerCase())}">${E(e.name)} · ${E(e.muscle)}</option>`).join('')}</select></label><label class="field section"><span class="label">Series que vas a registrar</span><input name="sets" type="number" min="1" max="20" value="3"></label><button class="btn primary block section" type="submit">Añadir a mi sesión</button></form>`);
+ modal('Añadir ejercicio a esta sesión',`<form id="sessionAddForm"><div class="field"><span class="label">Busca y elige ejercicio</span>${exerciseComboboxHTML('sessionExercise')}</div><label class="field section"><span class="label">Series que vas a registrar</span><input name="sets" type="number" min="1" max="20" value="3"></label><button class="btn primary block section" type="submit">Añadir a mi sesión</button></form>`);
+}
+// El formulario utiliza el input oculto name="exerciseId". Nunca inferimos el ID
+// únicamente a partir del texto que alguien escriba en el buscador.
+function normalizeExerciseQuery(text){return String(text||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLocaleLowerCase('es').trim();}
+function closeExerciseCombo(combo){if(!combo)return;const menu=combo.querySelector('.exercise-combo-menu'),input=combo.querySelector('[data-combo-search]'),toggle=combo.querySelector('[data-combo-toggle]');if(menu)menu.hidden=true;input?.setAttribute('aria-expanded','false');input?.removeAttribute('aria-activedescendant');toggle?.setAttribute('aria-expanded','false');combo.classList.remove('is-open');}
+function filterExerciseCombo(combo,query=''){
+ const q=normalizeExerciseQuery(query),options=[...combo.querySelectorAll('[data-combo-option]')];let count=0;
+ for(const option of options){option.hidden=!normalizeExerciseQuery(option.dataset.search).includes(q);if(!option.hidden)count++;option.classList.remove('is-active');}
+ const empty=combo.querySelector('[data-combo-empty]');if(empty)empty.hidden=count!==0;
+ combo.querySelector('[data-combo-search]')?.removeAttribute('aria-activedescendant');return count;
+}
+function openExerciseCombo(combo,{all=true}={}){
+ if(!combo)return;
+ document.querySelectorAll('[data-exercise-combobox]').forEach(other=>{if(other!==combo)closeExerciseCombo(other);});
+ const menu=combo.querySelector('.exercise-combo-menu'),input=combo.querySelector('[data-combo-search]'),toggle=combo.querySelector('[data-combo-toggle]');
+ if(!menu||!input)return;
+ filterExerciseCombo(combo,all?'':input.value);menu.hidden=false;input.setAttribute('aria-expanded','true');toggle?.setAttribute('aria-expanded','true');combo.classList.add('is-open');
+ if(all){const selected=combo.querySelector('[data-combo-option][aria-selected="true"]');menu.scrollTop=selected?Math.max(0,selected.offsetTop-menu.offsetTop-70):0;}
+ else menu.scrollTop=0;
+}
+function chooseExerciseCombo(option){
+ const combo=option.closest('[data-exercise-combobox]');if(!combo)return;
+ combo.querySelector('[data-combo-value]').value=option.dataset.exerciseId;
+ const input=combo.querySelector('[data-combo-search]');input.value=option.dataset.exerciseName;
+ combo.querySelectorAll('[data-combo-option]').forEach(o=>o.setAttribute('aria-selected',String(o===option)));
+ closeExerciseCombo(combo);input.blur();
+}
+function activeExerciseComboOption(combo,step){
+ const visible=[...combo.querySelectorAll('[data-combo-option]')].filter(o=>!o.hidden);
+ if(!visible.length)return;
+ const index=visible.findIndex(o=>o.classList.contains('is-active'));
+ const next=visible[(index+step+visible.length)%visible.length];
+ visible.forEach(o=>o.classList.toggle('is-active',o===next));
+ combo.querySelector('[data-combo-search]')?.setAttribute('aria-activedescendant',next.id);
+ next.scrollIntoView({block:'nearest'});
 }
 function exerciseModal(id){const e=id?exercise(id):null;modal(e?'Detalle del ejercicio':'Crear ejercicio',e?`<p><span class="muscle-tag">${E(e.muscle)}</span> <span class="pill">${E(e.equipment)}</span> <span class="level-chip">${E(e.level||'General')}</span></p><p>${E(e.instructions)}</p><p class="footnote">Unidad: ${E(e.unit==='seconds'?'segundos':e.unit==='minutes'?'minutos':'repeticiones')} · Carga: ${E(e.loadUnit)}</p>${e.custom?`<button class="btn danger" data-action="delete-exercise" data-id="${E(e.id)}">Eliminar ejercicio propio</button>`:''}`:`<form id="exerciseForm"><div class="form-grid"><label class="field full"><span class="label">Nombre</span><input name="name" required maxlength="100"></label><label class="field"><span class="label">Músculo</span><input name="muscle" required placeholder="Espalda" maxlength="40"></label><label class="field"><span class="label">Material</span><select name="equipment"><option>Máquina</option><option>Mancuernas</option><option>Polea</option><option>Barra</option><option>Peso corporal</option><option>Otro</option></select></label><label class="field"><span class="label">Unidad</span><select name="unit"><option value="reps">Repeticiones</option><option value="seconds">Segundos</option><option value="minutes">Minutos</option></select></label><label class="field"><span class="label">Tipo de carga</span><select name="loadUnit"><option>Máquina</option><option>Por mancuerna</option><option>Total</option><option>Peso corporal</option><option>Sin carga</option></select></label><label class="field"><span class="label">Nivel</span><select name="level"><option>Principiante</option><option>Intermedio</option><option>Avanzado</option></select></label><label class="field full"><span class="label">Cómo se realiza</span><textarea name="instructions" maxlength="1000" required></textarea></label></div><button class="btn primary block section" type="submit">Añadir al banco</button></form>`);}
 function detailSession(id){
@@ -594,12 +646,36 @@ function formSubmit(form){const fd=new FormData(form);if(form.id==='measureForm'
 function filterLibrary(){const level=document.getElementById('levelFilter')?.value||'Todos';const q=(document.getElementById('exerciseSearch')?.value||'').trim().toLowerCase(),muscle=document.getElementById('muscleFilter')?.value||'Todos';document.querySelectorAll('[data-library-item]').forEach(el=>{el.hidden=!(el.dataset.text.includes(q)&&(muscle==='Todos'||el.dataset.muscle===muscle)&&(level==='Todos'||el.dataset.level===level));});}
 window.addEventListener('hashchange',()=>{const next=viewFromHash();if(view!==next){view=next;closeModal();render();window.scrollTo(0,0);}});
 document.addEventListener('click',e=>{
+ const option=e.target.closest('[data-combo-option]');if(option){e.preventDefault();chooseExerciseCombo(option);return;}
+ const toggle=e.target.closest('[data-combo-toggle]');if(toggle){e.preventDefault();const combo=toggle.closest('[data-exercise-combobox]');if(combo.querySelector('.exercise-combo-menu').hidden)openExerciseCombo(combo);else closeExerciseCombo(combo);return;}
+ const search=e.target.closest('[data-combo-search]');if(search){const combo=search.closest('[data-exercise-combobox]');if(combo.querySelector('.exercise-combo-menu').hidden)openExerciseCombo(combo);return;}
+ if(!e.target.closest('[data-exercise-combobox]'))document.querySelectorAll('[data-exercise-combobox]').forEach(closeExerciseCombo);
  const nav=e.target.closest('[data-nav]');if(nav){navigateTo(nav.dataset.nav);return;}
  const day=e.target.closest('[data-day]');if(day){selectedDay=Number(day.dataset.day);render();return;}
  const a=e.target.closest('[data-action]');if(a){e.preventDefault();doAction(a);}
  if(e.target.classList.contains('modal-backdrop'))closeModal();
 });
-document.addEventListener('keydown',e=>{if(e.key==='Escape'&&showingModal)closeModal();if((e.key==='Enter'||e.key===' ')&&e.target.matches('[data-body-metric]')){e.preventDefault();e.target.dispatchEvent(new MouseEvent('click',{bubbles:true}));}});
+document.addEventListener('keydown',e=>{
+ if(e.target.matches('[data-combo-search]')){
+   const combo=e.target.closest('[data-exercise-combobox]');
+   if(e.key==='ArrowDown'||e.key==='ArrowUp'){
+     e.preventDefault();if(combo.querySelector('.exercise-combo-menu').hidden)openExerciseCombo(combo);
+     activeExerciseComboOption(combo,e.key==='ArrowDown'?1:-1);return;
+   }
+   if(e.key==='Enter'&&!combo.querySelector('.exercise-combo-menu').hidden){
+     e.preventDefault();const option=combo.querySelector('[data-combo-option].is-active:not([hidden])')||combo.querySelector('[data-combo-option]:not([hidden])');if(option)chooseExerciseCombo(option);return;
+   }
+   if(e.key==='Escape'&&!combo.querySelector('.exercise-combo-menu').hidden){e.preventDefault();e.stopPropagation();closeExerciseCombo(combo);return;}
+   if(e.key==='Tab')closeExerciseCombo(combo);
+ }
+ if(e.key==='Escape'&&showingModal)closeModal();
+ if((e.key==='Enter'||e.key===' ')&&e.target.matches('[data-body-metric]')){e.preventDefault();e.target.dispatchEvent(new MouseEvent('click',{bubbles:true}));}
+});
+document.addEventListener('focusin',e=>{if(e.target.matches('[data-combo-search]')){
+ const combo=e.target.closest('[data-exercise-combobox]');const selected=combo.querySelector('[data-combo-value]').value;
+ if(selected)e.target.select();openExerciseCombo(combo);
+}});
+
 document.addEventListener('submit',e=>{if(['measureForm','profileForm','routineForm','exerciseForm','goalForm','sessionAddForm','plannerForm'].includes(e.target.id)){e.preventDefault();formSubmit(e.target);}});
 document.addEventListener('change',e=>{
  if(e.target.id==='chartMetric'){chartMetric=e.target.value;render();return;}
@@ -611,9 +687,11 @@ document.addEventListener('change',e=>{
 document.addEventListener('input',e=>{
  if(e.target.id==='exerciseSearch'){filterLibrary();return;}
  if(e.target.id==='loadsSearch'){const q=e.target.value.toLocaleLowerCase('es').trim();document.querySelectorAll('[data-load-item]').forEach(el=>{el.hidden=!el.dataset.text.includes(q);});return;}
- if(e.target.id==='sessionCatalogSearch'){
-   const q=e.target.value.trim().toLocaleLowerCase('es');const select=document.getElementById('sessionExerciseSelect');
-   if(select){[...select.options].forEach(o=>{o.hidden=!o.dataset.text.includes(q);});const first=[...select.options].find(o=>!o.hidden);if(first)select.value=first.value;}
+ if(e.target.matches('[data-combo-search]')){
+   const combo=e.target.closest('[data-exercise-combobox]');
+   combo.querySelector('[data-combo-value]').value='';
+   combo.querySelectorAll('[data-combo-option]').forEach(o=>o.setAttribute('aria-selected','false'));
+   openExerciseCombo(combo,{all:false});
    return;
  }
  const el=e.target;if(!el.hasAttribute('data-set-field')||!db.activeSession)return;
