@@ -80,7 +80,11 @@ function mergeCatalog(current,defaults){
     if(!known.has(ex.id)){current.exercises.push(ex);continue;}
     // Update only built-in labels and capabilities. Never alter custom exercises or session history.
     const own=known.get(ex.id);
-    if(!own.custom){own.name=ex.name;own.muscle=ex.muscle;own.equipment=ex.equipment;own.unit=ex.unit;own.loadUnit=ex.loadUnit;own.supportsDistance=!!ex.supportsDistance;own.instructions=ex.instructions;own.level=ex.level||own.level||'General';}
+    if(!own.custom && !own.userEdited){
+      for(const field of ['name','muscle','equipment','unit','loadUnit','supportsDistance','instructions','level','brand','machineLine','movementGroup','catalogVerified']){
+        if(Object.hasOwn(ex,field)) own[field]=ex[field];
+      }
+    }
   }
   return current;
 }
@@ -305,7 +309,8 @@ function setInputs(ex,set,ei,si){
  const done=`<label class="done"><span class="sr-only">Completar serie</span><input aria-label="Completar serie" type="checkbox" data-set-done data-ex="${ei}" data-set="${si}" ${set.done?'checked':''}></label>`;
  if(ex.unit==='minutes')return `<div class="set-row-flex ${set.done?'completed':''}"><b class="set-number">${si+1}</b>${f('minutes','Min','decimal')}${e.supportsDistance?f('distanceKm','km','decimal'):''}${ex.exerciseId==='cardio-cinta'?f('inclinePct','Inclinación %','decimal'):''}${done}</div>`;
  const bodyweight=e.equipment==='Peso corporal'||e.loadUnit==='Sin carga'||e.loadUnit==='Peso corporal';
- return `<div class="set-row-flex ${set.done?'completed':''}"><b class="set-number">${si+1}</b>${!bodyweight?f('load','Kg'):''}${f(ex.unit,ex.unit==='seconds'?'Segundos':'Reps','decimal')}${f('rir','RIR','numeric')}${done}</div>`;
+ const weightLabel=e.loadUnit==='Por lado'?'Kg/lado':e.loadUnit==='Por mancuerna'?'Kg/manc.':'Kg';
+ return `<div class="set-row-flex ${set.done?'completed':''}"><b class="set-number">${si+1}</b>${!bodyweight?f('load',weightLabel):''}${f(ex.unit,ex.unit==='seconds'?'Segundos':'Reps','decimal')}${f('rir','RIR','numeric')}${done}</div>`;
 }
 function sessionExerciseHTML(s,ex,orderNo){
  const ei=s.exercises.findIndex(x=>x.id===ex.id),finished=ex.completionOrder!=null,
@@ -317,7 +322,7 @@ function sessionHTML(s){
  const done=orderedSessionExercises(s).filter(ex=>ex.completionOrder!=null),pending=orderedSessionExercises(s).filter(ex=>ex.completionOrder==null);
  return `<div class="session-card"><div class="row-between wrap"><div><span class="eyebrow">SESIÓN EN CURSO</span><h2>${E(s.title)}</h2><small>${done.length} ejercicios terminados · ${pending.length} pendientes</small></div><button class="btn danger small" data-action="cancel-session">Descartar</button></div>
  <label class="field section" style="max-width:230px"><span class="label">Fecha de la sesión</span><input type="date" data-session-date value="${E(s.date)}" max="${madridToday()}"></label>
- <div class="row-between section wrap"><h3>Orden real de entrenamiento</h3><button class="btn small" data-action="session-add">+ Añadir ejercicio del banco</button></div>
+ <div class="session-add-header"><h3>Orden real de entrenamiento</h3><button class="btn" data-action="session-add">+ Añadir ejercicio del banco</button></div>
  ${done.length?`<div class="stack">${done.map((ex,i)=>sessionExerciseHTML(s,ex,i+1)).join('')}</div>`:''}
  <h3 class="section muted">Pendientes · orden previsto</h3>${pending.length?`<div class="stack">${pending.map(ex=>sessionExerciseHTML(s,ex,0)).join('')}</div>`:`<p class="muted">No hay ejercicios pendientes. Puedes añadir otro del banco.</p>`}
  <button class="btn primary block section" data-action="finish-session">Guardar entrenamiento (${done.length} ejercicios terminados)</button><p class="small-note">Usa «Guardar este ejercicio» cuando lo termines. El primero que finalices pasará a ser el n.º 1, aunque fuera el cuarto del plan. Puedes registrar solo una parte del entrenamiento. Los pendientes sin completar no se guardan en el historial.</p></div>`;
@@ -356,12 +361,29 @@ function sessionsPageHTML(){const count=db.sessions.filter(s=>s.status==='comple
  <section class="card"><div class="row-between wrap"><h2>Todos los entrenamientos</h2><span class="pill green">${count} sesiones</span></div>${sessionHistoryHTML(null)}</section>`;
 }
 
+const MACHINE_BRANDS = ['Technogym','Hammer Strength','gym80'];
+const BRAND_CATALOGS = {
+  'Technogym':'https://www.technogym.com/en-INT/category/selection-900/',
+  'Hammer Strength':'https://www.lifefitness.com/en-us/catalog/strength-training/plate-loaded/hammer-strength',
+  'gym80':'https://www.gym80.co.uk/product-ranges/sygnum'
+};
+function fullExerciseName(e){return `${e.name}${e.brand?' · '+e.brand+(e.machineLine?' '+e.machineLine:''):''}`;}
+function exerciseMeta(e){
+ return `<span class="muscle-tag">${E(e.muscle)}</span><span class="exercise-equip">${E(e.equipment)}</span>${e.brand?`<span class="brand-chip">${E(e.brand)}${e.machineLine?` · ${E(e.machineLine)}`:''}</span>`:''}`;
+}
+function exerciseVariants(e){
+ if(!e.movementGroup)return '';
+ const options=db.exercises.filter(x=>x.id!==e.id && x.movementGroup===e.movementGroup).slice(0,12);
+ if(!options.length)return '';
+ return `<div class="exercise-variants"><h3>Otras formas de este movimiento</h3><p class="small-note">Cada modalidad y cada máquina tienen su propio historial de cargas; los kilos no son directamente comparables.</p><div class="variant-grid">${options.map(x=>`<button class="variant-choice" type="button" data-action="exercise-detail" data-id="${E(x.id)}"><span>${E(x.name)}</span><small>${E(x.brand||x.equipment)}${x.machineLine?' · '+E(x.machineLine):''}</small></button>`).join('')}</div></div>`;
+}
 function libraryHTML(){
  const muscles=['Todos',...new Set(db.exercises.map(e=>e.muscle))];
- return `${header('Banco de ejercicios',`${db.exercises.length} ejercicios disponibles. Busca por músculo, material o nivel.`,`<button class="btn primary" data-action="new-exercise">+ Nuevo ejercicio</button>`)}
- <div class="card"><div class="filters"><input id="exerciseSearch" type="search" placeholder="Buscar ejercicio, material…" aria-label="Buscar ejercicios"><select id="muscleFilter" class="select-inline" aria-label="Grupo muscular">${muscles.map(m=>`<option value="${E(m)}">${E(m)}</option>`).join('')}</select><select id="levelFilter" class="select-inline" aria-label="Nivel del ejercicio"><option value="Todos">Todos los niveles</option><option value="Principiante">Principiante</option><option value="Intermedio">Intermedio</option><option value="Avanzado">Avanzado</option></select></div><p class="small-note">Las máquinas usan nombres habituales en inglés; pueden variar según la marca. Otros ejercicios mantienen sus nombres en español.</p></div>
- <div class="grid2 section" id="exerciseResults">${db.exercises.map(e=>`<div class="exercise-card" data-library-item data-text="${E(`${e.name} ${e.muscle} ${e.equipment}`.toLowerCase())}" data-muscle="${E(e.muscle)}" data-level="${E(e.level||'General')}"><div class="row-between"><div><h3>${E(e.name)}</h3><p><span class="muscle-tag">${E(e.muscle)}</span> · ${E(e.equipment)} <span class="level-chip">${E(e.level||'General')}</span></p></div><button class="btn small" data-action="exercise-detail" data-id="${E(e.id)}">Ver</button></div><small>${E(e.instructions)}</small></div>`).join('')}</div>`;
+ return `${header('Banco de ejercicios',`${db.exercises.length} ejercicios disponibles. Puedes editar cualquiera y filtrar por marca, músculo o nivel.`,`<button class="btn primary" data-action="new-exercise">+ Nuevo ejercicio</button>`)}
+ <div class="card"><div class="filters"><input id="exerciseSearch" type="search" placeholder="Buscar ejercicio, material o marca…" aria-label="Buscar ejercicios"><select id="muscleFilter" class="select-inline" aria-label="Grupo muscular">${muscles.map(m=>`<option value="${E(m)}">${E(m)}</option>`).join('')}</select><select id="levelFilter" class="select-inline" aria-label="Nivel del ejercicio"><option value="Todos">Todos los niveles</option><option value="Principiante">Principiante</option><option value="Intermedio">Intermedio</option><option value="Avanzado">Avanzado</option></select><select id="brandFilter" class="select-inline" aria-label="Marca de la máquina"><option value="Todas">Todas las marcas</option><option value="Sin marca">Sin marca / otras modalidades</option>${MACHINE_BRANDS.map(b=>`<option value="${E(b)}">${E(b)}</option>`).join('')}</select></div><p class="small-note">Las marcas y denominaciones de las variantes proceden de catálogos oficiales. <strong>No significa que cada modelo esté instalado en Zubiarte.</strong> Confirma la placa de la máquina y edita el nombre si lo necesitas. Las mancuernas, poleas, barras y ejercicios de peso corporal siguen como modalidades independientes.</p></div>
+ <div class="grid2 section" id="exerciseResults">${db.exercises.map(e=>`<article class="exercise-card" data-library-item data-text="${E(normalizeExerciseQuery([e.name,e.muscle,e.equipment,e.brand,e.machineLine].filter(Boolean).join(' ')))}" data-muscle="${E(e.muscle)}" data-level="${E(e.level||'General')}" data-brand="${E(e.brand||'Sin marca')}"><div class="library-card-head"><div class="library-card-copy"><h3>${E(e.name)}</h3><div class="library-card-meta">${exerciseMeta(e)} <span class="level-chip">${E(e.level||'General')}</span></div></div><div class="library-actions"><button class="btn small ghost" data-action="exercise-detail" data-id="${E(e.id)}">Ver</button><button class="btn small library-edit-btn" data-action="exercise-edit" data-id="${E(e.id)}">Editar</button></div></div><p class="library-instructions">${E(e.instructions)}</p>${e.brand?`<small class="library-brand-note">${e.catalogVerified&&!e.userEdited?'Referencia de catálogo · equipo del club sin confirmar':'Denominación personalizada · verifica la placa del equipo'}</small>`:''}</article>`).join('')}</div>`;
 }
+
 function profileHTML(){
  return `${header('Tu perfil y objetivos','Crea varios objetivos y genera una nueva rutina según tus días disponibles.')}
  <div class="grid2"><form class="card" id="profileForm"><h2>Datos de referencia</h2><div class="form-grid"><label class="field"><span class="label">Altura (cm)</span><input name="heightCm" inputmode="decimal" value="${E(db.profile.heightCm)}"></label><label class="field"><span class="label">Peso de referencia (kg)</span><input name="referenceWeightKg" inputmode="decimal" value="${E(db.profile.referenceWeightKg)}"></label><label class="field full"><span class="label">Gimnasio</span><input name="gym" maxlength="100" value="${E(db.profile.gym)}"></label></div><button class="btn primary block section" type="submit">Guardar perfil</button></form>
@@ -392,7 +414,7 @@ function measurementModal(id){const rec=db.measurements.find(m=>m.id===id);modal
 // permite escribir para filtrar y guarda el ID estable del ejercicio elegido.
 function exerciseComboboxHTML(prefix,selectedId=''){
  const current=db.exercises.find(e=>e.id===selectedId);
- const display=current?current.name:'';
+ const display=current?fullExerciseName(current):'';
  return `<div class="exercise-combobox" data-exercise-combobox>
   <div class="exercise-combo-control">
    <input id="${prefix}Search" class="exercise-combo-input" data-combo-search type="search" role="combobox" aria-autocomplete="list" aria-haspopup="listbox" aria-expanded="false" aria-controls="${prefix}Options" aria-label="Buscar o seleccionar ejercicio" autocomplete="off" spellcheck="false" placeholder="Selecciona un ejercicio o escribe para buscar…" value="${E(display)}">
@@ -400,7 +422,7 @@ function exerciseComboboxHTML(prefix,selectedId=''){
   </div>
   <input type="hidden" name="exerciseId" data-combo-value value="${E(selectedId)}">
   <div class="exercise-combo-menu" id="${prefix}Options" role="listbox" aria-label="Ejercicios disponibles" hidden>
-   ${db.exercises.map((e,i)=>`<button type="button" role="option" class="exercise-combo-option" id="${prefix}Option${i}" data-combo-option data-exercise-id="${E(e.id)}" data-exercise-name="${E(e.name)}" data-search="${E(e.name+' '+e.muscle+' '+e.equipment)}" aria-selected="${selectedId===e.id}"><span>${E(e.name)}</span><small>${E(e.muscle)} · ${E(e.equipment)}</small></button>`).join('')}
+   ${db.exercises.map((e,i)=>`<button type="button" role="option" class="exercise-combo-option" id="${prefix}Option${i}" data-combo-option data-exercise-id="${E(e.id)}" data-exercise-name="${E(fullExerciseName(e))}" data-search="${E([e.name,e.muscle,e.equipment,e.brand,e.machineLine].filter(Boolean).join(' '))}" aria-selected="${selectedId===e.id}"><span>${E(e.name)}</span><small>${E(e.muscle)} · ${E(e.brand||e.equipment)}${e.machineLine?' · '+E(e.machineLine):''}</small></button>`).join('')}
    <p class="exercise-combo-empty" data-combo-empty hidden>No se encontraron ejercicios. Prueba con otro nombre o grupo muscular.</p>
   </div>
  </div>`;
@@ -445,12 +467,25 @@ function activeExerciseComboOption(combo,step){
  combo.querySelector('[data-combo-search]')?.setAttribute('aria-activedescendant',next.id);
  next.scrollIntoView({block:'nearest'});
 }
-function exerciseModal(id){const e=id?exercise(id):null;modal(e?'Detalle del ejercicio':'Crear ejercicio',e?`<p><span class="muscle-tag">${E(e.muscle)}</span> <span class="pill">${E(e.equipment)}</span> <span class="level-chip">${E(e.level||'General')}</span></p><p>${E(e.instructions)}</p><p class="footnote">Unidad: ${E(e.unit==='seconds'?'segundos':e.unit==='minutes'?'minutos':'repeticiones')} · Carga: ${E(e.loadUnit)}</p>${e.custom?`<button class="btn danger" data-action="delete-exercise" data-id="${E(e.id)}">Eliminar ejercicio propio</button>`:''}`:`<form id="exerciseForm"><div class="form-grid"><label class="field full"><span class="label">Nombre</span><input name="name" required maxlength="100"></label><label class="field"><span class="label">Músculo</span><input name="muscle" required placeholder="Espalda" maxlength="40"></label><label class="field"><span class="label">Material</span><select name="equipment"><option>Máquina</option><option>Mancuernas</option><option>Polea</option><option>Barra</option><option>Peso corporal</option><option>Otro</option></select></label><label class="field"><span class="label">Unidad</span><select name="unit"><option value="reps">Repeticiones</option><option value="seconds">Segundos</option><option value="minutes">Minutos</option></select></label><label class="field"><span class="label">Tipo de carga</span><select name="loadUnit"><option>Máquina</option><option>Por mancuerna</option><option>Total</option><option>Peso corporal</option><option>Sin carga</option></select></label><label class="field"><span class="label">Nivel</span><select name="level"><option>Principiante</option><option>Intermedio</option><option>Avanzado</option></select></label><label class="field full"><span class="label">Cómo se realiza</span><textarea name="instructions" maxlength="1000" required></textarea></label></div><button class="btn primary block section" type="submit">Añadir al banco</button></form>`);}
+function exerciseModal(id, mode='detail'){
+ const e=id?db.exercises.find(x=>x.id===id):null;
+ if(id&&!e){toast('No se encontró ese ejercicio.',true);return;}
+ if(e&&mode!=='edit'){
+   const ref=e.brand&&BRAND_CATALOGS[e.brand]?`<p class="small-note">${e.catalogVerified&&!e.userEdited?'Denominación documentada en catálogo oficial.':'Nombre personalizado por ti.'} La presencia de este modelo en Zubiarte no está confirmada. <a href="${BRAND_CATALOGS[e.brand]}" target="_blank" rel="noopener noreferrer">Consultar catálogo de la marca</a>.</p>`:'';
+   modal('Detalle del ejercicio',`<div class="exercise-modal-detail"><h3>${E(e.name)}</h3><div class="library-card-meta">${exerciseMeta(e)} <span class="level-chip">${E(e.level||'General')}</span></div><p>${E(e.instructions)}</p><p class="footnote">Unidad: ${E(e.unit==='seconds'?'segundos':e.unit==='minutes'?'minutos':'repeticiones')} · Carga: ${E(e.loadUnit)}</p>${ref}${e.userEdited?'<span class="pill green">Personalizado por ti</span>':''}${exerciseVariants(e)}<div class="modal-actions"><button class="btn primary" data-action="exercise-edit" data-id="${E(e.id)}">Editar ejercicio</button>${e.custom?`<button class="btn danger" data-action="delete-exercise" data-id="${E(e.id)}">Eliminar ejercicio propio</button>`:''}</div></div>`);
+   return;
+ }
+ const selected=e||{};
+ const used=!!e&&(db.sessions.some(s=>s.exercises?.some(x=>x.exerciseId===e.id))||db.activeSession?.exercises?.some(x=>x.exerciseId===e.id));
+ const option=(value,current)=>`<option value="${E(value)}" ${value===current?'selected':''}>${E(value)}</option>`;
+ modal(e?'Editar ejercicio':'Crear ejercicio',`<form id="exerciseForm" data-id="${E(e?.id||'')}"><div class="form-grid"><label class="field full"><span class="label">Nombre de la máquina o ejercicio</span><input name="name" value="${E(selected.name||'')}" required maxlength="100" placeholder="Ej. Lat Machine"></label><label class="field"><span class="label">Grupo muscular</span><input name="muscle" value="${E(selected.muscle||'')}" required placeholder="Espalda" maxlength="40"></label><label class="field"><span class="label">Material</span><select name="equipment">${['Máquina','Mancuernas','Polea','Barra','Peso corporal','Cardio','Otro'].map(v=>option(v,selected.equipment||'Máquina')).join('')}</select></label><label class="field"><span class="label">Marca (solo para máquina)</span><select name="brand">${[['','Sin marca específica'],...MACHINE_BRANDS.map(b=>[b,b])].map(([value,label])=>`<option value="${E(value)}" ${value===(selected.brand||'')?'selected':''}>${E(label)}</option>`).join('')}</select></label><label class="field full"><span class="label">Serie o modelo (opcional)</span><input name="machineLine" maxlength="80" value="${E(selected.machineLine||'')}" placeholder="Ej. Selection 900, Sygnum Dual"></label><label class="field"><span class="label">Unidad</span><select name="unit" ${used?'disabled':''}>${[['reps','Repeticiones'],['seconds','Segundos'],['minutes','Minutos']].map(([v,l])=>`<option value="${v}" ${v===(selected.unit||'reps')?'selected':''}>${l}</option>`).join('')}</select>${used?`<input type="hidden" name="unit" value="${E(selected.unit)}">`:''}</label><label class="field"><span class="label">Tipo de carga</span><select name="loadUnit">${['Máquina','Por mancuerna','Por lado','Total','Peso corporal','Sin carga'].map(v=>option(v,selected.loadUnit||'Máquina')).join('')}</select></label><label class="field"><span class="label">Nivel</span><select name="level">${['Principiante','Intermedio','Avanzado'].map(v=>option(v,selected.level||'Principiante')).join('')}</select></label><label class="field full"><span class="label">Cómo se realiza</span><textarea name="instructions" maxlength="1200" required>${E(selected.instructions||'')}</textarea></label></div>${used?'<p class="small-note">La unidad de este ejercicio está bloqueada porque existen series guardadas. Puedes editar el nombre y las instrucciones sin borrar el historial.</p>':''}<p class="small-note">Si editas un ejercicio del catálogo, tu personalización se conserva cuando actualices NIVEL. Su ID y las cargas anteriores no cambian.</p><div class="modal-actions"><button class="btn primary" type="submit">${e?'Guardar cambios':'Añadir al banco'}</button>${e?`<button type="button" class="btn ghost" data-action="exercise-detail" data-id="${E(e.id)}">Cancelar</button>`:''}</div></form>`);
+}
+
 function detailSession(id){
  const s=db.sessions.find(x=>x.id===id);if(!s)return;
  const exs=[...s.exercises].filter(e=>e.sets.some(t=>t.done)).sort((a,b)=>(a.completionOrder??999)-(b.completionOrder??999));
  modal('Sesión · '+niceDate(s.date),`<p class="muted">${E(s.title)} · ${exs.length} ejercicios en orden de realización</p>${exs.map((ex,i)=>{
- const e=exercise(ex.exerciseId),display=e.name==='Ejercicio eliminado'?ex.name:e.name;
+ const e=exercise(ex.exerciseId),display=ex.name||e.name;
  return `<div class="card section"><strong>${i+1}. ${E(display)}</strong> <span class="muscle-tag">${E(e.muscle)}</span><div class="scroll-table"><table><thead><tr><th>Serie</th><th>${ex.unit==='minutes'?'Minutos':'Kg'}</th><th>${ex.unit==='minutes'?'Km':ex.unit==='seconds'?'Segundos':'Reps'}</th>${ex.unit==='minutes'&&ex.exerciseId==='cardio-cinta'?'<th>Inclinación %</th>':''}</tr></thead><tbody>${ex.sets.filter(t=>t.done).map((set,si)=>`<tr><td>${si+1}</td><td>${ex.unit==='minutes'?fmtNum(set.minutes,2):set.load==null?'—':`${fmtNum(set.load)} kg`}</td><td>${ex.unit==='minutes'?fmtNum(set.distanceKm,2):fmtNum(set[ex.unit],2)}</td>${ex.unit==='minutes'&&ex.exerciseId==='cardio-cinta'?`<td>${fmtNum(set.inclinePct,1)}</td>`:''}</tr>`).join('')}</tbody></table></div></div>`;}).join('')}`);
 }
 
@@ -594,6 +629,7 @@ function doAction(target){const action=target.dataset.action,id=target.dataset.i
     case 'routine-copy':{const current=activeRoutine(),name=prompt('Nombre de la nueva versión de rutina:',`${current.name} (versión nueva)`);if(!name?.trim())break;const copy=JSON.parse(JSON.stringify(current));copy.id=uid();copy.name=name.trim().slice(0,100);copy.createdAt=madridToday();db.routines.push(copy);db.activeRoutineId=copy.id;persist();render();toast('Nueva versión activada');break;}
     case 'routine-activate':if(db.routines.some(r=>r.id===id)){db.activeRoutineId=id;persist();render();toast('Rutina activada');}break;
     case 'exercise-detail':exerciseModal(id);break;
+    case 'exercise-edit':exerciseModal(id,'edit');break;
     case 'new-exercise':exerciseModal();break;
     case 'delete-exercise':{if(db.routines.some(r=>Object.values(r.days).some(d=>d.exercises.some(rx=>rx.exerciseId===id)))||db.sessions.some(s=>s.exercises.some(e=>e.exerciseId===id))){toast('Este ejercicio figura en alguna rutina o sesión; no se puede borrar.',true);break;}if(confirm('¿Eliminar ejercicio personalizado?')){db.exercises=db.exercises.filter(e=>e.id!==id);persist();closeModal();render();}}break;
     case 'export':doExport();break;
@@ -640,10 +676,20 @@ function formSubmit(form){const fd=new FormData(form);if(form.id==='measureForm'
    if(!db.exercises.some(e=>e.id===fd.get('exerciseId'))||!Number.isInteger(sets)||sets<1||sets>20||!Number.isInteger(min)||!Number.isInteger(max)||min<1||max>600||max<min||Number.isNaN(load)||(load!=null&&(load<0||load>500))){toast('Revisa series, repeticiones y kilos.',true);return;}
    const rx={exerciseId:String(fd.get('exerciseId')),sets,min,max,suggestedKg:load,notes:String(fd.get('notes')||'').slice(0,1000),perSide:fd.has('perSide'),optional:fd.has('optional')};if(idx<0){day.exercises.push(rx);if(day.rest){day.rest=false;day.title='Entrenamiento extra';}}else day.exercises[idx]=rx;persist();closeModal();render();toast('Rutina actualizada');
  }else if(form.id==='exerciseForm'){
-   const name=String(fd.get('name')||'').trim(),instructions=String(fd.get('instructions')||'').trim(),muscle=String(fd.get('muscle')||'').trim();if(name.length<2||!muscle||!instructions){toast('Completa nombre, grupo muscular y técnica.',true);return;}
-   db.exercises.push({id:uid(),name:name.slice(0,100),muscle:muscle.slice(0,40),equipment:String(fd.get('equipment')),unit:String(fd.get('unit')),loadUnit:String(fd.get('loadUnit')),instructions:instructions.slice(0,1000),level:['Principiante','Intermedio','Avanzado'].includes(String(fd.get('level')))?String(fd.get('level')):'Principiante',custom:true});persist();closeModal();render();toast('Ejercicio añadido al banco');
+   const id=String(form.dataset.id||''),old=id?db.exercises.find(x=>x.id===id):null;
+   if(id&&!old){toast('Ejercicio no encontrado.',true);return;}
+   const name=String(fd.get('name')||'').trim(),instructions=String(fd.get('instructions')||'').trim(),muscle=String(fd.get('muscle')||'').trim(),
+    equipment=String(fd.get('equipment')||''),unit=String(fd.get('unit')||''),loadUnit=String(fd.get('loadUnit')||''),level=String(fd.get('level')||''),
+    brand=equipment==='Máquina'?String(fd.get('brand')||''):'',machineLine=equipment==='Máquina'&&brand?String(fd.get('machineLine')||'').trim():'';
+   if(name.length<2||name.length>100||!muscle||muscle.length>40||!instructions||instructions.length>1200||!['Máquina','Mancuernas','Polea','Barra','Peso corporal','Cardio','Otro'].includes(equipment)||!['reps','seconds','minutes'].includes(unit)||!['Máquina','Por mancuerna','Por lado','Total','Peso corporal','Sin carga'].includes(loadUnit)||!['Principiante','Intermedio','Avanzado'].includes(level)||!(brand===''||MACHINE_BRANDS.includes(brand))){toast('Revisa los campos del ejercicio.',true);return;}
+   const hasHistory=old&&(db.sessions.some(s=>s.exercises?.some(x=>x.exerciseId===id))||db.activeSession?.exercises?.some(x=>x.exerciseId===id));
+   if(hasHistory&&old.unit!==unit){toast('No se puede cambiar la unidad de un ejercicio con sesiones guardadas.',true);return;}
+   const props={name:name.slice(0,100),muscle:muscle.slice(0,40),equipment,unit,loadUnit,instructions:instructions.slice(0,1200),level,brand,machineLine:machineLine.slice(0,80)};
+   if(old){Object.assign(old,props,{userEdited:true,catalogVerified:false});}
+   else db.exercises.push({id:uid(),...props,movementGroup:null,custom:true,userEdited:true,catalogVerified:false});
+   persist();closeModal();render();toast(old?'Cambios guardados sin perder el historial':'Ejercicio añadido al banco');
  }}
-function filterLibrary(){const level=document.getElementById('levelFilter')?.value||'Todos';const q=(document.getElementById('exerciseSearch')?.value||'').trim().toLowerCase(),muscle=document.getElementById('muscleFilter')?.value||'Todos';document.querySelectorAll('[data-library-item]').forEach(el=>{el.hidden=!(el.dataset.text.includes(q)&&(muscle==='Todos'||el.dataset.muscle===muscle)&&(level==='Todos'||el.dataset.level===level));});}
+function filterLibrary(){const level=document.getElementById('levelFilter')?.value||'Todos';const q=normalizeExerciseQuery(document.getElementById('exerciseSearch')?.value||''),muscle=document.getElementById('muscleFilter')?.value||'Todos',brand=document.getElementById('brandFilter')?.value||'Todas';document.querySelectorAll('[data-library-item]').forEach(el=>{el.hidden=!(el.dataset.text.includes(q)&&(muscle==='Todos'||el.dataset.muscle===muscle)&&(level==='Todos'||el.dataset.level===level)&&(brand==='Todas'||el.dataset.brand===brand));});}
 window.addEventListener('hashchange',()=>{const next=viewFromHash();if(view!==next){view=next;closeModal();render();window.scrollTo(0,0);}});
 document.addEventListener('click',e=>{
  const option=e.target.closest('[data-combo-option]');if(option){e.preventDefault();chooseExerciseCombo(option);return;}
@@ -679,7 +725,7 @@ document.addEventListener('focusin',e=>{if(e.target.matches('[data-combo-search]
 document.addEventListener('submit',e=>{if(['measureForm','profileForm','routineForm','exerciseForm','goalForm','sessionAddForm','plannerForm'].includes(e.target.id)){e.preventDefault();formSubmit(e.target);}});
 document.addEventListener('change',e=>{
  if(e.target.id==='chartMetric'){chartMetric=e.target.value;render();return;}
- if(e.target.id==='muscleFilter'||e.target.id==='levelFilter'){filterLibrary();return;}
+ if(e.target.id==='muscleFilter'||e.target.id==='levelFilter'||e.target.id==='brandFilter'){filterLibrary();return;}
  if(e.target.id==='importFile'){doImport(e.target.files[0]);e.target.value='';return;}
  if(e.target.hasAttribute('data-session-date')){const date=e.target.value;if(validDate(date)&&date<=madridToday()){db.activeSession.date=date;persist();}else{toast('Fecha de sesión no válida.',true);render();}return;}
  if(e.target.hasAttribute('data-set-done')){const ex=db.activeSession?.exercises[Number(e.target.dataset.ex)],set=ex?.sets[Number(e.target.dataset.set)];if(!set)return;if(e.target.checked&&!validResult(ex,set)){toast('Introduce las repeticiones, el tiempo o los km antes de marcar la serie.',true);e.target.checked=false;return;}set.done=e.target.checked;persist();renderKeepScroll();}
