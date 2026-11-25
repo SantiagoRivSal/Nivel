@@ -10960,6 +10960,7 @@
     "machineModelReferences": 139,
     "availabilityAtFitnessParkZubiarte": "No verificada por modelo",
     "userData": "Archivo plantilla; NO contiene mediciones ni sesiones reales",
-    "note": "En la interfaz 4.6 se muestran fichas individuales. movementCatalog y machineVariants están disponibles como datos pero requieren cambios de app.js para mostrar un selector integrado por marca y modelo."
-  }
+    "note": "NIVEL 4.8 usa movementCatalog y machineVariants para mostrar alternativas y seleccionar máquinas. Los modelos no están confirmados en Zubiarte."
+  },
+  "machineAvailability": {}
 }

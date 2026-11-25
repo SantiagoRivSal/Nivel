@@ -1,29 +1,33 @@
-# NIVEL 4.6 — Edición del banco y catálogo de máquinas por marca
+# NIVEL 5.0 — Personalización del color
 
-## Qué se ha cambiado
+Actualización de NIVEL 4.9. Conserva `schemaVersion: 4`, la clave de almacenamiento local `nivel_fitness_data_v1` y el catálogo original de 333 ejercicios. No cambia las reglas de generación de rutinas ni la lógica de cargas por máquina.
 
-1. **Botón Añadir ejercicio del banco**: mejor separación del encabezado y las tarjetas, especialmente en móvil.
-2. **Banco de ejercicios editable**: botón «Editar» junto a «Ver» en cada ejercicio, tanto precargados como personalizados. Edición de nombre, músculos, instrucciones, nivel, material, marca y línea/modelo. ID inmutable, con historial preservado. Para ejercicios con sesiones registradas no se puede cambiar su unidad (reps / segundos / minutos).
-3. **Marcas**: añadidas 33 referencias con nombres documentados por fabricantes: Technogym Selection 900, Hammer Strength Plate Loaded, gym80 Sygnum y Sygnum Dual. El catálogo ahora tiene **163 ejercicios**.
-4. **Filtros por marca** y «otras formas de este movimiento» en el detalle; ejercicios con barra, mancuernas, polea y peso corporal siguen existiendo por separado.
-5. **Ediciones persistentes**: la propiedad `userEdited` evita que el catálogo predeterminado sobreescriba cambios al actualizar. La clave sigue siendo `nivel_fitness_data_v1` y el `schemaVersion` sigue siendo 4.
+## Nueva sección: Perfil → Apariencia
 
-## Lo que está verificado y lo que no
+- Cuatro colores de acento: verde original (#c4f46d), azul (#7cc7ff), rosa (#ff9fcf) y amarillo (#ffe077).
+- El cambio se aplica inmediatamente y se conserva en `profile.theme`, dentro de la memoria JSON personal. Los respaldos anteriores sin esta propiedad usan el verde.
+- Se mantiene el fondo oscuro, los colores de error y el significado del gráfico de composición corporal. El icono instalado de la PWA permanece fijo.
+- No se modifica el catálogo ni los registros de entrenamiento.
 
-Los nombres de equipos añadidos están en los catálogos de los fabricantes y las marcas se anuncian dentro de la cadena Fitness Park. **NO se ha verificado el inventario exacto de modelos de Fitness Park Zubiarte**. Por eso los ejercicios de cada marca están identificados como *referencias de catálogo* y no como presencia confirmada en la sala. Puedes editar el nombre exacto de cada equipo al comprobar su placa; ese cambio se conservará. Las máquinas Hammer Strength Plate Loaded se registran en **kg de discos por lado**, no con el peso total de la máquina; mantenlo consistente. Los kilos de máquinas distintas no son necesariamente comparables.
+## Funciones conservadas de NIVEL 4.9
 
-Fuentes oficiales consultadas:
-- Technogym Selection 900: https://www.technogym.com/en-INT/category/selection-900/
-- Hammer Strength Plate Loaded: https://www.lifefitness.com/en-us/catalog/strength-training/plate-loaded/hammer-strength
-- gym80 Sygnum: https://www.gym80.co.uk/product-ranges/sygnum
-- gym80 Sygnum Dual: https://www.gym80.co.uk/product-ranges/sygnum-dual
-- Club Zubiarte: https://www.fitnesspark.es/club/bilbao-zubiarte/
+- Inicio: entrenamiento de hoy, dos medidas y accesos rápidos.
+- Entrenar: plan semanal, sesión en curso, sesiones libres, mis rutinas, historial y cargas. En una sesión se muestran primero los ejercicios pendientes y completados; al elegir uno se abren sus series. Guardar el ejercicio vuelve a la lista.
+- Mis rutinas: lista compacta con nombre, días, duración y enfoque. Cada versión abre un menú con sus datos, días y ejercicios, y opciones (activar, duplicar, eliminar). La edición de los días se hace uno por uno.
+- Progreso: composición, medidas/mapa anatómico, evolución e historial en pantallas diferentes.
+- Ejercicios: búsqueda, filtros desplegables, 20 resultados por página. Las fichas abren instrucciones, máquinas, alternativas o edición; cada modelo tiene sus propias opciones de disponibilidad y uso.
+- Perfil: datos personales, objetivos, rutinas y copias de seguridad separados.
+- Formularios extensos: grupos desplegables de campos. Todos los campos se guardan juntos; abrir o cerrar un grupo no descarta lo escrito. En móvil, los diálogos ocupan la pantalla completa y los submenús tienen botones de regreso.
 
-## Cómo actualizar GitHub Pages
+## Actualizar GitHub Pages
 
-1. **Antes de actualizar, exporta tus datos desde Perfil → Descargar memoria JSON.** No subas ese archivo privado a un repositorio público.
-2. Sustituye los archivos públicos de tu repositorio por los de este paquete y conserva `.github/workflows/pages.yml` e `icons/`.
-3. Usa `git add .`, `git commit -m "NIVEL 4.6"` y `git push origin main`.
-4. Comprueba el nuevo catálogo y edita una ficha de prueba. Los datos de tu navegador no se borran al actualizar. Si cambias de navegador/dispositivo, restaura el JSON.
+1. Exporta primero tu memoria personal desde Perfil → Copias de seguridad (en 4.8, Perfil → Descargar memoria JSON).
+2. Sustituye los siete archivos del paquete en el repositorio. Conserva las carpetas `icons/` y `.github/`, no incluidas en el archivo original compartido. No publiques tu respaldo personal.
+3. Haz commit y push. Abre la aplicación en el mismo navegador; se conserva el almacenamiento local. La caché del service worker cambia a `nivel-static-v50`.
+4. Comprueba el plan semanal, el banco, la edición y una sesión libre. En caso de cambiar de navegador o de dispositivo, restaura tu respaldo.
 
-Ejecución local: `python -m http.server 5500`, abrir `http://localhost:5500`.
+## Pruebas y límites de esta actualización
+
+- Sintaxis de JavaScript comprobada con Node. Pruebas de DOM en Chromium a 390 × 844: los cuatro temas, selector, navegación, persistencia y restauración simuladas, compatibilidad con preferencias inválidas, ausencia de desbordamiento horizontal y comparación de los datos guardados (solo cambia la preferencia de color). Se inspeccionó visualmente la pantalla de Apariencia.
+- La navegación web real está bloqueada en el entorno de prueba; se cargaron el JS y el CSS directamente y se simuló localStorage. No se ha comprobado la instalación y recarga reales de GitHub Pages ni Safari/iOS.
+- El catálogo de modelos sigue sin ser un inventario verificado de Fitness Park Zubiarte. Los estados de disponibilidad que ya registraste se conservan.
