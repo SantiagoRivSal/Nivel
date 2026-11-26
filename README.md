@@ -1,33 +1,68 @@
-# NIVEL 5.0 — Personalización del color
+# NIVEL 5.9.1 — Entrenamiento personal
 
-Actualización de NIVEL 4.9. Conserva `schemaVersion: 4`, la clave de almacenamiento local `nivel_fitness_data_v1` y el catálogo original de 333 ejercicios. No cambia las reglas de generación de rutinas ni la lógica de cargas por máquina.
+## Ejecutar desde la carpeta general (macOS, Windows, Linux)
 
-## Nueva sección: Perfil → Apariencia
+Con Node.js 22 o superior instalado, abre una terminal en la carpeta que contiene `package.json` y ejecuta:
 
-- Cuatro colores de acento: verde original (#c4f46d), azul (#7cc7ff), rosa (#ff9fcf) y amarillo (#ffe077).
-- El cambio se aplica inmediatamente y se conserva en `profile.theme`, dentro de la memoria JSON personal. Los respaldos anteriores sin esta propiedad usan el verde.
-- Se mantiene el fondo oscuro, los colores de error y el significado del gráfico de composición corporal. El icono instalado de la PWA permanece fijo.
-- No se modifica el catálogo ni los registros de entrenamiento.
+```sh
+npm run dev
+```
 
-## Funciones conservadas de NIVEL 4.9
+Abre http://localhost:8787. No se requiere `npm install` para el desarrollo local: el servidor usa exclusivamente módulos incorporados de Node. Detén el servidor con Ctrl+C. Si el puerto está ocupado, detén el servidor anterior o cambia `PORT` (cambiar el puerto cambia el origen de almacenamiento del navegador).
 
-- Inicio: entrenamiento de hoy, dos medidas y accesos rápidos.
-- Entrenar: plan semanal, sesión en curso, sesiones libres, mis rutinas, historial y cargas. En una sesión se muestran primero los ejercicios pendientes y completados; al elegir uno se abren sus series. Guardar el ejercicio vuelve a la lista.
-- Mis rutinas: lista compacta con nombre, días, duración y enfoque. Cada versión abre un menú con sus datos, días y ejercicios, y opciones (activar, duplicar, eliminar). La edición de los días se hace uno por uno.
-- Progreso: composición, medidas/mapa anatómico, evolución e historial en pantallas diferentes.
-- Ejercicios: búsqueda, filtros desplegables, 20 resultados por página. Las fichas abren instrucciones, máquinas, alternativas o edición; cada modelo tiene sus propias opciones de disponibilidad y uso.
-- Perfil: datos personales, objetivos, rutinas y copias de seguridad separados.
-- Formularios extensos: grupos desplegables de campos. Todos los campos se guardan juntos; abrir o cerrar un grupo no descarta lo escrito. En móvil, los diálogos ocupan la pantalla completa y los submenús tienen botones de regreso.
+## Actualización y datos
 
-## Actualizar GitHub Pages
+1. En la versión anterior, Perfil → Copias de seguridad → exportar JSON.
+2. Descomprime la nueva versión en una carpeta nueva. No superpongas archivos antiguos: se retiraron módulos y configuraciones que ya no se usan.
+3. Ejecuta `npm run dev` y abre la misma dirección de antes, en el mismo navegador. Así se conserva localStorage (`nivel_fitness_data_v1`, esquema 4). Si cambia la dirección, importa el respaldo.
+4. No publiques tu respaldo personal ni archivos privados de configuración.
 
-1. Exporta primero tu memoria personal desde Perfil → Copias de seguridad (en 4.8, Perfil → Descargar memoria JSON).
-2. Sustituye los siete archivos del paquete en el repositorio. Conserva las carpetas `icons/` y `.github/`, no incluidas en el archivo original compartido. No publiques tu respaldo personal.
-3. Haz commit y push. Abre la aplicación en el mismo navegador; se conserva el almacenamiento local. La caché del service worker cambia a `nivel-static-v50`.
-4. Comprueba el plan semanal, el banco, la edición y una sesión libre. En caso de cambiar de navegador o de dispositivo, restaura tu respaldo.
+## Crear rutinas
 
-## Pruebas y límites de esta actualización
+Entrenar → Crear rutina: Manual o Asistente NIVEL. En ambos casos hay un editor semanal común. El objetivo general y la duración de referencia se establecen arriba. Cada día tiene un único selector de enfoque, nivel y minutos. Hay 47 enfoques agrupados y 11 objetivos de rendimiento/composición/recuperación, además de las prioridades musculares compatibles con versiones anteriores.
 
-- Sintaxis de JavaScript comprobada con Node. Pruebas de DOM en Chromium a 390 × 844: los cuatro temas, selector, navegación, persistencia y restauración simuladas, compatibilidad con preferencias inválidas, ausencia de desbordamiento horizontal y comparación de los datos guardados (solo cambia la preferencia de color). Se inspeccionó visualmente la pantalla de Apariencia.
-- La navegación web real está bloqueada en el entorno de prueba; se cargaron el JS y el CSS directamente y se simuló localStorage. No se ha comprobado la instalación y recarga reales de GitHub Pages ni Safari/iOS.
-- El catálogo de modelos sigue sin ser un inventario verificado de Fitness Park Zubiarte. Los estados de disponibilidad que ya registraste se conservan.
+El asistente semanal admite un mensaje opcional y genera una propuesta para los días seleccionados. El chat diario permite crear, completar sin cambiar tus ejercicios, o ajustar las series, repeticiones y descansos de los elegidos. Revisa la propuesta y aplícala únicamente al día correspondiente. El modo manual conserva todos los controles de edición.
+
+### Buscar y seleccionar ejercicios
+
+El selector compartido se abre al añadir un ejercicio en el editor semanal, al editar una rutina guardada, en sesiones personalizadas y durante un entrenamiento en curso. Escribe el nombre del movimiento, marca, modelo o código. Ejemplos: `mariposa gym80`, `4341`, `hammer pecho`, `bíceps polea`. Puedes combinar palabras en cualquier orden y omitir las tildes. Los filtros por material/marca y músculo se combinan con el texto y muestran el número de resultados. Selecciona una ficha concreta antes de guardar. Cada modelo conserva su propio identificador, tipo de carga e historial; no se seleccionan máquinas archivadas o marcadas como no disponibles. Los modelos sin verificar se identifican como «Por confirmar». Los sinónimos son locales y no abarcan todas las denominaciones posibles. El banco de ejercicios comparte la misma búsqueda, incluyendo las fichas no archivadas que se han marcado como no disponibles para poder gestionar su estado.
+
+### Qué reconoce el chat local
+
+- `45 minutos`, `4 ejercicios`, `principiante`, `intermedio`, `avanzado`.
+- `solo poleas y mancuernas`, `sin máquinas`, `sin barra`, `sin material`, `sin saltos` (filtra nombres conocidos de saltos/carrera; no es una evaluación clínica de impacto).
+- `hipertrofia`, `fuerza`, `powerbuilding`, `resistencia muscular`, `definición`.
+
+Las zonas musculares se seleccionan en el formulario. El chat aplica reglas deterministas, no es un modelo de lenguaje ni un entrenador médico. No entiende cualquier frase; muestra la interpretación para revisión. El número de ejercicios y el tiempo son orientativos y dependen del catálogo y nivel. En el modo completar o ajustar, las restricciones no borran los ejercicios que elegiste. No inventa pesos ni prescribe tratamientos. Las cargas existentes no se cambian automáticamente: revisa que sean adecuadas a los nuevos rangos. El generador no optimiza automáticamente la recuperación o volumen semanal a partir de tu historial. La nomenclatura y programación flexible se inspiran en la actualización ACSM de 2026 (https://pubmed.ncbi.nlm.nih.gov/41843416/); las combinaciones son opciones de organización, no protocolos clínicos.
+
+## Inventario y datos personales
+
+351 fichas activas, 92 modelos del inventario (98 fichas de máquina/cardio, incluidas modalidades de modelos multifunción). Los 71 modelos Technogym del listado original están activos provisionalmente, incluyendo Vertical Traction y Total Abdominal; 5 gym80 y 16 Hammer Strength se conservan. Los modelos no disponibles siguen excluidos de selectores y generador. Se conservan IDs anteriores cuando existían, unidades, historial, colores, ejercicios libres y datos personales. Los nuevos movimientos tienen fichas independientes; el nombre inglés original y la descripción del movimiento en español permiten distinguirlos. El inventario original se conserva en `catalogo-reserva/`. Las instrucciones de los modelos sin ficha específica son orientativas; sigue las indicaciones de la máquina. Los borradores semanales sin guardar siguen en memoria hasta recargar.
+
+## Arquitectura
+
+- `frontend/domain/day-planner.js`: agrupaciones, objetivos, planificación semanal, selección y prescripción diaria.
+- `frontend/domain/exercise-search.js`: normalización, sinónimos y puntuación de coincidencias del buscador compartido.
+- `frontend/domain/local-coach.js`: interpretación de instrucciones y restricciones locales.
+- `frontend/domain/routine-draft.js`: edición, movimientos y guardado de rutinas.
+- `scripts/dev.mjs`: servidor local de archivos públicos.
+- `backend/src/index.mjs`: adaptador de publicación estática; las rutas de API devuelven 404.
+- `backend/src/inventory.mjs`: inventario sincronizado para futuras extensiones.
+
+No hay integración de IA externa, claves, formularios de conexión ni consultas de entrenamiento a servidores externos. Si previamente desplegaste un servicio externo, la actualización local no lo desactiva remotamente: elimina sus secretos o redespliega desde esta versión. No reutilices la configuración privada anterior.
+
+## Pruebas y publicación
+
+```sh
+npm run check
+npm test
+npm run sync:inventory
+```
+
+Para publicar opcionalmente en Cloudflare, instala las dependencias de desarrollo (`npm install`), autentícate con Wrangler y ejecuta `npm run deploy`. Se conserva el nombre del Worker anterior para facilitar la actualización. Si publicas en GitHub Pages, usa el workflow incluido, que publica exclusivamente `frontend/`.
+
+Las pruebas automatizadas comprueban inventario, migración, combinaciones, planificación, interpretación y edición. Las pruebas incluyen, incluyendo búsqueda por modelo/código, sinónimos, marcas y exclusión de máquinas no disponibles. Chromium bloqueó la navegación de prueba por política del entorno; no se completó la validación visual/interactiva.
+
+## Registro de series (5.9.1)
+
+Ya no hay casillas de selección por serie. Introduce los datos y pulsa «Guardar este ejercicio»: se guardan las series con repeticiones, segundos o minutos/km válidos. Las series vacías se omiten. Al guardar el entrenamiento también se conservan las series válidas pendientes. El historial anterior y el catálogo no cambian.

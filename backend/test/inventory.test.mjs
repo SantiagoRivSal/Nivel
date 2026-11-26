@@ -1,0 +1,38 @@
+import * as search from "../../frontend/domain/exercise-search.js";
+import * as coach from '../../frontend/domain/local-coach.js';
+import * as daily from '../../frontend/domain/day-planner.js';
+import * as drafts from '../../frontend/domain/routine-draft.js';
+import test from 'node:test';import assert from 'node:assert/strict';import fs from 'node:fs';import vm from 'node:vm';import {inventory} from '../src/inventory.mjs';
+const read=p=>JSON.parse(fs.readFileSync(new URL(p,import.meta.url)));
+const seed=read('../../frontend/data.json'), old=read('../../catalogo-reserva/inventario-original.json');
+const source=fs.readFileSync(new URL('../../frontend/app.js',import.meta.url),'utf8').replace(/^import .*\n/gm,'').replace(/\ninit\(\);\s*$/,'');
+const context=vm.createContext({location:{hash:''},window:{addEventListener(){}},document:{addEventListener(){}},structuredClone,Intl,console,Date,crypto:globalThis.crypto,seed,old,...drafts,...daily,...coach,...search});
+vm.runInContext(source,context);
+const run=code=>vm.runInContext(code,context);
+test('all machine cards exactly shortlisted; all references valid',()=>{const models=seed.exercises.filter(e=>e.brand);assert.equal(new Set(models.map(e=>e.brand+'|'+e.modelName)).size,92);assert.equal(models.length,98);assert.equal(seed.exercises.length,inventory.size);for(const e of models){assert.ok(['Hammer Strength','gym80','Technogym'].includes(e.brand));assert.ok(e.machineVariants.length);}for(const g of seed.movementCatalog)for(const v of g.machineVariants)assert.ok(models.some(e=>e.movementGroup===g.id&&e.brand===v.marca&&e.modelName===v.modelo));for(const r of seed.routines)for(const d of Object.values(r.days))for(const rx of d.exercises)assert.ok(inventory.has(rx.exerciseId));});
+test('migration archives removed equipment, preserves history and user free exercise',()=>{assert.equal(run(`db=ensureData(old);db.sessions.push({id:'old',status:'completed',date:'2026-11-20',exercises:[{exerciseId:'press-pecho',sets:[{done:true,load:25}]}]});db.exercises.push({id:'own',custom:true,name:'Mi ejercicio',equipment:'Barra',brand:''});db=mergeCatalog(db,ensureData(seed));exercise('press-pecho').archived && !isActiveExercise('press-pecho') && db.sessions[0].exercises[0].sets[0].load===25 && isActiveExercise('own')`),true);assert.equal(run(`activeExercises().filter(e=>e.brand==='Technogym').length`),75);});
+test('local planner uses only active exercises for all focus and schedule combinations',()=>{assert.equal(run(`db=ensureData(seed);FOCUSES.every(([focus])=>['principiante','intermedio','avanzado'].every(level=>[1,2,3,4,5,6].every(n=>{const r=generateRoutine({focus,level,sessionsPerWeek:n,availableDays:[1,2,3,4,5,6],minutesPerSession:60});return Object.values(r.days).filter(d=>!d.rest).length===n&&Object.values(r.days).filter(d=>!d.rest).every(d=>d.exercises.length&&d.exercises.every(rx=>isActiveExercise(rx.exerciseId)));})))`),true);});
+test('unavailable selected model excluded from routine selector',()=>{assert.equal(run(`db=ensureData(seed);let model=modelOptions(exercise('fpz-gym80-4361')).find(v=>v.exerciseId==='fpz-gym80-4361');db.machineAvailability[inventoryKey(model)]='no_disponible';!isActiveExercise('fpz-gym80-4361')&&inventoryExercises().some(e=>e.id==='fpz-gym80-4361')`),true);});
+
+test('weekly editor exposes day-level generation controls and independent preferences',()=>{assert.equal(run(`db=ensureData(seed);routineDraft=createRoutineDraft('manual');routineDraft.days[1].preferences={area:'glutes',goal:'musculo',level:'intermedio',minutes:75};draftDay=1;const dayUI=dayPrefsHTML(routineDraft.days[1]);dayUI.includes('draft-generate-local')&&!dayUI.includes('draft-generate-gemini')&&!dayUI.includes('data-day-pref="goal"')&&dayUI.includes('draft-add')&&dailyPrefs(routineDraft.days[1]).area==='glutes'&&dailyPrefs(routineDraft.days[2]).area==='full'`),true);});
+
+test('weekly chat uses local material filters and duration for each selected day',()=>{assert.equal(run(`db=ensureData(seed);let r=generateRoutine({focus:'equilibrado',level:'intermedio',sessionsPerWeek:3,availableDays:[1,3,5],minutesPerSession:60,request:'45 minutos, solo mancuernas, 3 ejercicios'});r.minutesPerSession===45&&Object.values(r.days).filter(d=>!d.rest).every(d=>d.exercises.length>0&&d.exercises.length<=3&&d.exercises.every(x=>exercise(x.exerciseId).equipment==='Mancuernas'))`),true);});
+test('shared picker renders active models and filters in all four forms',()=>{assert.equal(run(`db=ensureData(seed);const picker=exerciseComboboxHTML('testPicker');picker.includes('data-combo-material')&&picker.includes('data-combo-muscle')&&picker.includes('data-combo-count')&&picker.includes('Código 4341')&&picker.includes('Por confirmar')&&picker.includes('Technogym')&&picker.includes('Vertical Traction')&&(picker.match(/data-combo-option /g)||[]).length===351`),true);assert.equal((source.match(/exerciseComboboxHTML\('(routine|session|draft|custom)Exercise'/g)||[]).length,4);});
+test('picker excludes an unavailable model and retains other machine identities',()=>{assert.equal(run(`db=ensureData(seed);const v=modelOptions(exercise('fpz-gym80-4341')).find(v=>v.exerciseId==='fpz-gym80-4341');db.machineAvailability[inventoryKey(v)]='no_disponible';const picker2=exerciseComboboxHTML('testPicker');!picker2.includes('data-exercise-id="fpz-gym80-4341"')&&picker2.includes('data-exercise-id="fpz-gym80-4361"')`),true);});
+
+test('reference list retains all original model identities for the three brands, with provisional Technogym activation',()=>{
+ const key=v=>[v.marca,v.linea,v.modelo].join('|');
+ const expected=new Set(old.movementCatalog.flatMap(g=>g.machineVariants.map(key)));
+ const actual=new Set(seed.machineReferenceCatalog.map(r=>[r.brand,r.line,r.model].join('|')));
+ assert.deepEqual(actual,expected);assert.equal(actual.size,92);
+ assert.equal(seed.machineReferenceCatalog.filter(r=>r.brand==='Technogym'&&r.status==='sin_verificar'&&r.provisional).length,71);
+ assert.equal(run(`db=ensureData(seed);machineReferenceHTML().includes('Technogym · 71 modelos · Provisional')&&activeExercises().filter(e=>e.brand==='Technogym').length===75`),true);
+});
+test('machine names follow canonical English model and variants; migration keeps previous IDs and loads',()=>{
+ for(const e of seed.exercises.filter(e=>e.brand))assert.ok(e.name===e.modelName||[' — Chest Press',' — Lat Pulldown',' — Single Leg'].some(s=>e.name===e.modelName+s));
+ assert.equal(run(`db=ensureData(seed);const chosenMachine=exercise('fpz-gym80-4341');chosenMachine.name='Mariposa';chosenMachine.userEdited=true;chosenMachine.instructions='Mi nota';db.sessions.push({id:'test-english',exercises:[{exerciseId:chosenMachine.id,sets:[{load:12}]}]});db=mergeCatalog(db,ensureData(seed));exercise('fpz-gym80-4341').name==='PURE KRAFT BUTTERFLY DUAL'&&exercise('fpz-gym80-4341').instructions==='Mi nota'&&db.sessions.at(-1).exercises[0].sets[0].load===12`),true);
+});
+test('5.8 update reactivates every Technogym card and preserves a model exclusion across multiple movements',()=>{
+ assert.equal(run(`db=ensureData(seed);const flight=exercise('fpz-technogym-mn3p');const fv=modelOptions(flight).find(v=>v.exerciseId===flight.id);db.machineAvailability[inventoryKey(fv)]='no_disponible';activeExercises().filter(e=>e.brand==='Technogym'&&e.modelName==='Multi Flight').length===0&&isActiveExercise('fpz-technogym-selection-900-vertical-traction')`),true);
+ assert.equal(run(`db=ensureData(seed);db.exercises.forEach(e=>{if(e.brand==='Technogym')e.archived=true;});db=mergeCatalog(db,ensureData(seed));activeExercises().filter(e=>e.brand==='Technogym').length===75`),true);
+});

@@ -1,0 +1,11 @@
+
+node_modules/
+.dev.vars
+.env
+.wrangler/
+
+node_modules/
+.wrangler/
+.dev.vars
+.env
+.DS_Store

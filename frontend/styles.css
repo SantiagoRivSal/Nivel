@@ -31,7 +31,6 @@ input[type=file]{overflow:hidden}
 .set-row-flex .compact-field{display:flex;flex:1 1 74px;min-width:59px;max-width:210px;flex-direction:column;gap:4px}
 .compact-field>span{color:var(--muted);font-size:11px;font-weight:800}
 .compact-field input{min-height:42px;font-size:16px;padding:8px 10px}
-.set-row-flex .done{display:flex;align-items:center;justify-content:center;min-width:35px;min-height:42px;margin-left:auto}
 .session-tools{margin-top:13px;gap:8px}
 .session-tools p{margin:0;flex:1}
 .day-choices{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:6px;margin:15px 0}
@@ -638,3 +637,29 @@ body:has(.modal-backdrop){overflow:hidden}.modal-backdrop{overscroll-behavior:co
 .theme-check{visibility:hidden}.theme-option input:checked+.theme-option-inner .theme-check{visibility:visible}
 .theme-help{max-width:560px;font-size:13px;margin-top:12px}
 @media(max-width:370px){.theme-option-inner{gap:8px;padding:10px}.theme-swatch{width:28px;height:28px;flex-basis:28px}}
+
+/* Weekly draft: compact controls, separate from the exercise detail button. */
+.draft-exercise { padding: 10px; }
+.draft-exercise .section-link { margin: 0; padding: 8px; width: 100%; }
+.draft-exercise .row { margin-top: 8px; gap: 8px; }
+/* 5.5: compact weekly navigation and daily generation controls */
+.day-list.draft-week{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:6px;padding:0;width:100%;}
+.draft-week .day-chip{min-width:0;padding:10px 2px;min-height:56px;}
+.daily-builder h3{margin:0}.daily-builder .form-grid{gap:14px}.daily-builder .small-note{margin-top:12px;}.daily-builder .stack{gap:10px;}
+@media(max-width:370px){.day-list.draft-week{gap:3px}.draft-week .day-chip{padding:8px 0}.draft-week .day-chip small{font-size:10px}}
+/* Shared exercise search: visible inline results, usable on mobile without overlay. */
+.exercise-combo-panel[hidden],.exercise-combo-selection[hidden]{display:none!important}
+.exercise-combo-panel{margin-top:10px;min-width:0}
+.exercise-combo-filters{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:8px}
+.exercise-combo-filters label{display:flex;flex-direction:column;min-width:0;gap:4px;color:var(--muted);font-size:12px}
+.exercise-combo-filters select{min-width:0;width:100%;min-height:42px;font-size:14px;padding:8px}
+.exercise-combo-count,.exercise-combo-selection{font-size:12px;color:#aabbc9;margin:8px 0 0;overflow-wrap:anywhere}
+.exercise-combo-selection{border-left:2px solid var(--green);padding-left:9px}
+.exercise-combo-menu{max-height:min(32dvh,270px);margin-top:6px;box-shadow:none}
+.exercise-combo-option{flex-shrink:0;min-height:52px}
+.exercise-combo-option small{line-height:1.45}
+@media(max-width:360px){.exercise-combo-filters{grid-template-columns:1fr}}
+
+/* 5.9.1: use the space formerly reserved for the set checkbox. */
+.session-exercise .set-row-flex .compact-field{max-width:none;min-width:0;flex:1 1 0}
+@media(max-width:360px){.session-exercise .set-row-flex{gap:5px}.session-exercise .compact-field input{padding-inline:6px}}

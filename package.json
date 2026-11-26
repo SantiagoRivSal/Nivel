@@ -1,0 +1,16 @@
+{
+  "name": "nivel-gym",
+  "version": "5.9.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "deploy": "wrangler deploy",
+    "test": "node --test backend/test/*.test.mjs",
+    "check": "node --check frontend/app.js && node --check frontend/sw.js && node --check frontend/domain/exercise-search.js && node --check frontend/domain/day-planner.js && node --check frontend/domain/local-coach.js && node --check frontend/domain/routine-draft.js && node --check backend/src/index.mjs && node --check scripts/dev.mjs",
+    "sync:inventory": "node scripts/sync-inventory.mjs"
+  },
+  "devDependencies": {
+    "wrangler": "^4.36.0"
+  }
+}

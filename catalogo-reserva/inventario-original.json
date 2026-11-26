@@ -1719,7 +1719,9 @@
       "brand": "Technogym",
       "machineLine": "Selection 900",
       "movementGroup": "grupo-press-de-pecho-horizontal",
-      "catalogVerified": true
+      "catalogVerified": true,
+      "disponibilidad_zubiarte": "sin_verificar",
+      "disponibilidad_provisional_zubiarte": true
     },
     {
       "id": "catalog-technogym-2",
@@ -1733,7 +1735,9 @@
       "brand": "Technogym",
       "machineLine": "Selection 900",
       "movementGroup": "grupo-jalon-al-pecho",
-      "catalogVerified": true
+      "catalogVerified": true,
+      "disponibilidad_zubiarte": "sin_verificar",
+      "disponibilidad_provisional_zubiarte": true
     },
     {
       "id": "catalog-technogym-3",
@@ -1747,7 +1751,9 @@
       "brand": "Technogym",
       "machineLine": "Selection 900",
       "movementGroup": "grupo-remo-sentado-en-polea-o-maquina",
-      "catalogVerified": true
+      "catalogVerified": true,
+      "disponibilidad_zubiarte": "sin_verificar",
+      "disponibilidad_provisional_zubiarte": true
     },
     {
       "id": "catalog-technogym-4",
@@ -1761,7 +1767,9 @@
       "brand": "Technogym",
       "machineLine": "Selection 900",
       "movementGroup": "grupo-prensa-de-piernas",
-      "catalogVerified": true
+      "catalogVerified": true,
+      "disponibilidad_zubiarte": "sin_verificar",
+      "disponibilidad_provisional_zubiarte": true
     },
     {
       "id": "catalog-technogym-5",
@@ -1775,7 +1783,9 @@
       "brand": "Technogym",
       "machineLine": "Selection 900",
       "movementGroup": "grupo-extension-de-cuadriceps",
-      "catalogVerified": true
+      "catalogVerified": true,
+      "disponibilidad_zubiarte": "sin_verificar",
+      "disponibilidad_provisional_zubiarte": true
     },
     {
       "id": "catalog-technogym-6",
@@ -1789,7 +1799,9 @@
       "brand": "Technogym",
       "machineLine": "Selection 900",
       "movementGroup": "grupo-curl-femoral-sentado",
-      "catalogVerified": true
+      "catalogVerified": true,
+      "disponibilidad_zubiarte": "sin_verificar",
+      "disponibilidad_provisional_zubiarte": true
     },
     {
       "id": "catalog-technogym-7",
@@ -1803,7 +1815,9 @@
       "brand": "Technogym",
       "machineLine": "Selection 900",
       "movementGroup": "grupo-press-de-hombros",
-      "catalogVerified": true
+      "catalogVerified": true,
+      "disponibilidad_zubiarte": "sin_verificar",
+      "disponibilidad_provisional_zubiarte": true
     },
     {
       "id": "catalog-technogym-8",
@@ -1817,7 +1831,9 @@
       "brand": "Technogym",
       "machineLine": "Selection 900",
       "movementGroup": "grupo-aperturas-inversas-deltoide-posterior",
-      "catalogVerified": true
+      "catalogVerified": true,
+      "disponibilidad_zubiarte": "sin_verificar",
+      "disponibilidad_provisional_zubiarte": true
     },
     {
       "id": "catalog-technogym-9",
@@ -1831,7 +1847,9 @@
       "brand": "Technogym",
       "machineLine": "Selection 900",
       "movementGroup": "grupo-crunch-abdominal",
-      "catalogVerified": true
+      "catalogVerified": true,
+      "disponibilidad_zubiarte": "sin_verificar",
+      "disponibilidad_provisional_zubiarte": true
     },
     {
       "id": "catalog-technogym-10",
@@ -1845,7 +1863,9 @@
       "brand": "Technogym",
       "machineLine": "Selection 900",
       "movementGroup": "grupo-curl-de-biceps-tradicional",
-      "catalogVerified": true
+      "catalogVerified": true,
+      "disponibilidad_zubiarte": "sin_verificar",
+      "disponibilidad_provisional_zubiarte": true
     },
     {
       "id": "catalog-technogym-11",
@@ -1859,7 +1879,9 @@
       "brand": "Technogym",
       "machineLine": "Selection 900",
       "movementGroup": "grupo-hip-thrust",
-      "catalogVerified": true
+      "catalogVerified": true,
+      "disponibilidad_zubiarte": "sin_verificar",
+      "disponibilidad_provisional_zubiarte": true
     },
     {
       "id": "catalog-technogym-12",
@@ -1873,7 +1895,9 @@
       "brand": "Technogym",
       "machineLine": "Selection 900",
       "movementGroup": "grupo-elevacion-de-gemelos-de-pie",
-      "catalogVerified": true
+      "catalogVerified": true,
+      "disponibilidad_zubiarte": "sin_verificar",
+      "disponibilidad_provisional_zubiarte": true
     },
     {
       "id": "catalog-hammer-strength-13",
@@ -1881,13 +1905,25 @@
       "muscle": "Pecho",
       "equipment": "Máquina",
       "unit": "reps",
-      "instructions": "Ajusta asiento, trabaja cada brazo de forma controlada y carga ambos lados correctamente. Registra los kg de discos por lado, siempre con el mismo criterio.",
+      "instructions": "Túmbate sobre el banco plano y empuja ambas palancas con control. Registra los discos por lado con el mismo criterio.",
       "loadUnit": "Por lado",
       "level": "Intermedio",
       "brand": "Hammer Strength",
       "machineLine": "Plate Loaded",
       "movementGroup": "grupo-press-de-pecho-horizontal",
-      "catalogVerified": true
+      "catalogVerified": true,
+      "disponibilidad_zubiarte": "sin_verificar",
+      "modelName": "Iso-Lateral Horizontal Bench Press",
+      "machineVariants": [
+        {
+          "marca": "Hammer Strength",
+          "linea": "Plate Loaded",
+          "modelo": "Iso-Lateral Horizontal Bench Press",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "inventoryNote": "Candidato seleccionado por el usuario mediante capturas; modelo exacto pendiente de confirmar."
+        }
+      ]
     },
     {
       "id": "catalog-hammer-strength-14",
@@ -1895,13 +1931,25 @@
       "muscle": "Pecho",
       "equipment": "Máquina",
       "unit": "reps",
-      "instructions": "Empuja en trayectoria inclinada manteniendo hombros estables. Registra los kg de discos por lado, siempre con el mismo criterio.",
+      "instructions": "Ajusta el asiento y empuja en diagonal hacia arriba con hombros estables. Registra los discos por lado con el mismo criterio.",
       "loadUnit": "Por lado",
       "level": "Intermedio",
       "brand": "Hammer Strength",
       "machineLine": "Plate Loaded",
       "movementGroup": "grupo-press-inclinado-de-pecho",
-      "catalogVerified": true
+      "catalogVerified": true,
+      "disponibilidad_zubiarte": "sin_verificar",
+      "modelName": "Iso-Lateral Incline Press",
+      "machineVariants": [
+        {
+          "marca": "Hammer Strength",
+          "linea": "Plate Loaded",
+          "modelo": "Iso-Lateral Incline Press",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "inventoryNote": "Candidato seleccionado por el usuario mediante capturas; modelo exacto pendiente de confirmar."
+        }
+      ]
     },
     {
       "id": "catalog-hammer-strength-15",
@@ -1909,13 +1957,25 @@
       "muscle": "Espalda",
       "equipment": "Máquina",
       "unit": "reps",
-      "instructions": "Tira desde arriba al pecho alto sin arquear excesivamente la espalda. Registra los kg de discos por lado, siempre con el mismo criterio.",
+      "instructions": "Estabiliza las piernas y lleva las asas hacia el pecho sin impulso. Registra los discos por lado con el mismo criterio.",
       "loadUnit": "Por lado",
       "level": "Intermedio",
       "brand": "Hammer Strength",
       "machineLine": "Plate Loaded",
       "movementGroup": "grupo-jalon-al-pecho",
-      "catalogVerified": true
+      "catalogVerified": true,
+      "disponibilidad_zubiarte": "sin_verificar",
+      "modelName": "Iso-Lateral Front Lat Pulldown",
+      "machineVariants": [
+        {
+          "marca": "Hammer Strength",
+          "linea": "Plate Loaded",
+          "modelo": "Iso-Lateral Front Lat Pulldown",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "inventoryNote": "Candidato seleccionado por el usuario mediante capturas; modelo exacto pendiente de confirmar."
+        }
+      ]
     },
     {
       "id": "catalog-hammer-strength-16",
@@ -1923,13 +1983,25 @@
       "muscle": "Espalda",
       "equipment": "Máquina",
       "unit": "reps",
-      "instructions": "Tira hacia el torso bajo con el pecho estable en el apoyo. Registra los kg de discos por lado, siempre con el mismo criterio.",
+      "instructions": "Apoya el pecho y tira de las asas hacia las costillas bajas. Registra los discos por lado con el mismo criterio.",
       "loadUnit": "Por lado",
       "level": "Intermedio",
       "brand": "Hammer Strength",
       "machineLine": "Plate Loaded",
       "movementGroup": "grupo-remo-sentado-en-polea-o-maquina",
-      "catalogVerified": true
+      "catalogVerified": true,
+      "disponibilidad_zubiarte": "sin_verificar",
+      "modelName": "Iso-Lateral Low Row",
+      "machineVariants": [
+        {
+          "marca": "Hammer Strength",
+          "linea": "Plate Loaded",
+          "modelo": "Iso-Lateral Low Row",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "inventoryNote": "Candidato seleccionado por el usuario mediante capturas; modelo exacto pendiente de confirmar."
+        }
+      ]
     },
     {
       "id": "catalog-hammer-strength-17",
@@ -1937,13 +2009,25 @@
       "muscle": "Espalda",
       "equipment": "Máquina",
       "unit": "reps",
-      "instructions": "Lleva asas hacia el torso con codos altos controlados. Registra los kg de discos por lado, siempre con el mismo criterio.",
+      "instructions": "Apoya el torso y tira de las asas altas hacia el cuerpo sin balancearte. Registra los discos por lado con el mismo criterio.",
       "loadUnit": "Por lado",
       "level": "Intermedio",
       "brand": "Hammer Strength",
       "machineLine": "Plate Loaded",
       "movementGroup": "grupo-remo-alto-iso-lateral",
-      "catalogVerified": true
+      "catalogVerified": true,
+      "disponibilidad_zubiarte": "sin_verificar",
+      "modelName": "Iso-Lateral High Row",
+      "machineVariants": [
+        {
+          "marca": "Hammer Strength",
+          "linea": "Plate Loaded",
+          "modelo": "Iso-Lateral High Row",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "inventoryNote": "Candidato seleccionado por el usuario mediante capturas; modelo exacto pendiente de confirmar."
+        }
+      ]
     },
     {
       "id": "catalog-hammer-strength-18",
@@ -1951,13 +2035,25 @@
       "muscle": "Hombros",
       "equipment": "Máquina",
       "unit": "reps",
-      "instructions": "Empuja los brazos de forma equilibrada sin arquear la espalda. Registra los kg de discos por lado, siempre con el mismo criterio.",
+      "instructions": "Regula el asiento y empuja hacia arriba con el tronco estable. Registra los discos por lado con el mismo criterio.",
       "loadUnit": "Por lado",
       "level": "Intermedio",
       "brand": "Hammer Strength",
       "machineLine": "Plate Loaded",
       "movementGroup": "grupo-press-de-hombros",
-      "catalogVerified": true
+      "catalogVerified": true,
+      "disponibilidad_zubiarte": "sin_verificar",
+      "modelName": "Iso-Lateral Shoulder Press",
+      "machineVariants": [
+        {
+          "marca": "Hammer Strength",
+          "linea": "Plate Loaded",
+          "modelo": "Iso-Lateral Shoulder Press",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "inventoryNote": "Candidato seleccionado por el usuario mediante capturas; modelo exacto pendiente de confirmar."
+        }
+      ]
     },
     {
       "id": "catalog-hammer-strength-19",
@@ -1965,13 +2061,25 @@
       "muscle": "Cuádriceps",
       "equipment": "Máquina",
       "unit": "reps",
-      "instructions": "Ajusta recorrido y coloca discos de forma equilibrada; mantén la espalda apoyada. Registra los kg de discos por lado, siempre con el mismo criterio.",
+      "instructions": "Apoya pies y espalda, flexiona rodillas con control y empuja sin bloquearlas. Registra los discos por lado con el mismo criterio.",
       "loadUnit": "Por lado",
       "level": "Intermedio",
       "brand": "Hammer Strength",
       "machineLine": "Plate Loaded",
-      "movementGroup": "prensa-piernas",
-      "catalogVerified": true
+      "movementGroup": "grupo-prensa-de-piernas",
+      "catalogVerified": true,
+      "disponibilidad_zubiarte": "sin_verificar",
+      "modelName": "Plate Loaded Linear Leg Press",
+      "machineVariants": [
+        {
+          "marca": "Hammer Strength",
+          "linea": "Plate Loaded",
+          "modelo": "Plate Loaded Linear Leg Press",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "inventoryNote": "Candidato seleccionado por el usuario mediante capturas; modelo exacto pendiente de confirmar."
+        }
+      ]
     },
     {
       "id": "catalog-hammer-strength-20",
@@ -1979,27 +2087,25 @@
       "muscle": "Cuádriceps",
       "equipment": "Máquina",
       "unit": "reps",
-      "instructions": "Ajusta la profundidad y apoya bien espalda y pies. Registra los kg de discos por lado, siempre con el mismo criterio.",
+      "instructions": "Ajusta los apoyos de hombros, mantén espalda apoyada y baja con control. Registra los discos por lado con el mismo criterio.",
       "loadUnit": "Por lado",
       "level": "Intermedio",
       "brand": "Hammer Strength",
       "machineLine": "Plate Loaded",
       "movementGroup": "grupo-hack-squat",
-      "catalogVerified": true
-    },
-    {
-      "id": "catalog-hammer-strength-21",
-      "name": "Iso-Lateral Leg Curl",
-      "muscle": "Isquiotibiales",
-      "equipment": "Máquina",
-      "unit": "reps",
-      "instructions": "Flexiona rodillas unilateralmente manteniendo cadera estable. Registra los kg de discos por lado, siempre con el mismo criterio.",
-      "loadUnit": "Por lado",
-      "level": "Intermedio",
-      "brand": "Hammer Strength",
-      "machineLine": "Plate Loaded",
-      "movementGroup": "grupo-curl-femoral-tumbado",
-      "catalogVerified": true
+      "catalogVerified": true,
+      "disponibilidad_zubiarte": "sin_verificar",
+      "modelName": "Plate Loaded Hack Squat",
+      "machineVariants": [
+        {
+          "marca": "Hammer Strength",
+          "linea": "Plate Loaded",
+          "modelo": "Plate Loaded Hack Squat",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "inventoryNote": "Candidato seleccionado por el usuario mediante capturas; modelo exacto pendiente de confirmar."
+        }
+      ]
     },
     {
       "id": "catalog-hammer-strength-22",
@@ -2007,167 +2113,25 @@
       "muscle": "Cuádriceps",
       "equipment": "Máquina",
       "unit": "reps",
-      "instructions": "Alinea rodillas y realiza extensión controlada en cada pierna. Registra los kg de discos por lado, siempre con el mismo criterio.",
+      "instructions": "Alinea las rodillas con el eje y extiende cada pierna de forma controlada. Registra los discos por lado con el mismo criterio.",
       "loadUnit": "Por lado",
       "level": "Intermedio",
       "brand": "Hammer Strength",
       "machineLine": "Plate Loaded",
       "movementGroup": "grupo-extension-de-cuadriceps",
-      "catalogVerified": true
-    },
-    {
-      "id": "catalog-gym80-23",
-      "name": "Seated Chest Press",
-      "muscle": "Pecho",
-      "equipment": "Máquina",
-      "unit": "reps",
-      "instructions": "Regula asiento y empuja manteniendo tronco apoyado.",
-      "loadUnit": "Máquina",
-      "level": "Principiante",
-      "brand": "gym80",
-      "machineLine": "Sygnum",
-      "movementGroup": "grupo-press-de-pecho-horizontal",
-      "catalogVerified": true
-    },
-    {
-      "id": "catalog-gym80-24",
-      "name": "Lat Pulldown Machine",
-      "muscle": "Espalda",
-      "equipment": "Máquina",
-      "unit": "reps",
-      "instructions": "Sujeta rodillas y lleva las asas al pecho sin balanceo.",
-      "loadUnit": "Máquina",
-      "level": "Principiante",
-      "brand": "gym80",
-      "machineLine": "Sygnum",
-      "movementGroup": "grupo-jalon-al-pecho",
-      "catalogVerified": true
-    },
-    {
-      "id": "catalog-gym80-25",
-      "name": "Seated Row Machine",
-      "muscle": "Espalda",
-      "equipment": "Máquina",
-      "unit": "reps",
-      "instructions": "Tira de agarres al tronco sin despegar el pecho del apoyo.",
-      "loadUnit": "Máquina",
-      "level": "Principiante",
-      "brand": "gym80",
-      "machineLine": "Sygnum",
-      "movementGroup": "grupo-remo-sentado-en-polea-o-maquina",
-      "catalogVerified": true
-    },
-    {
-      "id": "catalog-gym80-26",
-      "name": "Seated Leg Press",
-      "muscle": "Cuádriceps",
-      "equipment": "Máquina",
-      "unit": "reps",
-      "instructions": "Ajusta el respaldo y controla flexión y extensión de piernas.",
-      "loadUnit": "Máquina",
-      "level": "Principiante",
-      "brand": "gym80",
-      "machineLine": "Sygnum",
-      "movementGroup": "grupo-prensa-de-piernas",
-      "catalogVerified": true
-    },
-    {
-      "id": "catalog-gym80-27",
-      "name": "Seated Leg Curl",
-      "muscle": "Isquiotibiales",
-      "equipment": "Máquina",
-      "unit": "reps",
-      "instructions": "Ajusta los rodillos para flexionar rodillas sin despegar pelvis.",
-      "loadUnit": "Máquina",
-      "level": "Principiante",
-      "brand": "gym80",
-      "machineLine": "Sygnum",
-      "movementGroup": "grupo-curl-femoral-sentado",
-      "catalogVerified": true
-    },
-    {
-      "id": "catalog-gym80-28",
-      "name": "Leg Extension",
-      "muscle": "Cuádriceps",
-      "equipment": "Máquina",
-      "unit": "reps",
-      "instructions": "Ajusta el eje al nivel de rodillas y extiende con control.",
-      "loadUnit": "Máquina",
-      "level": "Principiante",
-      "brand": "gym80",
-      "machineLine": "Sygnum",
-      "movementGroup": "grupo-extension-de-cuadriceps",
-      "catalogVerified": true
-    },
-    {
-      "id": "catalog-gym80-29",
-      "name": "Shoulder Press",
-      "muscle": "Hombros",
-      "equipment": "Máquina",
-      "unit": "reps",
-      "instructions": "Ajusta asiento y presiona sin elevar hombros en exceso.",
-      "loadUnit": "Máquina",
-      "level": "Principiante",
-      "brand": "gym80",
-      "machineLine": "Sygnum",
-      "movementGroup": "grupo-press-de-hombros",
-      "catalogVerified": true
-    },
-    {
-      "id": "catalog-gym80-30",
-      "name": "Butterfly Reverse",
-      "muscle": "Hombros",
-      "equipment": "Máquina",
-      "unit": "reps",
-      "instructions": "Abre brazos de forma estable para trabajar deltoides posterior.",
-      "loadUnit": "Máquina",
-      "level": "Principiante",
-      "brand": "gym80",
-      "machineLine": "Sygnum",
-      "movementGroup": "grupo-aperturas-inversas-deltoide-posterior",
-      "catalogVerified": true
-    },
-    {
-      "id": "catalog-gym80-31",
-      "name": "Abdominal Machine",
-      "muscle": "Abdomen",
-      "equipment": "Máquina",
-      "unit": "reps",
-      "instructions": "Flexiona tronco suavemente concentrando el esfuerzo en el abdomen.",
-      "loadUnit": "Máquina",
-      "level": "Principiante",
-      "brand": "gym80",
-      "machineLine": "Sygnum",
-      "movementGroup": "grupo-crunch-abdominal",
-      "catalogVerified": true
-    },
-    {
-      "id": "catalog-gym80-32",
-      "name": "Incline Chest Press",
-      "muscle": "Pecho",
-      "equipment": "Máquina",
-      "unit": "reps",
-      "instructions": "Ajusta asiento para una trayectoria de empuje inclinada cómoda.",
-      "loadUnit": "Máquina",
-      "level": "Intermedio",
-      "brand": "gym80",
-      "machineLine": "Sygnum",
-      "movementGroup": "grupo-press-inclinado-de-pecho",
-      "catalogVerified": true
-    },
-    {
-      "id": "catalog-gym80-33",
-      "name": "Deadlift Machine",
-      "muscle": "Isquiotibiales",
-      "equipment": "Máquina",
-      "unit": "reps",
-      "instructions": "Mantén espalda neutra y extiende cadera y rodillas de forma progresiva.",
-      "loadUnit": "Máquina",
-      "level": "Intermedio",
-      "brand": "gym80",
-      "machineLine": "Sygnum Dual",
-      "movementGroup": "grupo-peso-muerto-en-maquina",
-      "catalogVerified": true
+      "catalogVerified": true,
+      "disponibilidad_zubiarte": "sin_verificar",
+      "modelName": "Iso-Lateral Leg Extension",
+      "machineVariants": [
+        {
+          "marca": "Hammer Strength",
+          "linea": "Plate Loaded",
+          "modelo": "Iso-Lateral Leg Extension",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "inventoryNote": "Candidato seleccionado por el usuario mediante capturas; modelo exacto pendiente de confirmar."
+        }
+      ]
     },
     {
       "id": "grupo-aperturas-declinadas-de-pecho",
@@ -2184,7 +2148,6 @@
       "catalogVerified": false,
       "materialOptions": [
         "Mancuernas",
-        "Máquina",
         "Polea"
       ],
       "machineVariants": [],
@@ -2311,17 +2274,28 @@
       ],
       "machineVariants": [
         {
+          "marca": "Technogym",
+          "linea": "Pure Strength",
+          "modelo": "Pure Strength Wide Chest Press",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "sourceUrl": "https://www.technogym.com/es-ES/category/pure-strength/",
+          "disponibilidad_provisional_zubiarte": true
+        },
+        {
           "marca": "Hammer Strength",
           "linea": "Plate Loaded",
           "modelo": "Iso-Lateral Wide Chest",
           "codigo": null,
-          "disponibilidad_zubiarte": "sin_verificar"
+          "disponibilidad_zubiarte": "sin_verificar",
+          "inventoryNote": "Candidato seleccionado por el usuario mediante capturas; modelo exacto pendiente de confirmar."
         }
       ],
       "sourceGroupId": "grupo-press-de-pecho-convergente",
       "levelEstimated": true,
       "modelName": "Iso-Lateral Wide Chest",
-      "modelCode": null
+      "modelCode": null,
+      "disponibilidad_zubiarte": "sin_verificar"
     },
     {
       "id": "grupo-press-de-pecho-en-polea-de-pie",
@@ -2383,19 +2357,9 @@
         "Mancuernas",
         "Máquina"
       ],
-      "machineVariants": [
-        {
-          "marca": "Hammer Strength",
-          "linea": "Plate Loaded",
-          "modelo": "Iso-Lateral Decline Chest Press",
-          "codigo": null,
-          "disponibilidad_zubiarte": "sin_verificar"
-        }
-      ],
+      "machineVariants": [],
       "sourceGroupId": "grupo-press-declinado-de-pecho",
-      "levelEstimated": true,
-      "modelName": "Iso-Lateral Decline Chest Press",
-      "modelCode": null
+      "levelEstimated": true
     },
     {
       "id": "grupo-press-landmine-de-pecho",
@@ -2445,7 +2409,7 @@
       "equipment": "Otro",
       "unit": "reps",
       "instructions": "Movimiento: Svend press. Material: Disco. Consulta la técnica específica de la variante que vayas a usar y registra su carga sin compararla directamente con otras máquinas.",
-      "loadUnit": "Sin carga",
+      "loadUnit": "Total",
       "level": "Intermedio",
       "movementGroup": "grupo-svend-press",
       "brand": "",
@@ -2585,7 +2549,8 @@
           "linea": "Plate Loaded",
           "modelo": "Iso-Lateral Wide Pulldown",
           "codigo": null,
-          "disponibilidad_zubiarte": "sin_verificar"
+          "disponibilidad_zubiarte": "sin_verificar",
+          "inventoryNote": "Candidato seleccionado por el usuario mediante capturas; modelo exacto pendiente de confirmar."
         }
       ],
       "sourceGroupId": "grupo-jalon-al-pecho-agarre-ancho",
@@ -2617,7 +2582,7 @@
       "id": "grupo-jalon-unilateral-de-dorsales",
       "name": "Jalón unilateral de dorsales",
       "muscle": "Espalda",
-      "equipment": "Máquina",
+      "equipment": "Polea",
       "unit": "reps",
       "instructions": "Movimiento: Jalón unilateral de dorsales. Material: Máquina, Polea. Consulta la técnica específica de la variante que vayas a usar y registra su carga sin compararla directamente con otras máquinas.",
       "loadUnit": "Máquina",
@@ -2627,7 +2592,6 @@
       "machineLine": "",
       "catalogVerified": false,
       "materialOptions": [
-        "Máquina",
         "Polea"
       ],
       "machineVariants": [],
@@ -2654,18 +2618,13 @@
       ],
       "machineVariants": [
         {
-          "marca": "Hammer Strength",
-          "linea": "Plate Loaded",
-          "modelo": "Plate Loaded Pullover",
+          "marca": "Technogym",
+          "linea": "Pure Strength",
+          "modelo": "Pure Strength Pullover",
           "codigo": null,
-          "disponibilidad_zubiarte": "sin_verificar"
-        },
-        {
-          "marca": "gym80",
-          "linea": "Sygnum",
-          "modelo": "PULL OVER MACHINE",
-          "codigo": "3012N",
-          "disponibilidad_zubiarte": "sin_verificar"
+          "disponibilidad_zubiarte": "sin_verificar",
+          "sourceUrl": "https://www.technogym.com/es-ES/category/pure-strength/",
+          "disponibilidad_provisional_zubiarte": true
         }
       ],
       "sourceGroupId": "grupo-pullover-de-dorsales",
@@ -2693,43 +2652,15 @@
           "linea": "Plate Loaded",
           "modelo": "Iso-Lateral High Row",
           "codigo": null,
-          "disponibilidad_zubiarte": "sin_verificar"
+          "disponibilidad_zubiarte": "sin_verificar",
+          "inventoryNote": "Candidato seleccionado por el usuario mediante capturas; modelo exacto pendiente de confirmar."
         }
       ],
       "sourceGroupId": "grupo-remo-alto-iso-lateral",
       "levelEstimated": true,
       "modelName": "Iso-Lateral High Row",
-      "modelCode": null
-    },
-    {
-      "id": "grupo-remo-d-y",
-      "name": "Remo D.Y.",
-      "muscle": "Espalda",
-      "equipment": "Máquina",
-      "unit": "reps",
-      "instructions": "Movimiento: Remo D.Y.. Material: Máquina. Consulta la técnica específica de la variante que vayas a usar y registra su carga sin compararla directamente con otras máquinas.",
-      "loadUnit": "Máquina",
-      "level": "Intermedio",
-      "movementGroup": "grupo-remo-d-y",
-      "brand": "Hammer Strength",
-      "machineLine": "Plate Loaded",
-      "catalogVerified": true,
-      "materialOptions": [
-        "Máquina"
-      ],
-      "machineVariants": [
-        {
-          "marca": "Hammer Strength",
-          "linea": "Plate Loaded",
-          "modelo": "Iso-Lateral D.Y. Row",
-          "codigo": null,
-          "disponibilidad_zubiarte": "sin_verificar"
-        }
-      ],
-      "sourceGroupId": "grupo-remo-d-y",
-      "levelEstimated": true,
-      "modelName": "Iso-Lateral D.Y. Row",
-      "modelCode": null
+      "modelCode": null,
+      "disponibilidad_zubiarte": "sin_verificar"
     },
     {
       "id": "grupo-remo-en-polea-a-una-mano",
@@ -2812,18 +2743,29 @@
       ],
       "machineVariants": [
         {
-          "marca": "Hammer Strength",
-          "linea": "Plate Loaded",
-          "modelo": "Iso-Lateral Row",
-          "codigo": null,
-          "disponibilidad_zubiarte": "sin_verificar"
-        },
-        {
           "marca": "Technogym",
           "linea": "Selection 900",
           "modelo": "Upper Back",
           "codigo": null,
-          "disponibilidad_zubiarte": "sin_verificar"
+          "disponibilidad_zubiarte": "sin_verificar",
+          "disponibilidad_provisional_zubiarte": true
+        },
+        {
+          "marca": "Technogym",
+          "linea": "Pure Strength",
+          "modelo": "Pure Strength Row",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "sourceUrl": "https://www.technogym.com/es-ES/category/pure-strength/",
+          "disponibilidad_provisional_zubiarte": true
+        },
+        {
+          "marca": "Hammer Strength",
+          "linea": "Plate Loaded",
+          "modelo": "Iso-Lateral Row",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "inventoryNote": "Candidato seleccionado por el usuario mediante capturas; modelo exacto pendiente de confirmar."
         }
       ],
       "sourceGroupId": "grupo-remo-pecho-apoyado",
@@ -2846,22 +2788,7 @@
         "Barra",
         "Máquina"
       ],
-      "machineVariants": [
-        {
-          "marca": "Hammer Strength",
-          "linea": "Plate Loaded",
-          "modelo": "Iso-Lateral T-Bar Row",
-          "codigo": null,
-          "disponibilidad_zubiarte": "sin_verificar"
-        },
-        {
-          "marca": "gym80",
-          "linea": "Pure Kraft",
-          "modelo": "PURE KRAFT T-BAR ROW",
-          "codigo": "4018",
-          "disponibilidad_zubiarte": "sin_verificar"
-        }
-      ],
+      "machineVariants": [],
       "sourceGroupId": "grupo-remo-t-bar",
       "levelEstimated": true
     },
@@ -3158,32 +3085,21 @@
       "id": "grupo-viking-press",
       "name": "Viking Press",
       "muscle": "Hombros",
-      "equipment": "Máquina",
+      "equipment": "Barra",
       "unit": "reps",
-      "instructions": "Movimiento: Viking Press. Material: Barra landmine, Máquina. Consulta la técnica específica de la variante que vayas a usar y registra su carga sin compararla directamente con otras máquinas. Press específico de hombros; no es la misma máquina que un Shoulder Press sentado.",
-      "loadUnit": "Máquina",
+      "instructions": "Con agarre landmine adecuado, empuja en diagonal por encima de los hombros con el tronco estable.",
+      "loadUnit": "Total",
       "level": "Intermedio",
       "movementGroup": "grupo-viking-press",
-      "brand": "gym80",
-      "machineLine": "Pure Kraft",
-      "catalogVerified": true,
+      "brand": "",
+      "machineLine": "",
+      "catalogVerified": false,
       "materialOptions": [
-        "Barra landmine",
-        "Máquina"
+        "Barra landmine"
       ],
-      "machineVariants": [
-        {
-          "marca": "gym80",
-          "linea": "Pure Kraft",
-          "modelo": "PURE KRAFT VIKING PRESS",
-          "codigo": "4388",
-          "disponibilidad_zubiarte": "sin_verificar"
-        }
-      ],
+      "machineVariants": [],
       "sourceGroupId": "grupo-viking-press",
-      "levelEstimated": true,
-      "modelName": "PURE KRAFT VIKING PRESS",
-      "modelCode": "4388"
+      "levelEstimated": true
     },
     {
       "id": "grupo-wall-slides",
@@ -3253,7 +3169,7 @@
       "equipment": "Otro",
       "unit": "reps",
       "instructions": "Movimiento: Curl con barra EZ. Material: Barra EZ. Consulta la técnica específica de la variante que vayas a usar y registra su carga sin compararla directamente con otras máquinas.",
-      "loadUnit": "Sin carga",
+      "loadUnit": "Total",
       "level": "Intermedio",
       "movementGroup": "grupo-curl-con-barra-ez",
       "brand": "",
@@ -3472,14 +3388,8 @@
           "linea": "Selection 900",
           "modelo": "Arm Extension",
           "codigo": null,
-          "disponibilidad_zubiarte": "sin_verificar"
-        },
-        {
-          "marca": "gym80",
-          "linea": "Sygnum",
-          "modelo": "TRICEPS EXTENSION",
-          "codigo": "3011",
-          "disponibilidad_zubiarte": "sin_verificar"
+          "disponibilidad_zubiarte": "sin_verificar",
+          "disponibilidad_provisional_zubiarte": true
         }
       ],
       "sourceGroupId": "grupo-extension-de-triceps-en-maquina",
@@ -3670,36 +3580,6 @@
       "levelEstimated": true
     },
     {
-      "id": "grupo-prensa-de-piernas-vertical",
-      "name": "Prensa de piernas vertical",
-      "muscle": "Cuádriceps",
-      "equipment": "Máquina",
-      "unit": "reps",
-      "instructions": "Movimiento: Prensa de piernas vertical. Material: Máquina. Consulta la técnica específica de la variante que vayas a usar y registra su carga sin compararla directamente con otras máquinas. Mantener identificada como variante con cargas y recorrido propios.",
-      "loadUnit": "Máquina",
-      "level": "Intermedio",
-      "movementGroup": "grupo-prensa-de-piernas-vertical",
-      "brand": "gym80",
-      "machineLine": "Pure Kraft",
-      "catalogVerified": true,
-      "materialOptions": [
-        "Máquina"
-      ],
-      "machineVariants": [
-        {
-          "marca": "gym80",
-          "linea": "Pure Kraft",
-          "modelo": "PURE KRAFT VERTICAL LEG PRESS",
-          "codigo": "4354",
-          "disponibilidad_zubiarte": "sin_verificar"
-        }
-      ],
-      "sourceGroupId": "grupo-prensa-de-piernas-vertical",
-      "levelEstimated": true,
-      "modelName": "PURE KRAFT VERTICAL LEG PRESS",
-      "modelCode": "4354"
-    },
-    {
       "id": "grupo-sentadilla-belt-squat",
       "name": "Sentadilla belt squat",
       "muscle": "Cuádriceps",
@@ -3718,18 +3598,13 @@
       ],
       "machineVariants": [
         {
-          "marca": "Hammer Strength",
-          "linea": "Plate Loaded",
-          "modelo": "Plate Loaded Belt Squat",
+          "marca": "Technogym",
+          "linea": "Pure Strength",
+          "modelo": "Pure Strength Belt Squat",
           "codigo": null,
-          "disponibilidad_zubiarte": "sin_verificar"
-        },
-        {
-          "marca": "gym80",
-          "linea": "Pure Kraft",
-          "modelo": "PURE KRAFT BELT SQUAT",
-          "codigo": "4360",
-          "disponibilidad_zubiarte": "sin_verificar"
+          "disponibilidad_zubiarte": "sin_verificar",
+          "sourceUrl": "https://www.technogym.com/es-ES/category/pure-strength/",
+          "disponibilidad_provisional_zubiarte": true
         }
       ],
       "sourceGroupId": "grupo-sentadilla-belt-squat",
@@ -3793,18 +3668,11 @@
       ],
       "machineVariants": [
         {
-          "marca": "Hammer Strength",
-          "linea": "Plate Loaded",
-          "modelo": "Pendulum-X Squat",
-          "codigo": null,
-          "disponibilidad_zubiarte": "sin_verificar"
-        },
-        {
           "marca": "gym80",
           "linea": "Pure Kraft",
           "modelo": "PURE KRAFT PENDULUM SQUAT",
           "codigo": "4353N",
-          "disponibilidad_zubiarte": "sin_verificar"
+          "disponibilidad_zubiarte": "confirmada"
         }
       ],
       "sourceGroupId": "grupo-sentadilla-pendular-pendulum-squat",
@@ -4078,47 +3946,17 @@
       ],
       "machineVariants": [
         {
-          "marca": "gym80",
-          "linea": "Sygnum",
-          "modelo": "STANDING LEG CURL",
-          "codigo": "3013",
-          "disponibilidad_zubiarte": "sin_verificar"
+          "marca": "Technogym",
+          "linea": "Pure Strength",
+          "modelo": "Pure Strength Standing Leg Curl",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "sourceUrl": "https://www.technogym.com/es-ES/category/pure-strength/",
+          "disponibilidad_provisional_zubiarte": true
         }
       ],
       "sourceGroupId": "grupo-curl-femoral-de-pie",
-      "levelEstimated": true,
-      "modelName": "STANDING LEG CURL",
-      "modelCode": "3013"
-    },
-    {
-      "id": "grupo-curl-femoral-de-rodillas",
-      "name": "Curl femoral de rodillas",
-      "muscle": "Isquiotibiales",
-      "equipment": "Máquina",
-      "unit": "reps",
-      "instructions": "Movimiento: Curl femoral de rodillas. Material: Máquina. Consulta la técnica específica de la variante que vayas a usar y registra su carga sin compararla directamente con otras máquinas.",
-      "loadUnit": "Máquina",
-      "level": "Intermedio",
-      "movementGroup": "grupo-curl-femoral-de-rodillas",
-      "brand": "Hammer Strength",
-      "machineLine": "Plate Loaded",
-      "catalogVerified": true,
-      "materialOptions": [
-        "Máquina"
-      ],
-      "machineVariants": [
-        {
-          "marca": "Hammer Strength",
-          "linea": "Plate Loaded",
-          "modelo": "Iso-Lateral Kneeling Leg Curl",
-          "codigo": null,
-          "disponibilidad_zubiarte": "sin_verificar"
-        }
-      ],
-      "sourceGroupId": "grupo-curl-femoral-de-rodillas",
-      "levelEstimated": true,
-      "modelName": "Iso-Lateral Kneeling Leg Curl",
-      "modelCode": null
+      "levelEstimated": true
     },
     {
       "id": "grupo-curl-femoral-deslizante",
@@ -4159,19 +3997,9 @@
         "Máquina asistida",
         "Peso corporal"
       ],
-      "machineVariants": [
-        {
-          "marca": "Hammer Strength",
-          "linea": "Plate Loaded",
-          "modelo": "Plate Loaded Assisted Nordic Ham",
-          "codigo": null,
-          "disponibilidad_zubiarte": "sin_verificar"
-        }
-      ],
+      "machineVariants": [],
       "sourceGroupId": "grupo-curl-nordico",
-      "levelEstimated": true,
-      "modelName": "Plate Loaded Assisted Nordic Ham",
-      "modelCode": null
+      "levelEstimated": true
     },
     {
       "id": "grupo-extension-de-isquiotibiales-en-banco-ghd",
@@ -4341,36 +4169,6 @@
       "levelEstimated": true
     },
     {
-      "id": "grupo-hiperextension-reversa-reverse-hyper",
-      "name": "Hiperextensión reversa (reverse hyper)",
-      "muscle": "Glúteos",
-      "equipment": "Máquina",
-      "unit": "reps",
-      "instructions": "Movimiento: Hiperextensión reversa (reverse hyper). Material: Máquina. Consulta la técnica específica de la variante que vayas a usar y registra su carga sin compararla directamente con otras máquinas.",
-      "loadUnit": "Máquina",
-      "level": "Intermedio",
-      "movementGroup": "grupo-hiperextension-reversa-reverse-hyper",
-      "brand": "Hammer Strength",
-      "machineLine": "Plate Loaded",
-      "catalogVerified": true,
-      "materialOptions": [
-        "Máquina"
-      ],
-      "machineVariants": [
-        {
-          "marca": "Hammer Strength",
-          "linea": "Plate Loaded",
-          "modelo": "Glute Ham / Reverse Hyper Combo",
-          "codigo": null,
-          "disponibilidad_zubiarte": "sin_verificar"
-        }
-      ],
-      "sourceGroupId": "grupo-hiperextension-reversa-reverse-hyper",
-      "levelEstimated": true,
-      "modelName": "Glute Ham / Reverse Hyper Combo",
-      "modelCode": null
-    },
-    {
       "id": "grupo-monster-walk",
       "name": "Monster walk",
       "muscle": "Glúteos",
@@ -4520,32 +4318,21 @@
       "id": "grupo-gemelos-donkey",
       "name": "Gemelos donkey",
       "muscle": "Gemelos",
-      "equipment": "Máquina",
+      "equipment": "Peso corporal",
       "unit": "reps",
       "instructions": "Movimiento: Gemelos donkey. Material: Máquina, Peso corporal. Consulta la técnica específica de la variante que vayas a usar y registra su carga sin compararla directamente con otras máquinas.",
-      "loadUnit": "Máquina",
+      "loadUnit": "Peso corporal",
       "level": "Intermedio",
       "movementGroup": "grupo-gemelos-donkey",
       "brand": "",
       "machineLine": "",
       "catalogVerified": false,
       "materialOptions": [
-        "Máquina",
         "Peso corporal"
       ],
-      "machineVariants": [
-        {
-          "marca": "gym80",
-          "linea": "Sygnum",
-          "modelo": "DONKEY CALF",
-          "codigo": "3094",
-          "disponibilidad_zubiarte": "sin_verificar"
-        }
-      ],
+      "machineVariants": [],
       "sourceGroupId": "grupo-gemelos-donkey",
-      "levelEstimated": true,
-      "modelName": "DONKEY CALF",
-      "modelCode": "3094"
+      "levelEstimated": true
     },
     {
       "id": "grupo-aduccion-tumbado-de-lado",
@@ -4608,36 +4395,6 @@
       "levelEstimated": true
     },
     {
-      "id": "grupo-ab-swing",
-      "name": "Ab Swing",
-      "muscle": "Abdomen",
-      "equipment": "Máquina",
-      "unit": "reps",
-      "instructions": "Movimiento: Ab Swing. Material: Máquina. Consulta la técnica específica de la variante que vayas a usar y registra su carga sin compararla directamente con otras máquinas. Máquina específica de flexión abdominal; distinta de Crunch.",
-      "loadUnit": "Máquina",
-      "level": "Intermedio",
-      "movementGroup": "grupo-ab-swing",
-      "brand": "gym80",
-      "machineLine": "Pure Kraft",
-      "catalogVerified": true,
-      "materialOptions": [
-        "Máquina"
-      ],
-      "machineVariants": [
-        {
-          "marca": "gym80",
-          "linea": "Pure Kraft",
-          "modelo": "PURE KRAFT AB SWING",
-          "codigo": "4317",
-          "disponibilidad_zubiarte": "sin_verificar"
-        }
-      ],
-      "sourceGroupId": "grupo-ab-swing",
-      "levelEstimated": true,
-      "modelName": "PURE KRAFT AB SWING",
-      "modelCode": "4317"
-    },
-    {
       "id": "grupo-antirrotacion-de-pie-con-banda",
       "name": "Antirrotación de pie con banda",
       "muscle": "Abdomen",
@@ -4696,36 +4453,6 @@
       "machineVariants": [],
       "sourceGroupId": "grupo-crunch-arrodillado-en-maquina",
       "levelEstimated": true
-    },
-    {
-      "id": "grupo-crunch-oblicuo-en-maquina",
-      "name": "Crunch oblicuo en máquina",
-      "muscle": "Abdomen",
-      "equipment": "Máquina",
-      "unit": "reps",
-      "instructions": "Movimiento: Crunch oblicuo en máquina. Material: Máquina. Consulta la técnica específica de la variante que vayas a usar y registra su carga sin compararla directamente con otras máquinas.",
-      "loadUnit": "Máquina",
-      "level": "Intermedio",
-      "movementGroup": "grupo-crunch-oblicuo-en-maquina",
-      "brand": "Hammer Strength",
-      "machineLine": "Plate Loaded",
-      "catalogVerified": true,
-      "materialOptions": [
-        "Máquina"
-      ],
-      "machineVariants": [
-        {
-          "marca": "Hammer Strength",
-          "linea": "Plate Loaded",
-          "modelo": "Abdominal / Oblique Crunch",
-          "codigo": null,
-          "disponibilidad_zubiarte": "sin_verificar"
-        }
-      ],
-      "sourceGroupId": "grupo-crunch-oblicuo-en-maquina",
-      "levelEstimated": true,
-      "modelName": "Abdominal / Oblique Crunch",
-      "modelCode": null
     },
     {
       "id": "grupo-dead-bug-con-banda",
@@ -4952,14 +4679,8 @@
           "linea": "Selection 900",
           "modelo": "Rotary Torso",
           "codigo": null,
-          "disponibilidad_zubiarte": "sin_verificar"
-        },
-        {
-          "marca": "gym80",
-          "linea": "Sygnum",
-          "modelo": "ROTARY MACHINE",
-          "codigo": "3225",
-          "disponibilidad_zubiarte": "sin_verificar"
+          "disponibilidad_zubiarte": "sin_verificar",
+          "disponibilidad_provisional_zubiarte": true
         }
       ],
       "sourceGroupId": "grupo-rotacion-de-tronco-en-maquina",
@@ -5088,13 +4809,16 @@
           "linea": "Selection 900",
           "modelo": "Total Abdominal",
           "codigo": null,
-          "disponibilidad_zubiarte": "sin_verificar"
+          "disponibilidad_zubiarte": "sin_verificar",
+          "disponibilidad_provisional_zubiarte": true
         }
       ],
       "sourceGroupId": "grupo-total-abdominal",
       "levelEstimated": true,
       "modelName": "Total Abdominal",
-      "modelCode": null
+      "modelCode": null,
+      "disponibilidad_zubiarte": "sin_verificar",
+      "disponibilidad_provisional_zubiarte": true
     },
     {
       "id": "grupo-bird-dog-isometrico",
@@ -5158,21 +4882,8 @@
           "linea": "Selection 900",
           "modelo": "Lower Back",
           "codigo": null,
-          "disponibilidad_zubiarte": "sin_verificar"
-        },
-        {
-          "marca": "gym80",
-          "linea": "Sygnum",
-          "modelo": "LOWER BACK MACHINE",
-          "codigo": "3007",
-          "disponibilidad_zubiarte": "sin_verificar"
-        },
-        {
-          "marca": "gym80",
-          "linea": "Sygnum",
-          "modelo": "LOWER BACK MACHINE",
-          "codigo": "3038",
-          "disponibilidad_zubiarte": "sin_verificar"
+          "disponibilidad_zubiarte": "sin_verificar",
+          "disponibilidad_provisional_zubiarte": true
         }
       ],
       "sourceGroupId": "grupo-extension-lumbar-en-maquina",
@@ -5233,7 +4944,8 @@
       "machineLine": "",
       "catalogVerified": false,
       "materialOptions": [
-        "Máquina cardio"
+        "Máquina cardio",
+        "Cardio"
       ],
       "machineVariants": [],
       "sourceGroupId": "grupo-assault-bike-air-bike",
@@ -5273,9 +4985,20 @@
       "machineLine": "",
       "catalogVerified": false,
       "materialOptions": [
-        "Bicicleta"
+        "Bicicleta",
+        "Cardio"
       ],
-      "machineVariants": [],
+      "machineVariants": [
+        {
+          "marca": "Technogym",
+          "linea": "Group Cycle",
+          "modelo": "Group Cycle",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "sourceUrl": "https://www.technogym.com/es-ES/business-equipment-cardio/",
+          "disponibilidad_provisional_zubiarte": true
+        }
+      ],
       "sourceGroupId": "grupo-bicicleta-spinning",
       "levelEstimated": true
     },
@@ -5395,9 +5118,20 @@
       "machineLine": "",
       "catalogVerified": false,
       "materialOptions": [
-        "Máquina cardio"
+        "Máquina cardio",
+        "Cardio"
       ],
-      "machineVariants": [],
+      "machineVariants": [
+        {
+          "marca": "Technogym",
+          "linea": "Excite+",
+          "modelo": "Excite+ Top",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "sourceUrl": "https://www.technogym.com/es-ES/category/excite/",
+          "disponibilidad_provisional_zubiarte": true
+        }
+      ],
       "sourceGroupId": "grupo-ergometro-de-brazos",
       "levelEstimated": true
     },
@@ -5925,6 +5659,1971 @@
       "machineVariants": [],
       "sourceGroupId": "grupo-wall-ball",
       "levelEstimated": true
+    },
+    {
+      "id": "fpz-gym80-4325",
+      "name": "PURE KRAFT SHOULDER LATERAL RAISE DUAL",
+      "muscle": "Hombros",
+      "equipment": "Máquina",
+      "unit": "reps",
+      "instructions": "Eleva los brazos lateralmente hasta una altura cómoda sin encoger hombros.",
+      "loadUnit": "Máquina",
+      "level": "Intermedio",
+      "brand": "gym80",
+      "machineLine": "Pure Kraft",
+      "movementGroup": "grupo-elevaciones-laterales-de-hombros",
+      "catalogVerified": true,
+      "materialOptions": [
+        "Máquina"
+      ],
+      "machineVariants": [
+        {
+          "marca": "gym80",
+          "linea": "Pure Kraft",
+          "modelo": "PURE KRAFT SHOULDER LATERAL RAISE DUAL",
+          "codigo": "4325",
+          "disponibilidad_zubiarte": "confirmada",
+          "sourceUrl": "https://gym80.de/en/all-products/filter-plate-loaded/"
+        }
+      ],
+      "modelName": "PURE KRAFT SHOULDER LATERAL RAISE DUAL",
+      "modelCode": "4325",
+      "sourceGroupId": "grupo-elevaciones-laterales-de-hombros",
+      "levelEstimated": true,
+      "disponibilidad_zubiarte": "confirmada"
+    },
+    {
+      "id": "fpz-gym80-4341",
+      "name": "PURE KRAFT BUTTERFLY DUAL",
+      "muscle": "Pecho",
+      "equipment": "Máquina",
+      "unit": "reps",
+      "instructions": "Ajusta los agarres a la altura del pecho, acerca los brazos en arco sin impulso.",
+      "loadUnit": "Máquina",
+      "level": "Intermedio",
+      "brand": "gym80",
+      "machineLine": "Pure Kraft",
+      "movementGroup": "grupo-aperturas-de-pecho",
+      "catalogVerified": true,
+      "materialOptions": [
+        "Máquina"
+      ],
+      "machineVariants": [
+        {
+          "marca": "gym80",
+          "linea": "Pure Kraft",
+          "modelo": "PURE KRAFT BUTTERFLY DUAL",
+          "codigo": "4341",
+          "disponibilidad_zubiarte": "confirmada",
+          "sourceUrl": "https://gym80.de/en/all-products/filter-plate-loaded/"
+        }
+      ],
+      "modelName": "PURE KRAFT BUTTERFLY DUAL",
+      "modelCode": "4341",
+      "sourceGroupId": "grupo-aperturas-de-pecho",
+      "levelEstimated": true,
+      "disponibilidad_zubiarte": "confirmada"
+    },
+    {
+      "id": "fpz-gym80-4361",
+      "name": "PURE KRAFT-STRONG LEG PRESS DUAL",
+      "muscle": "Cuádriceps",
+      "equipment": "Máquina",
+      "unit": "reps",
+      "instructions": "Apoya pelvis y espalda; empuja con todo el pie y controla la bajada.",
+      "loadUnit": "Máquina",
+      "level": "Intermedio",
+      "brand": "gym80",
+      "machineLine": "Pure Kraft Strong",
+      "movementGroup": "grupo-prensa-de-piernas",
+      "catalogVerified": true,
+      "materialOptions": [
+        "Máquina"
+      ],
+      "machineVariants": [
+        {
+          "marca": "gym80",
+          "linea": "Pure Kraft Strong",
+          "modelo": "PURE KRAFT-STRONG LEG PRESS DUAL",
+          "codigo": "4361",
+          "disponibilidad_zubiarte": "confirmada",
+          "sourceUrl": "https://gym80.de/en/all-products/filter-plate-loaded/"
+        }
+      ],
+      "modelName": "PURE KRAFT-STRONG LEG PRESS DUAL",
+      "modelCode": "4361",
+      "sourceGroupId": "grupo-prensa-de-piernas",
+      "levelEstimated": true,
+      "disponibilidad_zubiarte": "confirmada"
+    },
+    {
+      "id": "fpz-technogym-pure-strength-pure-strength-hip-thrust",
+      "name": "Pure Strength Hip Thrust",
+      "muscle": "Glúteos",
+      "equipment": "Máquina",
+      "unit": "reps",
+      "instructions": "Ajusta el apoyo y cinturón; empuja con los pies hasta extender la cadera sin hiperextender la espalda.",
+      "loadUnit": "Máquina",
+      "level": "Intermedio",
+      "brand": "Technogym",
+      "machineLine": "Pure Strength",
+      "movementGroup": "grupo-hip-thrust",
+      "catalogVerified": true,
+      "materialOptions": [
+        "Máquina"
+      ],
+      "machineVariants": [
+        {
+          "marca": "Technogym",
+          "linea": "Pure Strength",
+          "modelo": "Pure Strength Hip Thrust",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "sourceUrl": "https://www.technogym.com/es-ES/category/pure-strength/",
+          "disponibilidad_provisional_zubiarte": true
+        }
+      ],
+      "modelName": "Pure Strength Hip Thrust",
+      "modelCode": null,
+      "sourceGroupId": "grupo-hip-thrust",
+      "levelEstimated": true,
+      "disponibilidad_zubiarte": "sin_verificar",
+      "disponibilidad_provisional_zubiarte": true
+    },
+    {
+      "id": "fpz-technogym-pure-strength-pure-strength-linear-leg-press",
+      "name": "Pure Strength Linear Leg Press",
+      "muscle": "Cuádriceps",
+      "equipment": "Máquina",
+      "unit": "reps",
+      "instructions": "Apoya pelvis y espalda; desciende sin despegar la cadera y empuja con todo el pie.",
+      "loadUnit": "Máquina",
+      "level": "Intermedio",
+      "brand": "Technogym",
+      "machineLine": "Pure Strength",
+      "movementGroup": "grupo-prensa-de-piernas-lineal-45",
+      "catalogVerified": true,
+      "materialOptions": [
+        "Máquina"
+      ],
+      "machineVariants": [
+        {
+          "marca": "Technogym",
+          "linea": "Pure Strength",
+          "modelo": "Pure Strength Linear Leg Press",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "sourceUrl": "https://www.technogym.com/es-ES/category/pure-strength/",
+          "disponibilidad_provisional_zubiarte": true
+        }
+      ],
+      "modelName": "Pure Strength Linear Leg Press",
+      "modelCode": null,
+      "sourceGroupId": "grupo-prensa-de-piernas-lineal-45",
+      "levelEstimated": true,
+      "disponibilidad_zubiarte": "sin_verificar",
+      "disponibilidad_provisional_zubiarte": true
+    },
+    {
+      "id": "fpz-technogym-pure-strength-pure-strength-leg-press",
+      "name": "Pure Strength Leg Press",
+      "muscle": "Cuádriceps",
+      "equipment": "Máquina",
+      "unit": "reps",
+      "instructions": "Apoya pelvis y espalda; empuja con todo el pie y controla la bajada.",
+      "loadUnit": "Máquina",
+      "level": "Intermedio",
+      "brand": "Technogym",
+      "machineLine": "Pure Strength",
+      "movementGroup": "grupo-prensa-de-piernas",
+      "catalogVerified": true,
+      "materialOptions": [
+        "Máquina"
+      ],
+      "machineVariants": [
+        {
+          "marca": "Technogym",
+          "linea": "Pure Strength",
+          "modelo": "Pure Strength Leg Press",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "sourceUrl": "https://www.technogym.com/es-ES/category/pure-strength/",
+          "disponibilidad_provisional_zubiarte": true
+        }
+      ],
+      "modelName": "Pure Strength Leg Press",
+      "modelCode": null,
+      "sourceGroupId": "grupo-prensa-de-piernas",
+      "levelEstimated": true,
+      "disponibilidad_zubiarte": "sin_verificar",
+      "disponibilidad_provisional_zubiarte": true
+    },
+    {
+      "id": "fpz-technogym-pure-strength-pure-strength-hack-squat",
+      "name": "Pure Strength Hack Squat",
+      "muscle": "Cuádriceps",
+      "equipment": "Máquina",
+      "unit": "reps",
+      "instructions": "Ajusta topes; apoya espalda y baja en rango cómodo sin levantar talones.",
+      "loadUnit": "Máquina",
+      "level": "Intermedio",
+      "brand": "Technogym",
+      "machineLine": "Pure Strength",
+      "movementGroup": "grupo-hack-squat",
+      "catalogVerified": true,
+      "materialOptions": [
+        "Máquina"
+      ],
+      "machineVariants": [
+        {
+          "marca": "Technogym",
+          "linea": "Pure Strength",
+          "modelo": "Pure Strength Hack Squat",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "sourceUrl": "https://www.technogym.com/es-ES/category/pure-strength/",
+          "disponibilidad_provisional_zubiarte": true
+        }
+      ],
+      "modelName": "Pure Strength Hack Squat",
+      "modelCode": null,
+      "sourceGroupId": "grupo-hack-squat",
+      "levelEstimated": true,
+      "disponibilidad_zubiarte": "sin_verificar",
+      "disponibilidad_provisional_zubiarte": true
+    },
+    {
+      "id": "fpz-technogym-pure-strength-pure-strength-belt-squat",
+      "name": "Pure Strength Belt Squat",
+      "muscle": "Cuádriceps",
+      "equipment": "Máquina",
+      "unit": "reps",
+      "instructions": "Ajusta cinturón y topes; baja con pies firmes y sube sin perder equilibrio.",
+      "loadUnit": "Máquina",
+      "level": "Intermedio",
+      "brand": "Technogym",
+      "machineLine": "Pure Strength",
+      "movementGroup": "grupo-sentadilla-belt-squat",
+      "catalogVerified": true,
+      "materialOptions": [
+        "Máquina"
+      ],
+      "machineVariants": [
+        {
+          "marca": "Technogym",
+          "linea": "Pure Strength",
+          "modelo": "Pure Strength Belt Squat",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "sourceUrl": "https://www.technogym.com/es-ES/category/pure-strength/",
+          "disponibilidad_provisional_zubiarte": true
+        }
+      ],
+      "modelName": "Pure Strength Belt Squat",
+      "modelCode": null,
+      "sourceGroupId": "grupo-sentadilla-belt-squat",
+      "levelEstimated": true,
+      "disponibilidad_zubiarte": "sin_verificar",
+      "disponibilidad_provisional_zubiarte": true
+    },
+    {
+      "id": "fpz-technogym-pure-strength-pure-strength-row",
+      "name": "Pure Strength Row",
+      "muscle": "Espalda",
+      "equipment": "Máquina",
+      "unit": "reps",
+      "instructions": "Ajusta apoyo de pecho y asiento; tira con los codos y controla el retorno.",
+      "loadUnit": "Máquina",
+      "level": "Intermedio",
+      "brand": "Technogym",
+      "machineLine": "Pure Strength",
+      "movementGroup": "grupo-remo-pecho-apoyado",
+      "catalogVerified": true,
+      "materialOptions": [
+        "Máquina"
+      ],
+      "machineVariants": [
+        {
+          "marca": "Technogym",
+          "linea": "Pure Strength",
+          "modelo": "Pure Strength Row",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "sourceUrl": "https://www.technogym.com/es-ES/category/pure-strength/",
+          "disponibilidad_provisional_zubiarte": true
+        }
+      ],
+      "modelName": "Pure Strength Row",
+      "modelCode": null,
+      "sourceGroupId": "grupo-remo-pecho-apoyado",
+      "levelEstimated": true,
+      "disponibilidad_zubiarte": "sin_verificar",
+      "disponibilidad_provisional_zubiarte": true
+    },
+    {
+      "id": "fpz-technogym-pure-strength-pure-strength-incline-chest-press",
+      "name": "Pure Strength Incline Chest Press",
+      "muscle": "Pecho",
+      "equipment": "Máquina",
+      "unit": "reps",
+      "instructions": "Ajusta los apoyos y empuja en diagonal hacia arriba sin rebote.",
+      "loadUnit": "Máquina",
+      "level": "Intermedio",
+      "brand": "Technogym",
+      "machineLine": "Pure Strength",
+      "movementGroup": "grupo-press-inclinado-de-pecho",
+      "catalogVerified": true,
+      "materialOptions": [
+        "Máquina"
+      ],
+      "machineVariants": [
+        {
+          "marca": "Technogym",
+          "linea": "Pure Strength",
+          "modelo": "Pure Strength Incline Chest Press",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "sourceUrl": "https://www.technogym.com/es-ES/category/pure-strength/",
+          "disponibilidad_provisional_zubiarte": true
+        }
+      ],
+      "modelName": "Pure Strength Incline Chest Press",
+      "modelCode": null,
+      "sourceGroupId": "grupo-press-inclinado-de-pecho",
+      "levelEstimated": true,
+      "disponibilidad_zubiarte": "sin_verificar",
+      "disponibilidad_provisional_zubiarte": true
+    },
+    {
+      "id": "fpz-technogym-pure-strength-pure-strength-chest-press",
+      "name": "Pure Strength Chest Press",
+      "muscle": "Pecho",
+      "equipment": "Máquina",
+      "unit": "reps",
+      "instructions": "Ajusta asiento y agarres; empuja y vuelve de forma controlada.",
+      "loadUnit": "Máquina",
+      "level": "Intermedio",
+      "brand": "Technogym",
+      "machineLine": "Pure Strength",
+      "movementGroup": "grupo-press-de-pecho-horizontal",
+      "catalogVerified": true,
+      "materialOptions": [
+        "Máquina"
+      ],
+      "machineVariants": [
+        {
+          "marca": "Technogym",
+          "linea": "Pure Strength",
+          "modelo": "Pure Strength Chest Press",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "sourceUrl": "https://www.technogym.com/es-ES/category/pure-strength/",
+          "disponibilidad_provisional_zubiarte": true
+        }
+      ],
+      "modelName": "Pure Strength Chest Press",
+      "modelCode": null,
+      "sourceGroupId": "grupo-press-de-pecho-horizontal",
+      "levelEstimated": true,
+      "disponibilidad_zubiarte": "sin_verificar",
+      "disponibilidad_provisional_zubiarte": true
+    },
+    {
+      "id": "fpz-technogym-pure-strength-pure-strength-shoulder-press",
+      "name": "Pure Strength Shoulder Press",
+      "muscle": "Hombros",
+      "equipment": "Máquina",
+      "unit": "reps",
+      "instructions": "Ajusta asiento y empuja por encima de los hombros sin arquear la espalda.",
+      "loadUnit": "Máquina",
+      "level": "Intermedio",
+      "brand": "Technogym",
+      "machineLine": "Pure Strength",
+      "movementGroup": "grupo-press-de-hombros",
+      "catalogVerified": true,
+      "materialOptions": [
+        "Máquina"
+      ],
+      "machineVariants": [
+        {
+          "marca": "Technogym",
+          "linea": "Pure Strength",
+          "modelo": "Pure Strength Shoulder Press",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "sourceUrl": "https://www.technogym.com/es-ES/category/pure-strength/",
+          "disponibilidad_provisional_zubiarte": true
+        }
+      ],
+      "modelName": "Pure Strength Shoulder Press",
+      "modelCode": null,
+      "sourceGroupId": "grupo-press-de-hombros",
+      "levelEstimated": true,
+      "disponibilidad_zubiarte": "sin_verificar",
+      "disponibilidad_provisional_zubiarte": true
+    },
+    {
+      "id": "fpz-technogym-pure-strength-pure-strength-seated-calf",
+      "name": "Pure Strength Seated Calf",
+      "muscle": "Gemelos",
+      "equipment": "Máquina",
+      "unit": "reps",
+      "instructions": "Ajusta el apoyo sobre los muslos; eleva y baja talones de forma controlada.",
+      "loadUnit": "Máquina",
+      "level": "Intermedio",
+      "brand": "Technogym",
+      "machineLine": "Pure Strength",
+      "movementGroup": "grupo-elevacion-de-gemelos-sentado",
+      "catalogVerified": true,
+      "materialOptions": [
+        "Máquina"
+      ],
+      "machineVariants": [
+        {
+          "marca": "Technogym",
+          "linea": "Pure Strength",
+          "modelo": "Pure Strength Seated Calf",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "sourceUrl": "https://www.technogym.com/es-ES/category/pure-strength/",
+          "disponibilidad_provisional_zubiarte": true
+        }
+      ],
+      "modelName": "Pure Strength Seated Calf",
+      "modelCode": null,
+      "sourceGroupId": "grupo-elevacion-de-gemelos-sentado",
+      "levelEstimated": true,
+      "disponibilidad_zubiarte": "sin_verificar",
+      "disponibilidad_provisional_zubiarte": true
+    },
+    {
+      "id": "fpz-technogym-pure-strength-pure-strength-low-row",
+      "name": "Pure Strength Low Row",
+      "muscle": "Espalda",
+      "equipment": "Máquina",
+      "unit": "reps",
+      "instructions": "Apoya el pecho si hay soporte; tira de los codos hacia la cadera y controla el retorno.",
+      "loadUnit": "Máquina",
+      "level": "Intermedio",
+      "brand": "Technogym",
+      "machineLine": "Pure Strength",
+      "movementGroup": "grupo-remo-bajo-de-palanca",
+      "catalogVerified": true,
+      "materialOptions": [
+        "Máquina"
+      ],
+      "machineVariants": [
+        {
+          "marca": "Technogym",
+          "linea": "Pure Strength",
+          "modelo": "Pure Strength Low Row",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "sourceUrl": "https://www.technogym.com/es-ES/category/pure-strength/",
+          "disponibilidad_provisional_zubiarte": true
+        }
+      ],
+      "modelName": "Pure Strength Low Row",
+      "modelCode": null,
+      "sourceGroupId": "grupo-remo-bajo-de-palanca",
+      "levelEstimated": true,
+      "disponibilidad_zubiarte": "sin_verificar",
+      "disponibilidad_provisional_zubiarte": true
+    },
+    {
+      "id": "fpz-technogym-pure-strength-pure-strength-biceps",
+      "name": "Pure Strength Biceps",
+      "muscle": "Bíceps",
+      "equipment": "Máquina",
+      "unit": "reps",
+      "instructions": "Ajusta los apoyos y flexiona los codos sin balancear el tronco.",
+      "loadUnit": "Máquina",
+      "level": "Intermedio",
+      "brand": "Technogym",
+      "machineLine": "Pure Strength",
+      "movementGroup": "grupo-curl-de-biceps-tradicional",
+      "catalogVerified": true,
+      "materialOptions": [
+        "Máquina"
+      ],
+      "machineVariants": [
+        {
+          "marca": "Technogym",
+          "linea": "Pure Strength",
+          "modelo": "Pure Strength Biceps",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "sourceUrl": "https://www.technogym.com/es-ES/category/pure-strength/",
+          "disponibilidad_provisional_zubiarte": true
+        }
+      ],
+      "modelName": "Pure Strength Biceps",
+      "modelCode": null,
+      "sourceGroupId": "grupo-curl-de-biceps-tradicional",
+      "levelEstimated": true,
+      "disponibilidad_zubiarte": "sin_verificar",
+      "disponibilidad_provisional_zubiarte": true
+    },
+    {
+      "id": "fpz-technogym-pure-strength-pure-strength-rear-kick",
+      "name": "Pure Strength Rear Kick",
+      "muscle": "Glúteos",
+      "equipment": "Máquina",
+      "unit": "reps",
+      "instructions": "Empuja el apoyo hacia atrás desde la cadera, evitando arquear la espalda.",
+      "loadUnit": "Máquina",
+      "level": "Intermedio",
+      "brand": "Technogym",
+      "machineLine": "Pure Strength",
+      "movementGroup": "grupo-patada-de-gluteos",
+      "catalogVerified": true,
+      "materialOptions": [
+        "Máquina"
+      ],
+      "machineVariants": [
+        {
+          "marca": "Technogym",
+          "linea": "Pure Strength",
+          "modelo": "Pure Strength Rear Kick",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "sourceUrl": "https://www.technogym.com/es-ES/category/pure-strength/",
+          "disponibilidad_provisional_zubiarte": true
+        }
+      ],
+      "modelName": "Pure Strength Rear Kick",
+      "modelCode": null,
+      "sourceGroupId": "grupo-patada-de-gluteos",
+      "levelEstimated": true,
+      "disponibilidad_zubiarte": "sin_verificar",
+      "disponibilidad_provisional_zubiarte": true
+    },
+    {
+      "id": "fpz-technogym-pure-strength-pure-strength-seated-dip",
+      "name": "Pure Strength Seated Dip",
+      "muscle": "Tríceps",
+      "equipment": "Máquina",
+      "unit": "reps",
+      "instructions": "Ajusta asiento y agarres; presiona hacia abajo extendiendo codos y evita elevar hombros.",
+      "loadUnit": "Máquina",
+      "level": "Intermedio",
+      "brand": "Technogym",
+      "machineLine": "Pure Strength",
+      "movementGroup": "grupo-fondos-sentados-en-maquina",
+      "catalogVerified": true,
+      "materialOptions": [
+        "Máquina"
+      ],
+      "machineVariants": [
+        {
+          "marca": "Technogym",
+          "linea": "Pure Strength",
+          "modelo": "Pure Strength Seated Dip",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "sourceUrl": "https://www.technogym.com/es-ES/category/pure-strength/",
+          "disponibilidad_provisional_zubiarte": true
+        }
+      ],
+      "modelName": "Pure Strength Seated Dip",
+      "modelCode": null,
+      "sourceGroupId": "grupo-fondos-sentados-en-maquina",
+      "levelEstimated": true,
+      "disponibilidad_zubiarte": "sin_verificar",
+      "disponibilidad_provisional_zubiarte": true
+    },
+    {
+      "id": "fpz-technogym-pure-strength-pure-strength-deadlift",
+      "name": "Pure Strength Deadlift",
+      "muscle": "Isquiotibiales",
+      "equipment": "Máquina",
+      "unit": "reps",
+      "instructions": "Ajusta agarres, mantén espalda neutra y extiende caderas y rodillas sin tirones.",
+      "loadUnit": "Máquina",
+      "level": "Intermedio",
+      "brand": "Technogym",
+      "machineLine": "Pure Strength",
+      "movementGroup": "grupo-peso-muerto-en-maquina",
+      "catalogVerified": true,
+      "materialOptions": [
+        "Máquina"
+      ],
+      "machineVariants": [
+        {
+          "marca": "Technogym",
+          "linea": "Pure Strength",
+          "modelo": "Pure Strength Deadlift",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "sourceUrl": "https://www.technogym.com/es-ES/category/pure-strength/",
+          "disponibilidad_provisional_zubiarte": true
+        }
+      ],
+      "modelName": "Pure Strength Deadlift",
+      "modelCode": null,
+      "sourceGroupId": "grupo-peso-muerto-en-maquina",
+      "levelEstimated": true,
+      "disponibilidad_zubiarte": "sin_verificar",
+      "disponibilidad_provisional_zubiarte": true
+    },
+    {
+      "id": "fpz-technogym-pure-strength-pure-strength-calf",
+      "name": "Pure Strength Calf",
+      "muscle": "Gemelos",
+      "equipment": "Máquina",
+      "unit": "reps",
+      "instructions": "Eleva los talones con control y baja sin rebote.",
+      "loadUnit": "Máquina",
+      "level": "Intermedio",
+      "brand": "Technogym",
+      "machineLine": "Pure Strength",
+      "movementGroup": "grupo-elevacion-de-gemelos-de-pie",
+      "catalogVerified": true,
+      "materialOptions": [
+        "Máquina"
+      ],
+      "machineVariants": [
+        {
+          "marca": "Technogym",
+          "linea": "Pure Strength",
+          "modelo": "Pure Strength Calf",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "sourceUrl": "https://www.technogym.com/es-ES/category/pure-strength/",
+          "disponibilidad_provisional_zubiarte": true
+        }
+      ],
+      "modelName": "Pure Strength Calf",
+      "modelCode": null,
+      "sourceGroupId": "grupo-elevacion-de-gemelos-de-pie",
+      "levelEstimated": true,
+      "disponibilidad_zubiarte": "sin_verificar",
+      "disponibilidad_provisional_zubiarte": true
+    },
+    {
+      "id": "fpz-technogym-pure-strength-pure-strength-pullover",
+      "name": "Pure Strength Pullover",
+      "muscle": "Espalda",
+      "equipment": "Máquina",
+      "unit": "reps",
+      "instructions": "Ajusta asiento y apoyos; lleva los brazos hacia el tronco con codos estables sin arquear lumbar.",
+      "loadUnit": "Máquina",
+      "level": "Intermedio",
+      "brand": "Technogym",
+      "machineLine": "Pure Strength",
+      "movementGroup": "grupo-pullover-de-dorsales",
+      "catalogVerified": true,
+      "materialOptions": [
+        "Máquina"
+      ],
+      "machineVariants": [
+        {
+          "marca": "Technogym",
+          "linea": "Pure Strength",
+          "modelo": "Pure Strength Pullover",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "sourceUrl": "https://www.technogym.com/es-ES/category/pure-strength/",
+          "disponibilidad_provisional_zubiarte": true
+        }
+      ],
+      "modelName": "Pure Strength Pullover",
+      "modelCode": null,
+      "sourceGroupId": "grupo-pullover-de-dorsales",
+      "levelEstimated": true,
+      "disponibilidad_zubiarte": "sin_verificar",
+      "disponibilidad_provisional_zubiarte": true
+    },
+    {
+      "id": "fpz-technogym-pure-strength-pure-strength-standing-abductor",
+      "name": "Pure Strength Standing Abductor",
+      "muscle": "Glúteos",
+      "equipment": "Máquina",
+      "unit": "reps",
+      "instructions": "Estabiliza el tronco y separa la pierna o los apoyos sin girar la pelvis.",
+      "loadUnit": "Máquina",
+      "level": "Intermedio",
+      "brand": "Technogym",
+      "machineLine": "Pure Strength",
+      "movementGroup": "grupo-abduccion-de-cadera-de-pie",
+      "catalogVerified": true,
+      "materialOptions": [
+        "Máquina"
+      ],
+      "machineVariants": [
+        {
+          "marca": "Technogym",
+          "linea": "Pure Strength",
+          "modelo": "Pure Strength Standing Abductor",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "sourceUrl": "https://www.technogym.com/es-ES/category/pure-strength/",
+          "disponibilidad_provisional_zubiarte": true
+        }
+      ],
+      "modelName": "Pure Strength Standing Abductor",
+      "modelCode": null,
+      "sourceGroupId": "grupo-abduccion-de-cadera-de-pie",
+      "levelEstimated": true,
+      "disponibilidad_zubiarte": "sin_verificar",
+      "disponibilidad_provisional_zubiarte": true
+    },
+    {
+      "id": "fpz-technogym-pure-strength-pure-strength-leg-extension",
+      "name": "Pure Strength Leg Extension",
+      "muscle": "Cuádriceps",
+      "equipment": "Máquina",
+      "unit": "reps",
+      "instructions": "Alinea las rodillas con el eje y extiende sin golpe al final del recorrido.",
+      "loadUnit": "Máquina",
+      "level": "Intermedio",
+      "brand": "Technogym",
+      "machineLine": "Pure Strength",
+      "movementGroup": "grupo-extension-de-cuadriceps",
+      "catalogVerified": true,
+      "materialOptions": [
+        "Máquina"
+      ],
+      "machineVariants": [
+        {
+          "marca": "Technogym",
+          "linea": "Pure Strength",
+          "modelo": "Pure Strength Leg Extension",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "sourceUrl": "https://www.technogym.com/es-ES/category/pure-strength/",
+          "disponibilidad_provisional_zubiarte": true
+        }
+      ],
+      "modelName": "Pure Strength Leg Extension",
+      "modelCode": null,
+      "sourceGroupId": "grupo-extension-de-cuadriceps",
+      "levelEstimated": true,
+      "disponibilidad_zubiarte": "sin_verificar",
+      "disponibilidad_provisional_zubiarte": true
+    },
+    {
+      "id": "fpz-technogym-pure-strength-pure-strength-wide-chest-press",
+      "name": "Pure Strength Wide Chest Press",
+      "muscle": "Pecho",
+      "equipment": "Máquina",
+      "unit": "reps",
+      "instructions": "Ajusta el asiento; empuja las asas hacia delante y ligeramente hacia dentro, sin despegar espalda.",
+      "loadUnit": "Máquina",
+      "level": "Intermedio",
+      "brand": "Technogym",
+      "machineLine": "Pure Strength",
+      "movementGroup": "grupo-press-de-pecho-convergente",
+      "catalogVerified": true,
+      "materialOptions": [
+        "Máquina"
+      ],
+      "machineVariants": [
+        {
+          "marca": "Technogym",
+          "linea": "Pure Strength",
+          "modelo": "Pure Strength Wide Chest Press",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "sourceUrl": "https://www.technogym.com/es-ES/category/pure-strength/",
+          "disponibilidad_provisional_zubiarte": true
+        }
+      ],
+      "modelName": "Pure Strength Wide Chest Press",
+      "modelCode": null,
+      "sourceGroupId": "grupo-press-de-pecho-convergente",
+      "levelEstimated": true,
+      "disponibilidad_zubiarte": "sin_verificar",
+      "disponibilidad_provisional_zubiarte": true
+    },
+    {
+      "id": "fpz-technogym-pure-strength-pure-strength-standing-leg-curl",
+      "name": "Pure Strength Standing Leg Curl",
+      "muscle": "Isquiotibiales",
+      "equipment": "Máquina",
+      "unit": "reps",
+      "instructions": "Alinea la rodilla con el eje y flexiona una pierna sin mover la cadera.",
+      "loadUnit": "Máquina",
+      "level": "Intermedio",
+      "brand": "Technogym",
+      "machineLine": "Pure Strength",
+      "movementGroup": "grupo-curl-femoral-de-pie",
+      "catalogVerified": true,
+      "materialOptions": [
+        "Máquina"
+      ],
+      "machineVariants": [
+        {
+          "marca": "Technogym",
+          "linea": "Pure Strength",
+          "modelo": "Pure Strength Standing Leg Curl",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "sourceUrl": "https://www.technogym.com/es-ES/category/pure-strength/",
+          "disponibilidad_provisional_zubiarte": true
+        }
+      ],
+      "modelName": "Pure Strength Standing Leg Curl",
+      "modelCode": null,
+      "sourceGroupId": "grupo-curl-femoral-de-pie",
+      "levelEstimated": true,
+      "disponibilidad_zubiarte": "sin_verificar",
+      "disponibilidad_provisional_zubiarte": true
+    },
+    {
+      "id": "fpz-technogym-pure-strength-pure-strength-pulldown",
+      "name": "Pure Strength Pulldown",
+      "muscle": "Espalda",
+      "equipment": "Máquina",
+      "unit": "reps",
+      "instructions": "Ajusta asiento y apoyo de piernas; tira hacia el pecho y controla el retorno.",
+      "loadUnit": "Máquina",
+      "level": "Intermedio",
+      "brand": "Technogym",
+      "machineLine": "Pure Strength",
+      "movementGroup": "grupo-jalon-al-pecho",
+      "catalogVerified": true,
+      "materialOptions": [
+        "Máquina"
+      ],
+      "machineVariants": [
+        {
+          "marca": "Technogym",
+          "linea": "Pure Strength",
+          "modelo": "Pure Strength Pulldown",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "sourceUrl": "https://www.technogym.com/es-ES/category/pure-strength/",
+          "disponibilidad_provisional_zubiarte": true
+        }
+      ],
+      "modelName": "Pure Strength Pulldown",
+      "modelCode": null,
+      "sourceGroupId": "grupo-jalon-al-pecho",
+      "levelEstimated": true,
+      "disponibilidad_zubiarte": "sin_verificar",
+      "disponibilidad_provisional_zubiarte": true
+    },
+    {
+      "id": "fpz-technogym-selection-700-multi-hip",
+      "name": "Multi Hip — Flexión de cadera en máquina",
+      "muscle": "Glúteos",
+      "equipment": "Máquina",
+      "unit": "reps",
+      "instructions": "Alinea la cadera con el eje; eleva el muslo hacia delante sin inclinar el tronco.",
+      "loadUnit": "Máquina",
+      "level": "Intermedio",
+      "brand": "Technogym",
+      "machineLine": "Selection 700",
+      "movementGroup": "grupo-flexion-de-cadera-maquina",
+      "catalogVerified": true,
+      "materialOptions": [
+        "Máquina"
+      ],
+      "machineVariants": [
+        {
+          "marca": "Technogym",
+          "linea": "Selection 700",
+          "modelo": "Multi Hip",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "sourceUrl": "https://www.technogym.com/es-ES/category/selection/",
+          "disponibilidad_provisional_zubiarte": true
+        }
+      ],
+      "modelName": "Multi Hip",
+      "modelCode": null,
+      "sourceGroupId": "grupo-flexion-de-cadera-maquina",
+      "levelEstimated": true,
+      "disponibilidad_zubiarte": "sin_verificar",
+      "disponibilidad_provisional_zubiarte": true
+    },
+    {
+      "id": "fpz-technogym-selection-700-multi-hip-grupo-extension-de-cadera-maquina",
+      "name": "Multi Hip — Extensión de cadera en máquina",
+      "muscle": "Glúteos",
+      "equipment": "Máquina",
+      "unit": "reps",
+      "instructions": "Alinea la cadera con el eje; empuja el muslo hacia atrás sin arquear la zona lumbar.",
+      "loadUnit": "Máquina",
+      "level": "Intermedio",
+      "brand": "Technogym",
+      "machineLine": "Selection 700",
+      "movementGroup": "grupo-extension-de-cadera-maquina",
+      "catalogVerified": true,
+      "materialOptions": [
+        "Máquina"
+      ],
+      "machineVariants": [
+        {
+          "marca": "Technogym",
+          "linea": "Selection 700",
+          "modelo": "Multi Hip",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "sourceUrl": "https://www.technogym.com/es-ES/category/selection/",
+          "disponibilidad_provisional_zubiarte": true
+        }
+      ],
+      "modelName": "Multi Hip",
+      "modelCode": null,
+      "sourceGroupId": "grupo-extension-de-cadera-maquina",
+      "levelEstimated": true,
+      "disponibilidad_zubiarte": "sin_verificar",
+      "disponibilidad_provisional_zubiarte": true
+    },
+    {
+      "id": "fpz-technogym-selection-700-multi-hip-grupo-abduccion-de-cadera-de-pie",
+      "name": "Multi Hip — Abducción de cadera de pie",
+      "muscle": "Glúteos",
+      "equipment": "Máquina",
+      "unit": "reps",
+      "instructions": "Estabiliza el tronco y separa la pierna o los apoyos sin girar la pelvis.",
+      "loadUnit": "Máquina",
+      "level": "Intermedio",
+      "brand": "Technogym",
+      "machineLine": "Selection 700",
+      "movementGroup": "grupo-abduccion-de-cadera-de-pie",
+      "catalogVerified": true,
+      "materialOptions": [
+        "Máquina"
+      ],
+      "machineVariants": [
+        {
+          "marca": "Technogym",
+          "linea": "Selection 700",
+          "modelo": "Multi Hip",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "sourceUrl": "https://www.technogym.com/es-ES/category/selection/",
+          "disponibilidad_provisional_zubiarte": true
+        }
+      ],
+      "modelName": "Multi Hip",
+      "modelCode": null,
+      "sourceGroupId": "grupo-abduccion-de-cadera-de-pie",
+      "levelEstimated": true,
+      "disponibilidad_zubiarte": "sin_verificar",
+      "disponibilidad_provisional_zubiarte": true
+    },
+    {
+      "id": "fpz-technogym-selection-700-multi-hip-grupo-aduccion-de-cadera-de-pie",
+      "name": "Multi Hip — Aducción de cadera de pie",
+      "muscle": "Aductores",
+      "equipment": "Máquina",
+      "unit": "reps",
+      "instructions": "Alinea la cadera con el eje y acerca la pierna hacia la línea media sin rotar la pelvis.",
+      "loadUnit": "Máquina",
+      "level": "Intermedio",
+      "brand": "Technogym",
+      "machineLine": "Selection 700",
+      "movementGroup": "grupo-aduccion-de-cadera-de-pie",
+      "catalogVerified": true,
+      "materialOptions": [
+        "Máquina"
+      ],
+      "machineVariants": [
+        {
+          "marca": "Technogym",
+          "linea": "Selection 700",
+          "modelo": "Multi Hip",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "sourceUrl": "https://www.technogym.com/es-ES/category/selection/",
+          "disponibilidad_provisional_zubiarte": true
+        }
+      ],
+      "modelName": "Multi Hip",
+      "modelCode": null,
+      "sourceGroupId": "grupo-aduccion-de-cadera-de-pie",
+      "levelEstimated": true,
+      "disponibilidad_zubiarte": "sin_verificar",
+      "disponibilidad_provisional_zubiarte": true
+    },
+    {
+      "id": "fpz-technogym-mn3p",
+      "name": "Multi Flight",
+      "muscle": "Hombros",
+      "equipment": "Máquina",
+      "unit": "reps",
+      "instructions": "Eleva los brazos lateralmente con codos suaves sin encoger los hombros.",
+      "loadUnit": "Máquina",
+      "level": "Intermedio",
+      "brand": "Technogym",
+      "machineLine": "Selection 900",
+      "movementGroup": "grupo-elevaciones-laterales-de-pie-maquina",
+      "catalogVerified": true,
+      "materialOptions": [
+        "Máquina"
+      ],
+      "machineVariants": [
+        {
+          "marca": "Technogym",
+          "linea": "Selection 900",
+          "modelo": "Multi Flight",
+          "codigo": "MN3P",
+          "disponibilidad_zubiarte": "sin_verificar",
+          "sourceUrl": "https://www.technogym.com/en-GB/product/selection-900-multi-flight_MN3P.html",
+          "disponibilidad_provisional_zubiarte": true
+        }
+      ],
+      "modelName": "Multi Flight",
+      "modelCode": "MN3P",
+      "sourceGroupId": "grupo-elevaciones-laterales-de-pie-maquina",
+      "levelEstimated": true,
+      "disponibilidad_zubiarte": "sin_verificar",
+      "disponibilidad_provisional_zubiarte": true
+    },
+    {
+      "id": "fpz-technogym-excite-excite-run",
+      "name": "Excite+ Run",
+      "muscle": "Cardio",
+      "equipment": "Cardio",
+      "unit": "minutes",
+      "instructions": "Comienza a velocidad baja, camina o corre con postura estable y registra tiempo y distancia.",
+      "loadUnit": "Sin carga",
+      "level": "Principiante",
+      "brand": "Technogym",
+      "machineLine": "Excite+",
+      "movementGroup": "grupo-treadmill-caminadora",
+      "catalogVerified": true,
+      "materialOptions": [
+        "Cardio"
+      ],
+      "machineVariants": [
+        {
+          "marca": "Technogym",
+          "linea": "Excite+",
+          "modelo": "Excite+ Run",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "sourceUrl": "https://www.technogym.com/es-ES/category/excite/",
+          "disponibilidad_provisional_zubiarte": true
+        }
+      ],
+      "modelName": "Excite+ Run",
+      "modelCode": null,
+      "sourceGroupId": "grupo-treadmill-caminadora",
+      "levelEstimated": true,
+      "supportsDistance": true,
+      "disponibilidad_zubiarte": "sin_verificar",
+      "disponibilidad_provisional_zubiarte": true
+    },
+    {
+      "id": "fpz-technogym-excite-excite-bike",
+      "name": "Excite+ Bike",
+      "muscle": "Cardio",
+      "equipment": "Cardio",
+      "unit": "minutes",
+      "instructions": "Ajusta sillín y pedalea a ritmo estable.",
+      "loadUnit": "Sin carga",
+      "level": "Principiante",
+      "brand": "Technogym",
+      "machineLine": "Excite+",
+      "movementGroup": "grupo-bicicleta-estatica",
+      "catalogVerified": true,
+      "materialOptions": [
+        "Cardio"
+      ],
+      "machineVariants": [
+        {
+          "marca": "Technogym",
+          "linea": "Excite+",
+          "modelo": "Excite+ Bike",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "sourceUrl": "https://www.technogym.com/es-ES/category/excite/",
+          "disponibilidad_provisional_zubiarte": true
+        }
+      ],
+      "modelName": "Excite+ Bike",
+      "modelCode": null,
+      "sourceGroupId": "grupo-bicicleta-estatica",
+      "levelEstimated": true,
+      "supportsDistance": true,
+      "disponibilidad_zubiarte": "sin_verificar",
+      "disponibilidad_provisional_zubiarte": true
+    },
+    {
+      "id": "fpz-technogym-excite-excite-recline",
+      "name": "Excite+ Recline",
+      "muscle": "Cardio",
+      "equipment": "Cardio",
+      "unit": "minutes",
+      "instructions": "Ajusta la distancia al pedal para mantener ligera flexión de rodilla; pedalea con espalda apoyada.",
+      "loadUnit": "Sin carga",
+      "level": "Principiante",
+      "brand": "Technogym",
+      "machineLine": "Excite+",
+      "movementGroup": "grupo-bicicleta-reclinada",
+      "catalogVerified": true,
+      "materialOptions": [
+        "Cardio"
+      ],
+      "machineVariants": [
+        {
+          "marca": "Technogym",
+          "linea": "Excite+",
+          "modelo": "Excite+ Recline",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "sourceUrl": "https://www.technogym.com/es-ES/category/excite/",
+          "disponibilidad_provisional_zubiarte": true
+        }
+      ],
+      "modelName": "Excite+ Recline",
+      "modelCode": null,
+      "sourceGroupId": "grupo-bicicleta-reclinada",
+      "levelEstimated": true,
+      "supportsDistance": true,
+      "disponibilidad_zubiarte": "sin_verificar",
+      "disponibilidad_provisional_zubiarte": true
+    },
+    {
+      "id": "fpz-technogym-excite-excite-synchro",
+      "name": "Excite+ Synchro",
+      "muscle": "Cardio",
+      "equipment": "Cardio",
+      "unit": "minutes",
+      "instructions": "Mantén postura estable y realiza un movimiento fluido sin apoyarte excesivamente.",
+      "loadUnit": "Sin carga",
+      "level": "Principiante",
+      "brand": "Technogym",
+      "machineLine": "Excite+",
+      "movementGroup": "grupo-eliptica",
+      "catalogVerified": true,
+      "materialOptions": [
+        "Cardio"
+      ],
+      "machineVariants": [
+        {
+          "marca": "Technogym",
+          "linea": "Excite+",
+          "modelo": "Excite+ Synchro",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "sourceUrl": "https://www.technogym.com/es-ES/category/excite/",
+          "disponibilidad_provisional_zubiarte": true
+        }
+      ],
+      "modelName": "Excite+ Synchro",
+      "modelCode": null,
+      "sourceGroupId": "grupo-eliptica",
+      "levelEstimated": true,
+      "supportsDistance": true,
+      "disponibilidad_zubiarte": "sin_verificar",
+      "disponibilidad_provisional_zubiarte": true
+    },
+    {
+      "id": "fpz-technogym-excite-excite-vario",
+      "name": "Excite+ Vario",
+      "muscle": "Cardio",
+      "equipment": "Cardio",
+      "unit": "minutes",
+      "instructions": "Mantén postura erguida y ajusta la amplitud de zancada progresivamente.",
+      "loadUnit": "Sin carga",
+      "level": "Principiante",
+      "brand": "Technogym",
+      "machineLine": "Excite+",
+      "movementGroup": "grupo-eliptica-zancada-variable",
+      "catalogVerified": true,
+      "materialOptions": [
+        "Cardio"
+      ],
+      "machineVariants": [
+        {
+          "marca": "Technogym",
+          "linea": "Excite+",
+          "modelo": "Excite+ Vario",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "sourceUrl": "https://www.technogym.com/es-ES/category/excite/",
+          "disponibilidad_provisional_zubiarte": true
+        }
+      ],
+      "modelName": "Excite+ Vario",
+      "modelCode": null,
+      "sourceGroupId": "grupo-eliptica-zancada-variable",
+      "levelEstimated": true,
+      "supportsDistance": true,
+      "disponibilidad_zubiarte": "sin_verificar",
+      "disponibilidad_provisional_zubiarte": true
+    },
+    {
+      "id": "fpz-technogym-excite-excite-climb",
+      "name": "Excite+ Climb",
+      "muscle": "Cardio",
+      "equipment": "Cardio",
+      "unit": "minutes",
+      "instructions": "Sube peldaños con postura erguida, sin descargar el peso sobre los pasamanos.",
+      "loadUnit": "Sin carga",
+      "level": "Principiante",
+      "brand": "Technogym",
+      "machineLine": "Excite+",
+      "movementGroup": "grupo-stair-climber",
+      "catalogVerified": true,
+      "materialOptions": [
+        "Cardio"
+      ],
+      "machineVariants": [
+        {
+          "marca": "Technogym",
+          "linea": "Excite+",
+          "modelo": "Excite+ Climb",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "sourceUrl": "https://www.technogym.com/es-ES/category/excite/",
+          "disponibilidad_provisional_zubiarte": true
+        }
+      ],
+      "modelName": "Excite+ Climb",
+      "modelCode": null,
+      "sourceGroupId": "grupo-stair-climber",
+      "levelEstimated": true,
+      "supportsDistance": false,
+      "disponibilidad_zubiarte": "sin_verificar",
+      "disponibilidad_provisional_zubiarte": true
+    },
+    {
+      "id": "fpz-technogym-excite-excite-top",
+      "name": "Excite+ Top",
+      "muscle": "Cardio",
+      "equipment": "Cardio",
+      "unit": "minutes",
+      "instructions": "Ajusta asiento y manivelas a una altura cómoda; gira de forma continua sin elevar hombros.",
+      "loadUnit": "Sin carga",
+      "level": "Principiante",
+      "brand": "Technogym",
+      "machineLine": "Excite+",
+      "movementGroup": "grupo-ergometro-de-brazos",
+      "catalogVerified": true,
+      "materialOptions": [
+        "Cardio"
+      ],
+      "machineVariants": [
+        {
+          "marca": "Technogym",
+          "linea": "Excite+",
+          "modelo": "Excite+ Top",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "sourceUrl": "https://www.technogym.com/es-ES/category/excite/",
+          "disponibilidad_provisional_zubiarte": true
+        }
+      ],
+      "modelName": "Excite+ Top",
+      "modelCode": null,
+      "sourceGroupId": "grupo-ergometro-de-brazos",
+      "levelEstimated": true,
+      "supportsDistance": true,
+      "disponibilidad_zubiarte": "sin_verificar",
+      "disponibilidad_provisional_zubiarte": true
+    },
+    {
+      "id": "fpz-technogym-artis-artis-run",
+      "name": "Artis Run",
+      "muscle": "Cardio",
+      "equipment": "Cardio",
+      "unit": "minutes",
+      "instructions": "Comienza a velocidad baja, camina o corre con postura estable y registra tiempo y distancia.",
+      "loadUnit": "Sin carga",
+      "level": "Principiante",
+      "brand": "Technogym",
+      "machineLine": "Artis",
+      "movementGroup": "grupo-treadmill-caminadora",
+      "catalogVerified": true,
+      "materialOptions": [
+        "Cardio"
+      ],
+      "machineVariants": [
+        {
+          "marca": "Technogym",
+          "linea": "Artis",
+          "modelo": "Artis Run",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "sourceUrl": "https://www.technogym.com/es-ES/business-equipment-cardio/",
+          "disponibilidad_provisional_zubiarte": true
+        }
+      ],
+      "modelName": "Artis Run",
+      "modelCode": null,
+      "sourceGroupId": "grupo-treadmill-caminadora",
+      "levelEstimated": true,
+      "supportsDistance": true,
+      "disponibilidad_zubiarte": "sin_verificar",
+      "disponibilidad_provisional_zubiarte": true
+    },
+    {
+      "id": "fpz-technogym-artis-artis-bike",
+      "name": "Artis Bike",
+      "muscle": "Cardio",
+      "equipment": "Cardio",
+      "unit": "minutes",
+      "instructions": "Ajusta sillín y pedalea a ritmo estable.",
+      "loadUnit": "Sin carga",
+      "level": "Principiante",
+      "brand": "Technogym",
+      "machineLine": "Artis",
+      "movementGroup": "grupo-bicicleta-estatica",
+      "catalogVerified": true,
+      "materialOptions": [
+        "Cardio"
+      ],
+      "machineVariants": [
+        {
+          "marca": "Technogym",
+          "linea": "Artis",
+          "modelo": "Artis Bike",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "sourceUrl": "https://www.technogym.com/es-ES/business-equipment-cardio/",
+          "disponibilidad_provisional_zubiarte": true
+        }
+      ],
+      "modelName": "Artis Bike",
+      "modelCode": null,
+      "sourceGroupId": "grupo-bicicleta-estatica",
+      "levelEstimated": true,
+      "supportsDistance": true,
+      "disponibilidad_zubiarte": "sin_verificar",
+      "disponibilidad_provisional_zubiarte": true
+    },
+    {
+      "id": "fpz-technogym-artis-artis-synchro",
+      "name": "Artis Synchro",
+      "muscle": "Cardio",
+      "equipment": "Cardio",
+      "unit": "minutes",
+      "instructions": "Mantén postura estable y realiza un movimiento fluido sin apoyarte excesivamente.",
+      "loadUnit": "Sin carga",
+      "level": "Principiante",
+      "brand": "Technogym",
+      "machineLine": "Artis",
+      "movementGroup": "grupo-eliptica",
+      "catalogVerified": true,
+      "materialOptions": [
+        "Cardio"
+      ],
+      "machineVariants": [
+        {
+          "marca": "Technogym",
+          "linea": "Artis",
+          "modelo": "Artis Synchro",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "sourceUrl": "https://www.technogym.com/es-ES/business-equipment-cardio/",
+          "disponibilidad_provisional_zubiarte": true
+        }
+      ],
+      "modelName": "Artis Synchro",
+      "modelCode": null,
+      "sourceGroupId": "grupo-eliptica",
+      "levelEstimated": true,
+      "supportsDistance": true,
+      "disponibilidad_zubiarte": "sin_verificar",
+      "disponibilidad_provisional_zubiarte": true
+    },
+    {
+      "id": "fpz-technogym-artis-artis-vario",
+      "name": "Artis Vario",
+      "muscle": "Cardio",
+      "equipment": "Cardio",
+      "unit": "minutes",
+      "instructions": "Mantén postura erguida y ajusta la amplitud de zancada progresivamente.",
+      "loadUnit": "Sin carga",
+      "level": "Principiante",
+      "brand": "Technogym",
+      "machineLine": "Artis",
+      "movementGroup": "grupo-eliptica-zancada-variable",
+      "catalogVerified": true,
+      "materialOptions": [
+        "Cardio"
+      ],
+      "machineVariants": [
+        {
+          "marca": "Technogym",
+          "linea": "Artis",
+          "modelo": "Artis Vario",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "sourceUrl": "https://www.technogym.com/es-ES/business-equipment-cardio/",
+          "disponibilidad_provisional_zubiarte": true
+        }
+      ],
+      "modelName": "Artis Vario",
+      "modelCode": null,
+      "sourceGroupId": "grupo-eliptica-zancada-variable",
+      "levelEstimated": true,
+      "supportsDistance": true,
+      "disponibilidad_zubiarte": "sin_verificar",
+      "disponibilidad_provisional_zubiarte": true
+    },
+    {
+      "id": "fpz-technogym-artis-artis-climb",
+      "name": "Artis Climb",
+      "muscle": "Cardio",
+      "equipment": "Cardio",
+      "unit": "minutes",
+      "instructions": "Sube peldaños con postura erguida, sin descargar el peso sobre los pasamanos.",
+      "loadUnit": "Sin carga",
+      "level": "Principiante",
+      "brand": "Technogym",
+      "machineLine": "Artis",
+      "movementGroup": "grupo-stair-climber",
+      "catalogVerified": true,
+      "materialOptions": [
+        "Cardio"
+      ],
+      "machineVariants": [
+        {
+          "marca": "Technogym",
+          "linea": "Artis",
+          "modelo": "Artis Climb",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "sourceUrl": "https://www.technogym.com/es-ES/business-equipment-cardio/",
+          "disponibilidad_provisional_zubiarte": true
+        }
+      ],
+      "modelName": "Artis Climb",
+      "modelCode": null,
+      "sourceGroupId": "grupo-stair-climber",
+      "levelEstimated": true,
+      "supportsDistance": false,
+      "disponibilidad_zubiarte": "sin_verificar",
+      "disponibilidad_provisional_zubiarte": true
+    },
+    {
+      "id": "fpz-technogym-skill-skillmill",
+      "name": "Skillmill",
+      "muscle": "Cardio",
+      "equipment": "Cardio",
+      "unit": "minutes",
+      "instructions": "Empieza caminando en la zona central; regula la velocidad con tu posición y reduce el ritmo antes de detenerte.",
+      "loadUnit": "Sin carga",
+      "level": "Principiante",
+      "brand": "Technogym",
+      "machineLine": "Skill",
+      "movementGroup": "grupo-cinta-curva",
+      "catalogVerified": true,
+      "materialOptions": [
+        "Cardio"
+      ],
+      "machineVariants": [
+        {
+          "marca": "Technogym",
+          "linea": "Skill",
+          "modelo": "Skillmill",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "sourceUrl": "https://www.technogym.com/es-ES/skill-line-performance-equipment/",
+          "disponibilidad_provisional_zubiarte": true
+        }
+      ],
+      "modelName": "Skillmill",
+      "modelCode": null,
+      "sourceGroupId": "grupo-cinta-curva",
+      "levelEstimated": true,
+      "supportsDistance": true,
+      "disponibilidad_zubiarte": "sin_verificar",
+      "disponibilidad_provisional_zubiarte": true
+    },
+    {
+      "id": "fpz-technogym-skill-skillrow",
+      "name": "Skillrow",
+      "muscle": "Cardio",
+      "equipment": "Cardio",
+      "unit": "minutes",
+      "instructions": "Empuja con piernas, luego tronco y brazos; vuelve en orden inverso.",
+      "loadUnit": "Sin carga",
+      "level": "Principiante",
+      "brand": "Technogym",
+      "machineLine": "Skill",
+      "movementGroup": "grupo-remo-ergometro",
+      "catalogVerified": true,
+      "materialOptions": [
+        "Cardio"
+      ],
+      "machineVariants": [
+        {
+          "marca": "Technogym",
+          "linea": "Skill",
+          "modelo": "Skillrow",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "sourceUrl": "https://www.technogym.com/es-ES/skill-line-performance-equipment/",
+          "disponibilidad_provisional_zubiarte": true
+        }
+      ],
+      "modelName": "Skillrow",
+      "modelCode": null,
+      "sourceGroupId": "grupo-remo-ergometro",
+      "levelEstimated": true,
+      "supportsDistance": true,
+      "disponibilidad_zubiarte": "sin_verificar",
+      "disponibilidad_provisional_zubiarte": true
+    },
+    {
+      "id": "fpz-technogym-skill-skillrun",
+      "name": "Skillrun",
+      "muscle": "Cardio",
+      "equipment": "Cardio",
+      "unit": "minutes",
+      "instructions": "Comienza a velocidad baja, camina o corre con postura estable y registra tiempo y distancia.",
+      "loadUnit": "Sin carga",
+      "level": "Principiante",
+      "brand": "Technogym",
+      "machineLine": "Skill",
+      "movementGroup": "grupo-treadmill-caminadora",
+      "catalogVerified": true,
+      "materialOptions": [
+        "Cardio"
+      ],
+      "machineVariants": [
+        {
+          "marca": "Technogym",
+          "linea": "Skill",
+          "modelo": "Skillrun",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "sourceUrl": "https://www.technogym.com/es-ES/skill-line-performance-equipment/",
+          "disponibilidad_provisional_zubiarte": true
+        }
+      ],
+      "modelName": "Skillrun",
+      "modelCode": null,
+      "sourceGroupId": "grupo-treadmill-caminadora",
+      "levelEstimated": true,
+      "supportsDistance": true,
+      "disponibilidad_zubiarte": "sin_verificar",
+      "disponibilidad_provisional_zubiarte": true
+    },
+    {
+      "id": "fpz-technogym-skill-skillbike",
+      "name": "Skillbike",
+      "muscle": "Cardio",
+      "equipment": "Cardio",
+      "unit": "minutes",
+      "instructions": "Ajusta sillín y manillar; pedalea con cadencia controlada y aumenta resistencia gradualmente.",
+      "loadUnit": "Sin carga",
+      "level": "Principiante",
+      "brand": "Technogym",
+      "machineLine": "Skill",
+      "movementGroup": "grupo-bicicleta-rendimiento",
+      "catalogVerified": true,
+      "materialOptions": [
+        "Cardio"
+      ],
+      "machineVariants": [
+        {
+          "marca": "Technogym",
+          "linea": "Skill",
+          "modelo": "Skillbike",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "sourceUrl": "https://www.technogym.com/es-ES/skill-line-performance-equipment/",
+          "disponibilidad_provisional_zubiarte": true
+        }
+      ],
+      "modelName": "Skillbike",
+      "modelCode": null,
+      "sourceGroupId": "grupo-bicicleta-rendimiento",
+      "levelEstimated": true,
+      "supportsDistance": true,
+      "disponibilidad_zubiarte": "sin_verificar",
+      "disponibilidad_provisional_zubiarte": true
+    },
+    {
+      "id": "fpz-technogym-skill-skillup",
+      "name": "Skillup",
+      "muscle": "Cardio",
+      "equipment": "Cardio",
+      "unit": "minutes",
+      "instructions": "Ajusta la posición y resistencia; realiza tirones controlados con brazos y tronco según el pictograma.",
+      "loadUnit": "Sin carga",
+      "level": "Principiante",
+      "brand": "Technogym",
+      "machineLine": "Skill",
+      "movementGroup": "grupo-ergometro-vertical",
+      "catalogVerified": true,
+      "materialOptions": [
+        "Cardio"
+      ],
+      "machineVariants": [
+        {
+          "marca": "Technogym",
+          "linea": "Skill",
+          "modelo": "Skillup",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "sourceUrl": "https://www.technogym.com/es-ES/skill-line-performance-equipment/",
+          "disponibilidad_provisional_zubiarte": true
+        }
+      ],
+      "modelName": "Skillup",
+      "modelCode": null,
+      "sourceGroupId": "grupo-ergometro-vertical",
+      "levelEstimated": true,
+      "supportsDistance": false,
+      "disponibilidad_zubiarte": "sin_verificar",
+      "disponibilidad_provisional_zubiarte": true
+    },
+    {
+      "id": "fpz-technogym-group-cycle-group-cycle",
+      "name": "Group Cycle",
+      "muscle": "Cardio",
+      "equipment": "Cardio",
+      "unit": "minutes",
+      "instructions": "Ajusta sillín y manillar; pedalea con control y regula la resistencia.",
+      "loadUnit": "Sin carga",
+      "level": "Principiante",
+      "brand": "Technogym",
+      "machineLine": "Group Cycle",
+      "movementGroup": "grupo-bicicleta-spinning",
+      "catalogVerified": true,
+      "materialOptions": [
+        "Cardio"
+      ],
+      "machineVariants": [
+        {
+          "marca": "Technogym",
+          "linea": "Group Cycle",
+          "modelo": "Group Cycle",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "sourceUrl": "https://www.technogym.com/es-ES/business-equipment-cardio/",
+          "disponibilidad_provisional_zubiarte": true
+        }
+      ],
+      "modelName": "Group Cycle",
+      "modelCode": null,
+      "sourceGroupId": "grupo-bicicleta-spinning",
+      "levelEstimated": true,
+      "supportsDistance": true,
+      "disponibilidad_zubiarte": "sin_verificar",
+      "disponibilidad_provisional_zubiarte": true
+    },
+    {
+      "id": "fpz-gym80-80a00014",
+      "name": "Standing Chest Press",
+      "muscle": "Pecho",
+      "equipment": "Máquina",
+      "unit": "reps",
+      "instructions": "Colócate de pie contra el respaldo, sujeta los agarres y empuja al frente sin bloquear los codos.",
+      "loadUnit": "Por lado",
+      "level": "Intermedio",
+      "brand": "gym80",
+      "machineLine": "80ATHLETICS",
+      "movementGroup": "grupo-press-de-pecho-de-pie-maquina",
+      "catalogVerified": true,
+      "materialOptions": [
+        "Máquina"
+      ],
+      "machineVariants": [
+        {
+          "marca": "gym80",
+          "linea": "80ATHLETICS",
+          "modelo": "Standing Chest Press",
+          "codigo": "80A00014",
+          "disponibilidad_zubiarte": "confirmada",
+          "sourceUrl": "https://gym80.de/en/product/80a00014/"
+        }
+      ],
+      "modelName": "Standing Chest Press",
+      "modelCode": "80A00014",
+      "sourceGroupId": "grupo-press-de-pecho-de-pie-maquina",
+      "levelEstimated": true,
+      "disponibilidad_zubiarte": "confirmada"
+    },
+    {
+      "id": "fpz-gym80-4353n",
+      "name": "PURE KRAFT PENDULUM SQUAT",
+      "muscle": "Cuádriceps",
+      "equipment": "Máquina",
+      "unit": "reps",
+      "instructions": "Apoya la espalda y los hombros, desciende con control y empuja con todo el pie.",
+      "loadUnit": "Máquina",
+      "level": "Intermedio",
+      "brand": "gym80",
+      "machineLine": "Pure Kraft",
+      "movementGroup": "grupo-sentadilla-pendular-pendulum-squat",
+      "catalogVerified": true,
+      "materialOptions": [
+        "Máquina"
+      ],
+      "machineVariants": [
+        {
+          "marca": "gym80",
+          "linea": "Pure Kraft",
+          "modelo": "PURE KRAFT PENDULUM SQUAT",
+          "codigo": "4353N",
+          "disponibilidad_zubiarte": "confirmada"
+        }
+      ],
+      "modelName": "PURE KRAFT PENDULUM SQUAT",
+      "modelCode": "4353N",
+      "sourceGroupId": "grupo-sentadilla-pendular-pendulum-squat",
+      "levelEstimated": true,
+      "disponibilidad_zubiarte": "confirmada"
+    },
+    {
+      "id": "fpz-hammer-strength-plate-loaded-super-squat-press",
+      "name": "Plate Loaded Super Squat Press",
+      "muscle": "Cuádriceps",
+      "equipment": "Máquina",
+      "unit": "reps",
+      "instructions": "Apoya espalda y pies; empuja las plataformas independientes sin bloquear rodillas. Registra los discos por lado con el mismo criterio.",
+      "loadUnit": "Por lado",
+      "level": "Intermedio",
+      "brand": "Hammer Strength",
+      "machineLine": "Plate Loaded",
+      "movementGroup": "grupo-prensa-de-piernas",
+      "catalogVerified": true,
+      "materialOptions": [
+        "Máquina"
+      ],
+      "machineVariants": [
+        {
+          "marca": "Hammer Strength",
+          "linea": "Plate Loaded",
+          "modelo": "Plate Loaded Super Squat Press",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "inventoryNote": "Candidato seleccionado por el usuario mediante capturas; modelo exacto pendiente de confirmar."
+        }
+      ],
+      "modelName": "Plate Loaded Super Squat Press",
+      "modelCode": null,
+      "sourceGroupId": "grupo-prensa-de-piernas",
+      "levelEstimated": true,
+      "disponibilidad_zubiarte": "sin_verificar"
+    },
+    {
+      "id": "fpz-hammer-strength-iso-lateral-wide-pulldown",
+      "name": "Iso-Lateral Wide Pulldown",
+      "muscle": "Espalda",
+      "equipment": "Máquina",
+      "unit": "reps",
+      "instructions": "Sujeta las asas anchas y lleva los codos hacia abajo sin balancearte. Registra los discos por lado con el mismo criterio.",
+      "loadUnit": "Por lado",
+      "level": "Intermedio",
+      "brand": "Hammer Strength",
+      "machineLine": "Plate Loaded",
+      "movementGroup": "grupo-jalon-al-pecho-agarre-ancho",
+      "catalogVerified": true,
+      "materialOptions": [
+        "Máquina"
+      ],
+      "machineVariants": [
+        {
+          "marca": "Hammer Strength",
+          "linea": "Plate Loaded",
+          "modelo": "Iso-Lateral Wide Pulldown",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "inventoryNote": "Candidato seleccionado por el usuario mediante capturas; modelo exacto pendiente de confirmar."
+        }
+      ],
+      "modelName": "Iso-Lateral Wide Pulldown",
+      "modelCode": null,
+      "sourceGroupId": "grupo-jalon-al-pecho-agarre-ancho",
+      "levelEstimated": true,
+      "disponibilidad_zubiarte": "sin_verificar"
+    },
+    {
+      "id": "fpz-hammer-strength-iso-lateral-wide-chest",
+      "name": "Iso-Lateral Wide Chest",
+      "muscle": "Pecho",
+      "equipment": "Máquina",
+      "unit": "reps",
+      "instructions": "Ajusta el asiento y empuja desde una apertura cómoda sin forzar los hombros. Registra los discos por lado con el mismo criterio.",
+      "loadUnit": "Por lado",
+      "level": "Intermedio",
+      "brand": "Hammer Strength",
+      "machineLine": "Plate Loaded",
+      "movementGroup": "grupo-press-de-pecho-convergente",
+      "catalogVerified": true,
+      "materialOptions": [
+        "Máquina"
+      ],
+      "machineVariants": [
+        {
+          "marca": "Hammer Strength",
+          "linea": "Plate Loaded",
+          "modelo": "Iso-Lateral Wide Chest",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "inventoryNote": "Candidato seleccionado por el usuario mediante capturas; modelo exacto pendiente de confirmar."
+        }
+      ],
+      "modelName": "Iso-Lateral Wide Chest",
+      "modelCode": null,
+      "sourceGroupId": "grupo-press-de-pecho-convergente",
+      "levelEstimated": true,
+      "disponibilidad_zubiarte": "sin_verificar"
+    },
+    {
+      "id": "fpz-hammer-strength-iso-lateral-row",
+      "name": "Iso-Lateral Row",
+      "muscle": "Espalda",
+      "equipment": "Máquina",
+      "unit": "reps",
+      "instructions": "Apoya el pecho y rema llevando los codos hacia atrás sin elevar los hombros. Registra los discos por lado con el mismo criterio.",
+      "loadUnit": "Por lado",
+      "level": "Intermedio",
+      "brand": "Hammer Strength",
+      "machineLine": "Plate Loaded",
+      "movementGroup": "grupo-remo-pecho-apoyado",
+      "catalogVerified": true,
+      "materialOptions": [
+        "Máquina"
+      ],
+      "machineVariants": [
+        {
+          "marca": "Hammer Strength",
+          "linea": "Plate Loaded",
+          "modelo": "Iso-Lateral Row",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "inventoryNote": "Candidato seleccionado por el usuario mediante capturas; modelo exacto pendiente de confirmar."
+        }
+      ],
+      "modelName": "Iso-Lateral Row",
+      "modelCode": null,
+      "sourceGroupId": "grupo-remo-pecho-apoyado",
+      "levelEstimated": true,
+      "disponibilidad_zubiarte": "sin_verificar"
+    },
+    {
+      "id": "fpz-hammer-strength-iso-lateral-super-incline-press",
+      "name": "Iso-Lateral Super Incline Press",
+      "muscle": "Pecho",
+      "equipment": "Máquina",
+      "unit": "reps",
+      "instructions": "Ajusta el asiento y empuja en la trayectoria muy inclinada sin arquear la espalda. Registra los discos por lado con el mismo criterio.",
+      "loadUnit": "Por lado",
+      "level": "Intermedio",
+      "brand": "Hammer Strength",
+      "machineLine": "Plate Loaded",
+      "movementGroup": "grupo-press-inclinado-de-pecho",
+      "catalogVerified": true,
+      "materialOptions": [
+        "Máquina"
+      ],
+      "machineVariants": [
+        {
+          "marca": "Hammer Strength",
+          "linea": "Plate Loaded",
+          "modelo": "Iso-Lateral Super Incline Press",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "inventoryNote": "Candidato seleccionado por el usuario mediante capturas; modelo exacto pendiente de confirmar."
+        }
+      ],
+      "modelName": "Iso-Lateral Super Incline Press",
+      "modelCode": null,
+      "sourceGroupId": "grupo-press-inclinado-de-pecho",
+      "levelEstimated": true,
+      "disponibilidad_zubiarte": "sin_verificar"
+    },
+    {
+      "id": "fpz-hammer-strength-iso-lateral-chest-back-pecho",
+      "name": "Iso-Lateral Chest/Back — Pecho",
+      "muscle": "Pecho",
+      "equipment": "Máquina",
+      "unit": "reps",
+      "instructions": "Usa el puesto de pecho y empuja las asas manteniendo la espalda apoyada. Registra los discos por lado con el mismo criterio.",
+      "loadUnit": "Por lado",
+      "level": "Intermedio",
+      "brand": "Hammer Strength",
+      "machineLine": "Plate Loaded",
+      "movementGroup": "grupo-press-inclinado-de-pecho",
+      "catalogVerified": true,
+      "materialOptions": [
+        "Máquina"
+      ],
+      "machineVariants": [
+        {
+          "marca": "Hammer Strength",
+          "linea": "Plate Loaded",
+          "modelo": "Iso-Lateral Chest/Back",
+          "codigo": "IL-CB",
+          "disponibilidad_zubiarte": "sin_verificar",
+          "inventoryNote": "Candidato seleccionado por el usuario mediante capturas; modelo exacto pendiente de confirmar.",
+          "sourceUrl": "https://www.lifefitness.com/es-es/productos/fuerza/plate-loaded/plate-loaded-iso-lateral-chest-back"
+        }
+      ],
+      "modelName": "Iso-Lateral Chest/Back",
+      "modelCode": "IL-CB",
+      "sourceGroupId": "grupo-press-inclinado-de-pecho",
+      "levelEstimated": true,
+      "disponibilidad_zubiarte": "sin_verificar"
+    },
+    {
+      "id": "fpz-hammer-strength-iso-lateral-chest-back-espalda",
+      "name": "Iso-Lateral Chest/Back — Espalda",
+      "muscle": "Espalda",
+      "equipment": "Máquina",
+      "unit": "reps",
+      "instructions": "Usa el puesto de espalda y tira de las asas hacia abajo con el tronco estable. Registra los discos por lado con el mismo criterio.",
+      "loadUnit": "Por lado",
+      "level": "Intermedio",
+      "brand": "Hammer Strength",
+      "machineLine": "Plate Loaded",
+      "movementGroup": "grupo-jalon-al-pecho",
+      "catalogVerified": true,
+      "materialOptions": [
+        "Máquina"
+      ],
+      "machineVariants": [
+        {
+          "marca": "Hammer Strength",
+          "linea": "Plate Loaded",
+          "modelo": "Iso-Lateral Chest/Back",
+          "codigo": "IL-CB",
+          "disponibilidad_zubiarte": "sin_verificar",
+          "inventoryNote": "Candidato seleccionado por el usuario mediante capturas; modelo exacto pendiente de confirmar.",
+          "sourceUrl": "https://www.lifefitness.com/es-es/productos/fuerza/plate-loaded/plate-loaded-iso-lateral-chest-back"
+        }
+      ],
+      "modelName": "Iso-Lateral Chest/Back",
+      "modelCode": "IL-CB",
+      "sourceGroupId": "grupo-jalon-al-pecho",
+      "levelEstimated": true,
+      "disponibilidad_zubiarte": "sin_verificar"
+    },
+    {
+      "id": "fpz-hammer-strength-iso-lateral-bench-press",
+      "name": "Iso-Lateral Bench Press",
+      "muscle": "Pecho",
+      "equipment": "Máquina",
+      "unit": "reps",
+      "instructions": "Sentado con espalda apoyada, empuja las asas hacia delante y controla el retorno. Registra los discos por lado con el mismo criterio.",
+      "loadUnit": "Por lado",
+      "level": "Intermedio",
+      "brand": "Hammer Strength",
+      "machineLine": "Plate Loaded",
+      "movementGroup": "grupo-press-de-pecho-horizontal",
+      "catalogVerified": true,
+      "materialOptions": [
+        "Máquina"
+      ],
+      "machineVariants": [
+        {
+          "marca": "Hammer Strength",
+          "linea": "Plate Loaded",
+          "modelo": "Iso-Lateral Bench Press",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "inventoryNote": "Candidato seleccionado por el usuario mediante capturas; modelo exacto pendiente de confirmar."
+        }
+      ],
+      "modelName": "Iso-Lateral Bench Press",
+      "modelCode": null,
+      "sourceGroupId": "grupo-press-de-pecho-horizontal",
+      "levelEstimated": true,
+      "disponibilidad_zubiarte": "sin_verificar"
     }
   ],
   "routines": [
@@ -6344,57 +8043,41 @@
       "legacyNames": [
         "Aperturas de pecho en polea",
         "Cruces de poleas bajas",
-        "Pec Deck Fly"
+        "Pec Deck Fly",
+        "PURE KRAFT BUTTERFLY DUAL"
       ],
       "machineVariants": [
-        {
-          "marca": "Hammer Strength",
-          "linea": "Plate Loaded",
-          "modelo": "Plate Loaded Super Fly",
-          "codigo": null,
-          "disponibilidad_zubiarte": "sin_verificar"
-        },
         {
           "marca": "Technogym",
           "linea": "Selection 700",
           "modelo": "Dual Pectoral / Reverse Fly",
           "codigo": null,
-          "disponibilidad_zubiarte": "sin_verificar"
+          "disponibilidad_zubiarte": "sin_verificar",
+          "disponibilidad_provisional_zubiarte": true
         },
         {
           "marca": "Technogym",
           "linea": "Selection 900",
           "modelo": "Multi Flight",
           "codigo": null,
-          "disponibilidad_zubiarte": "sin_verificar"
+          "disponibilidad_zubiarte": "sin_verificar",
+          "disponibilidad_provisional_zubiarte": true
         },
         {
           "marca": "Technogym",
           "linea": "Selection 900",
           "modelo": "Pectoral",
           "codigo": null,
-          "disponibilidad_zubiarte": "sin_verificar"
+          "disponibilidad_zubiarte": "sin_verificar",
+          "disponibilidad_provisional_zubiarte": true
         },
         {
           "marca": "gym80",
-          "linea": "Sygnum",
-          "modelo": "BUTTERFLY",
-          "codigo": "3022",
-          "disponibilidad_zubiarte": "sin_verificar"
-        },
-        {
-          "marca": "gym80",
-          "linea": "Sygnum",
-          "modelo": "BUTTERFLY WITH PADS",
-          "codigo": "3021",
-          "disponibilidad_zubiarte": "sin_verificar"
-        },
-        {
-          "marca": "gym80",
-          "linea": "Sygnum",
-          "modelo": "CHEST CROSSOVER MACHINE",
-          "codigo": "3014",
-          "disponibilidad_zubiarte": "sin_verificar"
+          "linea": "Pure Kraft",
+          "modelo": "PURE KRAFT BUTTERFLY DUAL",
+          "codigo": "4341",
+          "disponibilidad_zubiarte": "confirmada",
+          "sourceUrl": "https://gym80.de/en/all-products/filter-plate-loaded/"
         }
       ],
       "notes": "",
@@ -6406,7 +8089,6 @@
       "muscle": "Pecho",
       "materialOptions": [
         "Mancuernas",
-        "Máquina",
         "Polea"
       ],
       "legacyNames": [],
@@ -6525,14 +8207,26 @@
       "materialOptions": [
         "Máquina"
       ],
-      "legacyNames": [],
+      "legacyNames": [
+        "Pure Strength Wide Chest Press"
+      ],
       "machineVariants": [
         {
           "marca": "Hammer Strength",
           "linea": "Plate Loaded",
           "modelo": "Iso-Lateral Wide Chest",
           "codigo": null,
-          "disponibilidad_zubiarte": "sin_verificar"
+          "disponibilidad_zubiarte": "sin_verificar",
+          "inventoryNote": "Candidato seleccionado por el usuario mediante capturas; modelo exacto pendiente de confirmar."
+        },
+        {
+          "marca": "Technogym",
+          "linea": "Pure Strength",
+          "modelo": "Pure Strength Wide Chest Press",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "sourceUrl": "https://www.technogym.com/es-ES/category/pure-strength/",
+          "disponibilidad_provisional_zubiarte": true
         }
       ],
       "notes": "",
@@ -6563,7 +8257,8 @@
       "legacyNames": [
         "Chest Press",
         "Press banca con barra",
-        "Press de banca con barra"
+        "Press de banca con barra",
+        "Pure Strength Chest Press"
       ],
       "machineVariants": [
         {
@@ -6571,42 +8266,33 @@
           "linea": "Plate Loaded",
           "modelo": "Iso-Lateral Bench Press",
           "codigo": null,
-          "disponibilidad_zubiarte": "sin_verificar"
+          "disponibilidad_zubiarte": "sin_verificar",
+          "inventoryNote": "Candidato seleccionado por el usuario mediante capturas; modelo exacto pendiente de confirmar."
         },
         {
           "marca": "Hammer Strength",
           "linea": "Plate Loaded",
           "modelo": "Iso-Lateral Horizontal Bench Press",
           "codigo": null,
-          "disponibilidad_zubiarte": "sin_verificar"
-        },
-        {
-          "marca": "Hammer Strength",
-          "linea": "Select",
-          "modelo": "Hammer Strength Select Chest Press",
-          "codigo": null,
-          "disponibilidad_zubiarte": "sin_verificar"
+          "disponibilidad_zubiarte": "sin_verificar",
+          "inventoryNote": "Candidato seleccionado por el usuario mediante capturas; modelo exacto pendiente de confirmar."
         },
         {
           "marca": "Technogym",
           "linea": "Selection 900",
           "modelo": "Chest Press",
           "codigo": null,
-          "disponibilidad_zubiarte": "sin_verificar"
+          "disponibilidad_zubiarte": "sin_verificar",
+          "disponibilidad_provisional_zubiarte": true
         },
         {
-          "marca": "gym80",
-          "linea": "Sygnum",
-          "modelo": "SEATED CHEST PRESS",
-          "codigo": "3016",
-          "disponibilidad_zubiarte": "sin_verificar"
-        },
-        {
-          "marca": "gym80",
-          "linea": "Sygnum Dual",
-          "modelo": "DUAL CHEST PRESS",
-          "codigo": "3041",
-          "disponibilidad_zubiarte": "sin_verificar"
+          "marca": "Technogym",
+          "linea": "Pure Strength",
+          "modelo": "Pure Strength Chest Press",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "sourceUrl": "https://www.technogym.com/es-ES/category/pure-strength/",
+          "disponibilidad_provisional_zubiarte": true
         }
       ],
       "notes": "Máquinas convergentes, Smith, mancuernas y barra no son equivalentes en kilos.",
@@ -6650,15 +8336,7 @@
         "Máquina"
       ],
       "legacyNames": [],
-      "machineVariants": [
-        {
-          "marca": "Hammer Strength",
-          "linea": "Plate Loaded",
-          "modelo": "Iso-Lateral Decline Chest Press",
-          "codigo": null,
-          "disponibilidad_zubiarte": "sin_verificar"
-        }
-      ],
+      "machineVariants": [],
       "notes": "",
       "isNew": true
     },
@@ -6672,7 +8350,7 @@
       ],
       "legacyNames": [
         "Press inclinado con mancuernas",
-        "Incline Chest Press"
+        "Pure Strength Incline Chest Press"
       ],
       "machineVariants": [
         {
@@ -6680,28 +8358,34 @@
           "linea": "Plate Loaded",
           "modelo": "Iso-Lateral Incline Press",
           "codigo": null,
-          "disponibilidad_zubiarte": "sin_verificar"
+          "disponibilidad_zubiarte": "sin_verificar",
+          "inventoryNote": "Candidato seleccionado por el usuario mediante capturas; modelo exacto pendiente de confirmar."
         },
         {
           "marca": "Hammer Strength",
           "linea": "Plate Loaded",
           "modelo": "Iso-Lateral Super Incline Press",
           "codigo": null,
-          "disponibilidad_zubiarte": "sin_verificar"
+          "disponibilidad_zubiarte": "sin_verificar",
+          "inventoryNote": "Candidato seleccionado por el usuario mediante capturas; modelo exacto pendiente de confirmar."
         },
         {
-          "marca": "gym80",
-          "linea": "Sygnum",
-          "modelo": "INCLINE CHEST PRESS",
-          "codigo": "3023N",
-          "disponibilidad_zubiarte": "sin_verificar"
+          "marca": "Technogym",
+          "linea": "Pure Strength",
+          "modelo": "Pure Strength Incline Chest Press",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "sourceUrl": "https://www.technogym.com/es-ES/category/pure-strength/",
+          "disponibilidad_provisional_zubiarte": true
         },
         {
-          "marca": "gym80",
-          "linea": "Sygnum Dual",
-          "modelo": "DUAL INCLINE CHEST PRESS",
-          "codigo": "3042",
-          "disponibilidad_zubiarte": "sin_verificar"
+          "marca": "Hammer Strength",
+          "linea": "Plate Loaded",
+          "modelo": "Iso-Lateral Chest/Back",
+          "codigo": "IL-CB",
+          "disponibilidad_zubiarte": "sin_verificar",
+          "inventoryNote": "Candidato seleccionado por el usuario mediante capturas; modelo exacto pendiente de confirmar.",
+          "sourceUrl": "https://www.lifefitness.com/es-es/productos/fuerza/plate-loaded/plate-loaded-iso-lateral-chest-back"
         }
       ],
       "notes": "",
@@ -6806,15 +8490,7 @@
         "Assisted Pull-Up",
         "Dominadas lastradas"
       ],
-      "machineVariants": [
-        {
-          "marca": "gym80",
-          "linea": "Sygnum",
-          "modelo": "KNEELING / CHINNING-DIPPING MACHINE",
-          "codigo": "3017",
-          "disponibilidad_zubiarte": "sin_verificar"
-        }
-      ],
+      "machineVariants": [],
       "notes": "El lastre y la asistencia se registran por separado, con signo y unidad claros.",
       "isNew": false
     },
@@ -6856,7 +8532,8 @@
       ],
       "legacyNames": [
         "Jalón al pecho",
-        "Lat Pulldown"
+        "Lat Pulldown",
+        "Pure Strength Pulldown"
       ],
       "machineVariants": [
         {
@@ -6864,49 +8541,42 @@
           "linea": "Plate Loaded",
           "modelo": "Iso-Lateral Front Lat Pulldown",
           "codigo": null,
-          "disponibilidad_zubiarte": "sin_verificar"
-        },
-        {
-          "marca": "Hammer Strength",
-          "linea": "Select",
-          "modelo": "Hammer Strength Select Lat Pulldown",
-          "codigo": null,
-          "disponibilidad_zubiarte": "sin_verificar"
+          "disponibilidad_zubiarte": "sin_verificar",
+          "inventoryNote": "Candidato seleccionado por el usuario mediante capturas; modelo exacto pendiente de confirmar."
         },
         {
           "marca": "Technogym",
           "linea": "Selection 900",
           "modelo": "Lat Machine",
           "codigo": null,
-          "disponibilidad_zubiarte": "sin_verificar"
+          "disponibilidad_zubiarte": "sin_verificar",
+          "disponibilidad_provisional_zubiarte": true
         },
         {
           "marca": "Technogym",
           "linea": "Selection 900",
           "modelo": "Vertical Traction",
           "codigo": null,
-          "disponibilidad_zubiarte": "sin_verificar"
+          "disponibilidad_zubiarte": "sin_verificar",
+          "disponibilidad_provisional_zubiarte": true
         },
         {
-          "marca": "gym80",
-          "linea": "Pure Kraft",
-          "modelo": "PURE KRAFT LAT PULLDOWN DUAL",
-          "codigo": "4311",
-          "disponibilidad_zubiarte": "sin_verificar"
+          "marca": "Technogym",
+          "linea": "Pure Strength",
+          "modelo": "Pure Strength Pulldown",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "sourceUrl": "https://www.technogym.com/es-ES/category/pure-strength/",
+          "disponibilidad_provisional_zubiarte": true
         },
         {
-          "marca": "gym80",
-          "linea": "Sygnum",
-          "modelo": "LAT PULLDOWN MACHINE",
-          "codigo": "3020",
-          "disponibilidad_zubiarte": "sin_verificar"
-        },
-        {
-          "marca": "gym80",
-          "linea": "Sygnum Dual",
-          "modelo": "DUAL LAT PULLDOWN",
-          "codigo": "3044",
-          "disponibilidad_zubiarte": "sin_verificar"
+          "marca": "Hammer Strength",
+          "linea": "Plate Loaded",
+          "modelo": "Iso-Lateral Chest/Back",
+          "codigo": "IL-CB",
+          "disponibilidad_zubiarte": "sin_verificar",
+          "inventoryNote": "Candidato seleccionado por el usuario mediante capturas; modelo exacto pendiente de confirmar.",
+          "sourceUrl": "https://www.lifefitness.com/es-es/productos/fuerza/plate-loaded/plate-loaded-iso-lateral-chest-back"
         }
       ],
       "notes": "Variantes de máquina tienen distinta trayectoria; comparar progresos solo en la misma variante.",
@@ -6927,7 +8597,8 @@
           "linea": "Plate Loaded",
           "modelo": "Iso-Lateral Wide Pulldown",
           "codigo": null,
-          "disponibilidad_zubiarte": "sin_verificar"
+          "disponibilidad_zubiarte": "sin_verificar",
+          "inventoryNote": "Candidato seleccionado por el usuario mediante capturas; modelo exacto pendiente de confirmar."
         }
       ],
       "notes": "",
@@ -6964,7 +8635,6 @@
       "name": "Jalón unilateral de dorsales",
       "muscle": "Espalda",
       "materialOptions": [
-        "Máquina",
         "Polea"
       ],
       "legacyNames": [],
@@ -6981,21 +8651,18 @@
         "Máquina",
         "Polea"
       ],
-      "legacyNames": [],
+      "legacyNames": [
+        "Pure Strength Pullover"
+      ],
       "machineVariants": [
         {
-          "marca": "Hammer Strength",
-          "linea": "Plate Loaded",
-          "modelo": "Plate Loaded Pullover",
+          "marca": "Technogym",
+          "linea": "Pure Strength",
+          "modelo": "Pure Strength Pullover",
           "codigo": null,
-          "disponibilidad_zubiarte": "sin_verificar"
-        },
-        {
-          "marca": "gym80",
-          "linea": "Sygnum",
-          "modelo": "PULL OVER MACHINE",
-          "codigo": "3012N",
-          "disponibilidad_zubiarte": "sin_verificar"
+          "disponibilidad_zubiarte": "sin_verificar",
+          "sourceUrl": "https://www.technogym.com/es-ES/category/pure-strength/",
+          "disponibilidad_provisional_zubiarte": true
         }
       ],
       "notes": "",
@@ -7015,7 +8682,8 @@
           "linea": "Plate Loaded",
           "modelo": "Iso-Lateral High Row",
           "codigo": null,
-          "disponibilidad_zubiarte": "sin_verificar"
+          "disponibilidad_zubiarte": "sin_verificar",
+          "inventoryNote": "Candidato seleccionado por el usuario mediante capturas; modelo exacto pendiente de confirmar."
         }
       ],
       "notes": "",
@@ -7043,15 +8711,7 @@
         "Máquina"
       ],
       "legacyNames": [],
-      "machineVariants": [
-        {
-          "marca": "Hammer Strength",
-          "linea": "Plate Loaded",
-          "modelo": "Iso-Lateral D.Y. Row",
-          "codigo": null,
-          "disponibilidad_zubiarte": "sin_verificar"
-        }
-      ],
+      "machineVariants": [],
       "notes": "",
       "isNew": true
     },
@@ -7115,21 +8775,34 @@
         "Mancuernas",
         "Máquina"
       ],
-      "legacyNames": [],
+      "legacyNames": [
+        "Pure Strength Row"
+      ],
       "machineVariants": [
         {
           "marca": "Hammer Strength",
           "linea": "Plate Loaded",
           "modelo": "Iso-Lateral Row",
           "codigo": null,
-          "disponibilidad_zubiarte": "sin_verificar"
+          "disponibilidad_zubiarte": "sin_verificar",
+          "inventoryNote": "Candidato seleccionado por el usuario mediante capturas; modelo exacto pendiente de confirmar."
         },
         {
           "marca": "Technogym",
           "linea": "Selection 900",
           "modelo": "Upper Back",
           "codigo": null,
-          "disponibilidad_zubiarte": "sin_verificar"
+          "disponibilidad_zubiarte": "sin_verificar",
+          "disponibilidad_provisional_zubiarte": true
+        },
+        {
+          "marca": "Technogym",
+          "linea": "Pure Strength",
+          "modelo": "Pure Strength Row",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "sourceUrl": "https://www.technogym.com/es-ES/category/pure-strength/",
+          "disponibilidad_provisional_zubiarte": true
         }
       ],
       "notes": "",
@@ -7153,42 +8826,16 @@
           "linea": "Plate Loaded",
           "modelo": "Iso-Lateral Low Row",
           "codigo": null,
-          "disponibilidad_zubiarte": "sin_verificar"
-        },
-        {
-          "marca": "Hammer Strength",
-          "linea": "Select",
-          "modelo": "Hammer Strength Select Seated Row",
-          "codigo": null,
-          "disponibilidad_zubiarte": "sin_verificar"
+          "disponibilidad_zubiarte": "sin_verificar",
+          "inventoryNote": "Candidato seleccionado por el usuario mediante capturas; modelo exacto pendiente de confirmar."
         },
         {
           "marca": "Technogym",
           "linea": "Selection 900",
           "modelo": "Low Row",
           "codigo": null,
-          "disponibilidad_zubiarte": "sin_verificar"
-        },
-        {
-          "marca": "gym80",
-          "linea": "Sygnum",
-          "modelo": "SEATED ROW MACHINE",
-          "codigo": "3040",
-          "disponibilidad_zubiarte": "sin_verificar"
-        },
-        {
-          "marca": "gym80",
-          "linea": "Sygnum",
-          "modelo": "SEATED ROW WITHOUT CHEST SUPPORT",
-          "codigo": "3039",
-          "disponibilidad_zubiarte": "sin_verificar"
-        },
-        {
-          "marca": "gym80",
-          "linea": "Sygnum Dual",
-          "modelo": "DUAL SEATED ROW",
-          "codigo": "3045",
-          "disponibilidad_zubiarte": "sin_verificar"
+          "disponibilidad_zubiarte": "sin_verificar",
+          "disponibilidad_provisional_zubiarte": true
         }
       ],
       "notes": "",
@@ -7203,22 +8850,7 @@
         "Máquina"
       ],
       "legacyNames": [],
-      "machineVariants": [
-        {
-          "marca": "Hammer Strength",
-          "linea": "Plate Loaded",
-          "modelo": "Iso-Lateral T-Bar Row",
-          "codigo": null,
-          "disponibilidad_zubiarte": "sin_verificar"
-        },
-        {
-          "marca": "gym80",
-          "linea": "Pure Kraft",
-          "modelo": "PURE KRAFT T-BAR ROW",
-          "codigo": "4018",
-          "disponibilidad_zubiarte": "sin_verificar"
-        }
-      ],
+      "machineVariants": [],
       "notes": "",
       "isNew": true
     },
@@ -7278,21 +8910,16 @@
           "linea": "Artis",
           "modelo": "Rear Delt Row",
           "codigo": null,
-          "disponibilidad_zubiarte": "sin_verificar"
+          "disponibilidad_zubiarte": "sin_verificar",
+          "disponibilidad_provisional_zubiarte": true
         },
         {
           "marca": "Technogym",
           "linea": "Selection 900",
           "modelo": "Reverse Fly",
           "codigo": null,
-          "disponibilidad_zubiarte": "sin_verificar"
-        },
-        {
-          "marca": "gym80",
-          "linea": "Sygnum",
-          "modelo": "BUTTERFLY REVERSE",
-          "codigo": "3025",
-          "disponibilidad_zubiarte": "sin_verificar"
+          "disponibilidad_zubiarte": "sin_verificar",
+          "disponibilidad_provisional_zubiarte": true
         }
       ],
       "notes": "",
@@ -7322,36 +8949,25 @@
       "legacyNames": [
         "Elevaciones laterales",
         "Elevación lateral unilateral en polea",
-        "Lateral Raise Machine"
+        "Lateral Raise Machine",
+        "PURE KRAFT SHOULDER LATERAL RAISE DUAL"
       ],
       "machineVariants": [
-        {
-          "marca": "Hammer Strength",
-          "linea": "Plate Loaded",
-          "modelo": "Plate Loaded Lateral Raise",
-          "codigo": null,
-          "disponibilidad_zubiarte": "sin_verificar"
-        },
         {
           "marca": "Technogym",
           "linea": "Selection 900",
           "modelo": "Delts Machine",
           "codigo": null,
-          "disponibilidad_zubiarte": "sin_verificar"
+          "disponibilidad_zubiarte": "sin_verificar",
+          "disponibilidad_provisional_zubiarte": true
         },
         {
           "marca": "gym80",
-          "linea": "Sygnum",
-          "modelo": "SHOULDER LATERAL RAISE WITH GRIPS",
-          "codigo": "3050",
-          "disponibilidad_zubiarte": "sin_verificar"
-        },
-        {
-          "marca": "gym80",
-          "linea": "Sygnum",
-          "modelo": "STANDING SHOULDER LATERAL RAISE",
-          "codigo": "3099",
-          "disponibilidad_zubiarte": "sin_verificar"
+          "linea": "Pure Kraft",
+          "modelo": "PURE KRAFT SHOULDER LATERAL RAISE DUAL",
+          "codigo": "4325",
+          "disponibilidad_zubiarte": "confirmada",
+          "sourceUrl": "https://gym80.de/en/all-products/filter-plate-loaded/"
         }
       ],
       "notes": "",
@@ -7460,7 +9076,8 @@
         "Máquina"
       ],
       "legacyNames": [
-        "Shoulder Press"
+        "Shoulder Press",
+        "Pure Strength Shoulder Press"
       ],
       "machineVariants": [
         {
@@ -7468,42 +9085,25 @@
           "linea": "Plate Loaded",
           "modelo": "Iso-Lateral Shoulder Press",
           "codigo": null,
-          "disponibilidad_zubiarte": "sin_verificar"
-        },
-        {
-          "marca": "Hammer Strength",
-          "linea": "Select",
-          "modelo": "Hammer Strength Select Shoulder Press",
-          "codigo": null,
-          "disponibilidad_zubiarte": "sin_verificar"
+          "disponibilidad_zubiarte": "sin_verificar",
+          "inventoryNote": "Candidato seleccionado por el usuario mediante capturas; modelo exacto pendiente de confirmar."
         },
         {
           "marca": "Technogym",
           "linea": "Selection 900",
           "modelo": "Shoulder Press",
           "codigo": null,
-          "disponibilidad_zubiarte": "sin_verificar"
+          "disponibilidad_zubiarte": "sin_verificar",
+          "disponibilidad_provisional_zubiarte": true
         },
         {
-          "marca": "gym80",
-          "linea": "FTM",
-          "modelo": "FTM SHOULDER & CHEST PRESS",
-          "codigo": "4402",
-          "disponibilidad_zubiarte": "sin_verificar"
-        },
-        {
-          "marca": "gym80",
-          "linea": "Sygnum",
-          "modelo": "SHOULDER PRESS",
-          "codigo": "3032",
-          "disponibilidad_zubiarte": "sin_verificar"
-        },
-        {
-          "marca": "gym80",
-          "linea": "Sygnum Dual",
-          "modelo": "DUAL SHOULDER PRESS",
-          "codigo": "3043",
-          "disponibilidad_zubiarte": "sin_verificar"
+          "marca": "Technogym",
+          "linea": "Pure Strength",
+          "modelo": "Pure Strength Shoulder Press",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "sourceUrl": "https://www.technogym.com/es-ES/category/pure-strength/",
+          "disponibilidad_provisional_zubiarte": true
         }
       ],
       "notes": "",
@@ -7591,19 +9191,10 @@
       "name": "Viking Press",
       "muscle": "Hombros",
       "materialOptions": [
-        "Barra landmine",
-        "Máquina"
+        "Barra landmine"
       ],
       "legacyNames": [],
-      "machineVariants": [
-        {
-          "marca": "gym80",
-          "linea": "Pure Kraft",
-          "modelo": "PURE KRAFT VIKING PRESS",
-          "codigo": "4388",
-          "disponibilidad_zubiarte": "sin_verificar"
-        }
-      ],
+      "machineVariants": [],
       "notes": "Press específico de hombros; no es la misma máquina que un Shoulder Press sentado.",
       "isNew": true
     },
@@ -7710,36 +9301,26 @@
       "legacyNames": [
         "Curl de bíceps",
         "Biceps Curl Machine",
-        "Curl de bíceps en polea"
+        "Curl de bíceps en polea",
+        "Pure Strength Biceps"
       ],
       "machineVariants": [
-        {
-          "marca": "Hammer Strength",
-          "linea": "Plate Loaded",
-          "modelo": "Plate Loaded Seated Biceps",
-          "codigo": null,
-          "disponibilidad_zubiarte": "sin_verificar"
-        },
         {
           "marca": "Technogym",
           "linea": "Selection 900",
           "modelo": "Arm Curl",
           "codigo": null,
-          "disponibilidad_zubiarte": "sin_verificar"
+          "disponibilidad_zubiarte": "sin_verificar",
+          "disponibilidad_provisional_zubiarte": true
         },
         {
-          "marca": "gym80",
-          "linea": "Sygnum",
-          "modelo": "BICEPS MACHINE",
-          "codigo": "3010",
-          "disponibilidad_zubiarte": "sin_verificar"
-        },
-        {
-          "marca": "gym80",
-          "linea": "Sygnum",
-          "modelo": "HORIZONTAL BICEPS",
-          "codigo": "3098",
-          "disponibilidad_zubiarte": "sin_verificar"
+          "marca": "Technogym",
+          "linea": "Pure Strength",
+          "modelo": "Pure Strength Biceps",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "sourceUrl": "https://www.technogym.com/es-ES/category/pure-strength/",
+          "disponibilidad_provisional_zubiarte": true
         }
       ],
       "notes": "",
@@ -7885,14 +9466,8 @@
           "linea": "Selection 900",
           "modelo": "Arm Extension",
           "codigo": null,
-          "disponibilidad_zubiarte": "sin_verificar"
-        },
-        {
-          "marca": "gym80",
-          "linea": "Sygnum",
-          "modelo": "TRICEPS EXTENSION",
-          "codigo": "3011",
-          "disponibilidad_zubiarte": "sin_verificar"
+          "disponibilidad_zubiarte": "sin_verificar",
+          "disponibilidad_provisional_zubiarte": true
         }
       ],
       "notes": "",
@@ -7931,22 +9506,13 @@
       "muscle": "Tríceps",
       "materialOptions": [
         "Mancuernas",
-        "Máquina",
         "Polea"
       ],
       "legacyNames": [
         "Extensión tríceps sobre cabeza",
         "Extensión francesa con mancuernas"
       ],
-      "machineVariants": [
-        {
-          "marca": "gym80",
-          "linea": "Sygnum",
-          "modelo": "TRICEPS OVERHEAD",
-          "codigo": "3095",
-          "disponibilidad_zubiarte": "sin_verificar"
-        }
-      ],
+      "machineVariants": [],
       "notes": "",
       "isNew": false
     },
@@ -8041,22 +9607,7 @@
         "Fondos en paralelas",
         "Fondos lastrados"
       ],
-      "machineVariants": [
-        {
-          "marca": "Hammer Strength",
-          "linea": "Plate Loaded",
-          "modelo": "Plate Loaded Seated Dip",
-          "codigo": null,
-          "disponibilidad_zubiarte": "sin_verificar"
-        },
-        {
-          "marca": "gym80",
-          "linea": "Sygnum",
-          "modelo": "DIP MACHINE",
-          "codigo": "3036",
-          "disponibilidad_zubiarte": "sin_verificar"
-        }
-      ],
+      "machineVariants": [],
       "notes": "",
       "isNew": false
     },
@@ -8108,7 +9659,8 @@
         "Máquina"
       ],
       "legacyNames": [
-        "Leg Extension"
+        "Leg Extension",
+        "Pure Strength Leg Extension"
       ],
       "machineVariants": [
         {
@@ -8116,35 +9668,25 @@
           "linea": "Plate Loaded",
           "modelo": "Iso-Lateral Leg Extension",
           "codigo": null,
-          "disponibilidad_zubiarte": "sin_verificar"
-        },
-        {
-          "marca": "Hammer Strength",
-          "linea": "Select",
-          "modelo": "Hammer Strength Select Leg Extension",
-          "codigo": null,
-          "disponibilidad_zubiarte": "sin_verificar"
+          "disponibilidad_zubiarte": "sin_verificar",
+          "inventoryNote": "Candidato seleccionado por el usuario mediante capturas; modelo exacto pendiente de confirmar."
         },
         {
           "marca": "Technogym",
           "linea": "Selection 900",
           "modelo": "Leg Extension",
           "codigo": null,
-          "disponibilidad_zubiarte": "sin_verificar"
+          "disponibilidad_zubiarte": "sin_verificar",
+          "disponibilidad_provisional_zubiarte": true
         },
         {
-          "marca": "gym80",
-          "linea": "Sygnum",
-          "modelo": "LEG EXTENSION",
-          "codigo": "3001",
-          "disponibilidad_zubiarte": "sin_verificar"
-        },
-        {
-          "marca": "gym80",
-          "linea": "Sygnum",
-          "modelo": "LYING LEG EXTENSION WITH ADJUSTABLE BACKREST",
-          "codigo": "3123",
-          "disponibilidad_zubiarte": "sin_verificar"
+          "marca": "Technogym",
+          "linea": "Pure Strength",
+          "modelo": "Pure Strength Leg Extension",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "sourceUrl": "https://www.technogym.com/es-ES/category/pure-strength/",
+          "disponibilidad_provisional_zubiarte": true
         }
       ],
       "notes": "Registrar por modelo de máquina; la carga del selector y los discos no son intercambiables.",
@@ -8170,7 +9712,8 @@
         "Máquina"
       ],
       "legacyNames": [
-        "Hack Squat"
+        "Hack Squat",
+        "Pure Strength Hack Squat"
       ],
       "machineVariants": [
         {
@@ -8178,14 +9721,17 @@
           "linea": "Plate Loaded",
           "modelo": "Plate Loaded Hack Squat",
           "codigo": null,
-          "disponibilidad_zubiarte": "sin_verificar"
+          "disponibilidad_zubiarte": "sin_verificar",
+          "inventoryNote": "Candidato seleccionado por el usuario mediante capturas; modelo exacto pendiente de confirmar."
         },
         {
-          "marca": "gym80",
-          "linea": "Pure Kraft",
-          "modelo": "PURE KRAFT HACK SQUAT",
-          "codigo": "4159N",
-          "disponibilidad_zubiarte": "sin_verificar"
+          "marca": "Technogym",
+          "linea": "Pure Strength",
+          "modelo": "Pure Strength Hack Squat",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "sourceUrl": "https://www.technogym.com/es-ES/category/pure-strength/",
+          "disponibilidad_provisional_zubiarte": true
         }
       ],
       "notes": "",
@@ -8199,7 +9745,9 @@
         "Máquina"
       ],
       "legacyNames": [
-        "Leg Press"
+        "Leg Press",
+        "PURE KRAFT-STRONG LEG PRESS DUAL",
+        "Pure Strength Leg Press"
       ],
       "machineVariants": [
         {
@@ -8207,70 +9755,41 @@
           "linea": "Plate Loaded",
           "modelo": "Plate Loaded Linear Leg Press",
           "codigo": null,
-          "disponibilidad_zubiarte": "sin_verificar"
+          "disponibilidad_zubiarte": "sin_verificar",
+          "inventoryNote": "Candidato seleccionado por el usuario mediante capturas; modelo exacto pendiente de confirmar."
         },
         {
           "marca": "Hammer Strength",
           "linea": "Plate Loaded",
           "modelo": "Plate Loaded Super Squat Press",
           "codigo": null,
-          "disponibilidad_zubiarte": "sin_verificar"
-        },
-        {
-          "marca": "Hammer Strength",
-          "linea": "Select",
-          "modelo": "Hammer Strength Select Seated Leg Press",
-          "codigo": null,
-          "disponibilidad_zubiarte": "sin_verificar"
+          "disponibilidad_zubiarte": "sin_verificar",
+          "inventoryNote": "Candidato seleccionado por el usuario mediante capturas; modelo exacto pendiente de confirmar."
         },
         {
           "marca": "Technogym",
           "linea": "Selection 900",
           "modelo": "Leg Press",
           "codigo": null,
-          "disponibilidad_zubiarte": "sin_verificar"
+          "disponibilidad_zubiarte": "sin_verificar",
+          "disponibilidad_provisional_zubiarte": true
         },
         {
           "marca": "gym80",
-          "linea": "Innovation",
-          "modelo": "INNOVATION LEG PRESS",
-          "codigo": "5001",
-          "disponibilidad_zubiarte": "sin_verificar"
+          "linea": "Pure Kraft Strong",
+          "modelo": "PURE KRAFT-STRONG LEG PRESS DUAL",
+          "codigo": "4361",
+          "disponibilidad_zubiarte": "confirmada",
+          "sourceUrl": "https://gym80.de/en/all-products/filter-plate-loaded/"
         },
         {
-          "marca": "gym80",
-          "linea": "Pure Kraft",
-          "modelo": "PURE KRAFT 45 DEGREES LINEAR LEG PRESS",
-          "codigo": "4023",
-          "disponibilidad_zubiarte": "sin_verificar"
-        },
-        {
-          "marca": "gym80",
-          "linea": "Pure Kraft",
-          "modelo": "PURE KRAFT SEATED LEG PRESS DUAL",
-          "codigo": "4314",
-          "disponibilidad_zubiarte": "sin_verificar"
-        },
-        {
-          "marca": "gym80",
-          "linea": "Sygnum",
-          "modelo": "LYING LEG PRESS",
-          "codigo": "3031",
-          "disponibilidad_zubiarte": "sin_verificar"
-        },
-        {
-          "marca": "gym80",
-          "linea": "Sygnum",
-          "modelo": "SEATED LEG PRESS",
-          "codigo": "3030",
-          "disponibilidad_zubiarte": "sin_verificar"
-        },
-        {
-          "marca": "gym80",
-          "linea": "Sygnum Dual",
-          "modelo": "DUAL LEG PRESS",
-          "codigo": "3046",
-          "disponibilidad_zubiarte": "sin_verificar"
+          "marca": "Technogym",
+          "linea": "Pure Strength",
+          "modelo": "Pure Strength Leg Press",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "sourceUrl": "https://www.technogym.com/es-ES/category/pure-strength/",
+          "disponibilidad_provisional_zubiarte": true
         }
       ],
       "notes": "Versiones horizontal, 45°, con discos o selectorizada: registrar modelo exacto y no mezclar cargas.",
@@ -8289,26 +9808,6 @@
       "isNew": true
     },
     {
-      "id": "grupo-prensa-de-piernas-vertical",
-      "name": "Prensa de piernas vertical",
-      "muscle": "Cuádriceps",
-      "materialOptions": [
-        "Máquina"
-      ],
-      "legacyNames": [],
-      "machineVariants": [
-        {
-          "marca": "gym80",
-          "linea": "Pure Kraft",
-          "modelo": "PURE KRAFT VERTICAL LEG PRESS",
-          "codigo": "4354",
-          "disponibilidad_zubiarte": "sin_verificar"
-        }
-      ],
-      "notes": "Mantener identificada como variante con cargas y recorrido propios.",
-      "isNew": true
-    },
-    {
       "id": "grupo-sentadilla-belt-squat",
       "name": "Sentadilla belt squat",
       "muscle": "Cuádriceps",
@@ -8316,21 +9815,18 @@
         "Cinturón con discos",
         "Máquina"
       ],
-      "legacyNames": [],
+      "legacyNames": [
+        "Pure Strength Belt Squat"
+      ],
       "machineVariants": [
         {
-          "marca": "Hammer Strength",
-          "linea": "Plate Loaded",
-          "modelo": "Plate Loaded Belt Squat",
+          "marca": "Technogym",
+          "linea": "Pure Strength",
+          "modelo": "Pure Strength Belt Squat",
           "codigo": null,
-          "disponibilidad_zubiarte": "sin_verificar"
-        },
-        {
-          "marca": "gym80",
-          "linea": "Pure Kraft",
-          "modelo": "PURE KRAFT BELT SQUAT",
-          "codigo": "4360",
-          "disponibilidad_zubiarte": "sin_verificar"
+          "disponibilidad_zubiarte": "sin_verificar",
+          "sourceUrl": "https://www.technogym.com/es-ES/category/pure-strength/",
+          "disponibilidad_provisional_zubiarte": true
         }
       ],
       "notes": "Carga desde cinturón; distinta de sentadilla tradicional.",
@@ -8366,25 +9862,12 @@
       ],
       "machineVariants": [
         {
-          "marca": "Hammer Strength",
-          "linea": "Plate Loaded",
-          "modelo": "Reverse V-Squat",
-          "codigo": null,
-          "disponibilidad_zubiarte": "sin_verificar"
-        },
-        {
           "marca": "Technogym",
           "linea": "Artis",
           "modelo": "Squat",
           "codigo": null,
-          "disponibilidad_zubiarte": "sin_verificar"
-        },
-        {
-          "marca": "gym80",
-          "linea": "Pure Kraft",
-          "modelo": "PURE KRAFT SQUAT MACHINE",
-          "codigo": "4038N",
-          "disponibilidad_zubiarte": "sin_verificar"
+          "disponibilidad_zubiarte": "sin_verificar",
+          "disponibilidad_provisional_zubiarte": true
         }
       ],
       "notes": "",
@@ -8466,18 +9949,11 @@
       "legacyNames": [],
       "machineVariants": [
         {
-          "marca": "Hammer Strength",
-          "linea": "Plate Loaded",
-          "modelo": "Pendulum-X Squat",
-          "codigo": null,
-          "disponibilidad_zubiarte": "sin_verificar"
-        },
-        {
           "marca": "gym80",
           "linea": "Pure Kraft",
           "modelo": "PURE KRAFT PENDULUM SQUAT",
           "codigo": "4353N",
-          "disponibilidad_zubiarte": "sin_verificar"
+          "disponibilidad_zubiarte": "confirmada"
         }
       ],
       "notes": "No equivale a hack squat ni a una sentadilla en Smith; trayectoria distinta.",
@@ -8672,14 +10148,18 @@
         "Máquina",
         "Polea"
       ],
-      "legacyNames": [],
+      "legacyNames": [
+        "Pure Strength Standing Leg Curl"
+      ],
       "machineVariants": [
         {
-          "marca": "gym80",
-          "linea": "Sygnum",
-          "modelo": "STANDING LEG CURL",
-          "codigo": "3013",
-          "disponibilidad_zubiarte": "sin_verificar"
+          "marca": "Technogym",
+          "linea": "Pure Strength",
+          "modelo": "Pure Strength Standing Leg Curl",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "sourceUrl": "https://www.technogym.com/es-ES/category/pure-strength/",
+          "disponibilidad_provisional_zubiarte": true
         }
       ],
       "notes": "",
@@ -8693,15 +10173,7 @@
         "Máquina"
       ],
       "legacyNames": [],
-      "machineVariants": [
-        {
-          "marca": "Hammer Strength",
-          "linea": "Plate Loaded",
-          "modelo": "Iso-Lateral Kneeling Leg Curl",
-          "codigo": null,
-          "disponibilidad_zubiarte": "sin_verificar"
-        }
-      ],
+      "machineVariants": [],
       "notes": "",
       "isNew": true
     },
@@ -8725,37 +10197,23 @@
       "materialOptions": [
         "Máquina"
       ],
-      "legacyNames": [
-        "Seated Leg Curl"
-      ],
+      "legacyNames": [],
       "machineVariants": [
-        {
-          "marca": "Hammer Strength",
-          "linea": "Select",
-          "modelo": "Hammer Strength Select Leg Curl",
-          "codigo": null,
-          "disponibilidad_zubiarte": "sin_verificar"
-        },
         {
           "marca": "Technogym",
           "linea": "Selection 700",
           "modelo": "Dual Leg Curl / Extension",
           "codigo": null,
-          "disponibilidad_zubiarte": "sin_verificar"
+          "disponibilidad_zubiarte": "sin_verificar",
+          "disponibilidad_provisional_zubiarte": true
         },
         {
           "marca": "Technogym",
           "linea": "Selection 900",
           "modelo": "Leg Curl",
           "codigo": null,
-          "disponibilidad_zubiarte": "sin_verificar"
-        },
-        {
-          "marca": "gym80",
-          "linea": "Sygnum",
-          "modelo": "SEATED LEG CURL",
-          "codigo": "3003",
-          "disponibilidad_zubiarte": "sin_verificar"
+          "disponibilidad_zubiarte": "sin_verificar",
+          "disponibilidad_provisional_zubiarte": true
         }
       ],
       "notes": "No confundir con curl femoral tumbado ni de pie.",
@@ -8768,30 +10226,15 @@
       "materialOptions": [
         "Máquina"
       ],
-      "legacyNames": [
-        "Lying Leg Curl"
-      ],
+      "legacyNames": [],
       "machineVariants": [
-        {
-          "marca": "Hammer Strength",
-          "linea": "Plate Loaded",
-          "modelo": "Iso-Lateral Leg Curl",
-          "codigo": null,
-          "disponibilidad_zubiarte": "sin_verificar"
-        },
         {
           "marca": "Technogym",
           "linea": "Selection 900",
           "modelo": "Prone Leg Curl",
           "codigo": null,
-          "disponibilidad_zubiarte": "sin_verificar"
-        },
-        {
-          "marca": "gym80",
-          "linea": "Sygnum",
-          "modelo": "LYING LEG CURL",
-          "codigo": "3002",
-          "disponibilidad_zubiarte": "sin_verificar"
+          "disponibilidad_zubiarte": "sin_verificar",
+          "disponibilidad_provisional_zubiarte": true
         }
       ],
       "notes": "",
@@ -8807,15 +10250,7 @@
         "Peso corporal"
       ],
       "legacyNames": [],
-      "machineVariants": [
-        {
-          "marca": "Hammer Strength",
-          "linea": "Plate Loaded",
-          "modelo": "Plate Loaded Assisted Nordic Ham",
-          "codigo": null,
-          "disponibilidad_zubiarte": "sin_verificar"
-        }
-      ],
+      "machineVariants": [],
       "notes": "",
       "isNew": true
     },
@@ -8865,15 +10300,18 @@
         "Máquina"
       ],
       "legacyNames": [
-        "Deadlift Machine"
+        "Deadlift Machine",
+        "Pure Strength Deadlift"
       ],
       "machineVariants": [
         {
-          "marca": "gym80",
-          "linea": "FTM",
-          "modelo": "FTM DEADLIFT MACHINE",
-          "codigo": "4401",
-          "disponibilidad_zubiarte": "sin_verificar"
+          "marca": "Technogym",
+          "linea": "Pure Strength",
+          "modelo": "Pure Strength Deadlift",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "sourceUrl": "https://www.technogym.com/es-ES/category/pure-strength/",
+          "disponibilidad_provisional_zubiarte": true
         }
       ],
       "notes": "",
@@ -8949,39 +10387,20 @@
       ],
       "machineVariants": [
         {
-          "marca": "Hammer Strength",
-          "linea": "Select",
-          "modelo": "Hammer Strength Select Hip Abduction",
-          "codigo": null,
-          "disponibilidad_zubiarte": "sin_verificar"
-        },
-        {
           "marca": "Technogym",
           "linea": "Artis",
           "modelo": "Abductor",
           "codigo": null,
-          "disponibilidad_zubiarte": "sin_verificar"
+          "disponibilidad_zubiarte": "sin_verificar",
+          "disponibilidad_provisional_zubiarte": true
         },
         {
           "marca": "Technogym",
           "linea": "Selection 700",
           "modelo": "Dual Abductor / Adductor",
           "codigo": null,
-          "disponibilidad_zubiarte": "sin_verificar"
-        },
-        {
-          "marca": "gym80",
-          "linea": "Sygnum",
-          "modelo": "ABDUCTION MACHINE",
-          "codigo": "3028",
-          "disponibilidad_zubiarte": "sin_verificar"
-        },
-        {
-          "marca": "gym80",
-          "linea": "Sygnum",
-          "modelo": "TOTAL HIP MACHINE",
-          "codigo": "3006",
-          "disponibilidad_zubiarte": "sin_verificar"
+          "disponibilidad_zubiarte": "sin_verificar",
+          "disponibilidad_provisional_zubiarte": true
         }
       ],
       "notes": "",
@@ -9049,22 +10468,26 @@
         "Máquina"
       ],
       "legacyNames": [
-        "Hip Thrust Machine"
+        "Hip Thrust Machine",
+        "Pure Strength Hip Thrust"
       ],
       "machineVariants": [
-        {
-          "marca": "Hammer Strength",
-          "linea": "Plate Loaded",
-          "modelo": "Plate Loaded Glute Drive",
-          "codigo": null,
-          "disponibilidad_zubiarte": "sin_verificar"
-        },
         {
           "marca": "Technogym",
           "linea": "Selection 900",
           "modelo": "Hip Thrust",
           "codigo": null,
-          "disponibilidad_zubiarte": "sin_verificar"
+          "disponibilidad_zubiarte": "sin_verificar",
+          "disponibilidad_provisional_zubiarte": true
+        },
+        {
+          "marca": "Technogym",
+          "linea": "Pure Strength",
+          "modelo": "Pure Strength Hip Thrust",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "sourceUrl": "https://www.technogym.com/es-ES/category/pure-strength/",
+          "disponibilidad_provisional_zubiarte": true
         }
       ],
       "notes": "La carga de una máquina no equivale necesariamente a la carga de una barra.",
@@ -9092,15 +10515,7 @@
         "Máquina"
       ],
       "legacyNames": [],
-      "machineVariants": [
-        {
-          "marca": "Hammer Strength",
-          "linea": "Plate Loaded",
-          "modelo": "Glute Ham / Reverse Hyper Combo",
-          "codigo": null,
-          "disponibilidad_zubiarte": "sin_verificar"
-        }
-      ],
+      "machineVariants": [],
       "notes": "",
       "isNew": true
     },
@@ -9127,7 +10542,8 @@
         "Polea"
       ],
       "legacyNames": [
-        "Glute Kickback"
+        "Glute Kickback",
+        "Pure Strength Rear Kick"
       ],
       "machineVariants": [
         {
@@ -9135,35 +10551,17 @@
           "linea": "Selection 900",
           "modelo": "Glute Press",
           "codigo": null,
-          "disponibilidad_zubiarte": "sin_verificar"
+          "disponibilidad_zubiarte": "sin_verificar",
+          "disponibilidad_provisional_zubiarte": true
         },
         {
-          "marca": "gym80",
-          "linea": "Innovation",
-          "modelo": "INNOVATION GLUTES MACHINE",
-          "codigo": "5002",
-          "disponibilidad_zubiarte": "sin_verificar"
-        },
-        {
-          "marca": "gym80",
-          "linea": "Pure Kraft",
-          "modelo": "PURE KRAFT GLUTEUS KICK MACHINE",
-          "codigo": "4321",
-          "disponibilidad_zubiarte": "sin_verificar"
-        },
-        {
-          "marca": "gym80",
-          "linea": "Sygnum",
-          "modelo": "GLUTEUS KICK RADIAL",
-          "codigo": "3005",
-          "disponibilidad_zubiarte": "sin_verificar"
-        },
-        {
-          "marca": "gym80",
-          "linea": "Sygnum",
-          "modelo": "KNEELING GLUTES KICK",
-          "codigo": "3004",
-          "disponibilidad_zubiarte": "sin_verificar"
+          "marca": "Technogym",
+          "linea": "Pure Strength",
+          "modelo": "Pure Strength Rear Kick",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "sourceUrl": "https://www.technogym.com/es-ES/category/pure-strength/",
+          "disponibilidad_provisional_zubiarte": true
         }
       ],
       "notes": "",
@@ -9260,7 +10658,8 @@
       ],
       "legacyNames": [
         "Calf Raise",
-        "Elevaciones de gemelos de pie"
+        "Elevaciones de gemelos de pie",
+        "Pure Strength Calf"
       ],
       "machineVariants": [
         {
@@ -9268,14 +10667,17 @@
           "linea": "Selection 900",
           "modelo": "Standing Calf",
           "codigo": null,
-          "disponibilidad_zubiarte": "sin_verificar"
+          "disponibilidad_zubiarte": "sin_verificar",
+          "disponibilidad_provisional_zubiarte": true
         },
         {
-          "marca": "gym80",
-          "linea": "Sygnum",
-          "modelo": "STANDING CALF RAISE MACHINE",
-          "codigo": "3018",
-          "disponibilidad_zubiarte": "sin_verificar"
+          "marca": "Technogym",
+          "linea": "Pure Strength",
+          "modelo": "Pure Strength Calf",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "sourceUrl": "https://www.technogym.com/es-ES/category/pure-strength/",
+          "disponibilidad_provisional_zubiarte": true
         }
       ],
       "notes": "",
@@ -9289,29 +10691,18 @@
         "Máquina"
       ],
       "legacyNames": [
-        "Seated Calf Raise"
+        "Seated Calf Raise",
+        "Pure Strength Seated Calf"
       ],
       "machineVariants": [
         {
-          "marca": "Hammer Strength",
-          "linea": "Plate Loaded",
-          "modelo": "Plate Loaded Seated Calf Raise",
+          "marca": "Technogym",
+          "linea": "Pure Strength",
+          "modelo": "Pure Strength Seated Calf",
           "codigo": null,
-          "disponibilidad_zubiarte": "sin_verificar"
-        },
-        {
-          "marca": "gym80",
-          "linea": "Pure Kraft",
-          "modelo": "PURE KRAFT SEATED CALF RAISE",
-          "codigo": "4026",
-          "disponibilidad_zubiarte": "sin_verificar"
-        },
-        {
-          "marca": "gym80",
-          "linea": "Sygnum",
-          "modelo": "SEATED CALF PRESS",
-          "codigo": "3027",
-          "disponibilidad_zubiarte": "sin_verificar"
+          "disponibilidad_zubiarte": "sin_verificar",
+          "sourceUrl": "https://www.technogym.com/es-ES/category/pure-strength/",
+          "disponibilidad_provisional_zubiarte": true
         }
       ],
       "notes": "",
@@ -9349,19 +10740,10 @@
       "name": "Gemelos donkey",
       "muscle": "Gemelos",
       "materialOptions": [
-        "Máquina",
         "Peso corporal"
       ],
       "legacyNames": [],
-      "machineVariants": [
-        {
-          "marca": "gym80",
-          "linea": "Sygnum",
-          "modelo": "DONKEY CALF",
-          "codigo": "3094",
-          "disponibilidad_zubiarte": "sin_verificar"
-        }
-      ],
+      "machineVariants": [],
       "notes": "",
       "isNew": true
     },
@@ -9378,25 +10760,12 @@
       ],
       "machineVariants": [
         {
-          "marca": "Hammer Strength",
-          "linea": "Select",
-          "modelo": "Hammer Strength Select Hip Adduction",
-          "codigo": null,
-          "disponibilidad_zubiarte": "sin_verificar"
-        },
-        {
           "marca": "Technogym",
           "linea": "Selection 900",
           "modelo": "Adductor",
           "codigo": null,
-          "disponibilidad_zubiarte": "sin_verificar"
-        },
-        {
-          "marca": "gym80",
-          "linea": "Sygnum",
-          "modelo": "ADDUCTION MACHINE",
-          "codigo": "3029",
-          "disponibilidad_zubiarte": "sin_verificar"
+          "disponibilidad_zubiarte": "sin_verificar",
+          "disponibilidad_provisional_zubiarte": true
         }
       ],
       "notes": "",
@@ -9436,26 +10805,6 @@
       "legacyNames": [],
       "machineVariants": [],
       "notes": "",
-      "isNew": true
-    },
-    {
-      "id": "grupo-ab-swing",
-      "name": "Ab Swing",
-      "muscle": "Abdomen",
-      "materialOptions": [
-        "Máquina"
-      ],
-      "legacyNames": [],
-      "machineVariants": [
-        {
-          "marca": "gym80",
-          "linea": "Pure Kraft",
-          "modelo": "PURE KRAFT AB SWING",
-          "codigo": "4317",
-          "disponibilidad_zubiarte": "sin_verificar"
-        }
-      ],
-      "notes": "Máquina específica de flexión abdominal; distinta de Crunch.",
       "isNew": true
     },
     {
@@ -9584,60 +10933,12 @@
       ],
       "machineVariants": [
         {
-          "marca": "Hammer Strength",
-          "linea": "Select",
-          "modelo": "Hammer Strength Select Abdominal Crunch",
-          "codigo": null,
-          "disponibilidad_zubiarte": "sin_verificar"
-        },
-        {
           "marca": "Technogym",
           "linea": "Selection 900",
           "modelo": "Abdominal Crunch",
           "codigo": null,
-          "disponibilidad_zubiarte": "sin_verificar"
-        },
-        {
-          "marca": "gym80",
-          "linea": "Pure Kraft",
-          "modelo": "PURE KRAFT ABDOMINAL CRUNCH",
-          "codigo": "4343",
-          "disponibilidad_zubiarte": "sin_verificar"
-        },
-        {
-          "marca": "gym80",
-          "linea": "Pure Kraft",
-          "modelo": "PURE KRAFT LYING ABDOMINAL",
-          "codigo": "4307",
-          "disponibilidad_zubiarte": "sin_verificar"
-        },
-        {
-          "marca": "gym80",
-          "linea": "Sygnum",
-          "modelo": "ABDOMINAL CRUNCH",
-          "codigo": "3008",
-          "disponibilidad_zubiarte": "sin_verificar"
-        },
-        {
-          "marca": "gym80",
-          "linea": "Sygnum",
-          "modelo": "ABDOMINAL MACHINE",
-          "codigo": "3037",
-          "disponibilidad_zubiarte": "sin_verificar"
-        },
-        {
-          "marca": "gym80",
-          "linea": "Sygnum",
-          "modelo": "CRUNCH MACHINE",
-          "codigo": "3124",
-          "disponibilidad_zubiarte": "sin_verificar"
-        },
-        {
-          "marca": "gym80",
-          "linea": "Sygnum",
-          "modelo": "LYING ABDOMINAL MACHINE",
-          "codigo": "3034",
-          "disponibilidad_zubiarte": "sin_verificar"
+          "disponibilidad_zubiarte": "sin_verificar",
+          "disponibilidad_provisional_zubiarte": true
         }
       ],
       "notes": "",
@@ -9677,15 +10978,7 @@
         "Máquina"
       ],
       "legacyNames": [],
-      "machineVariants": [
-        {
-          "marca": "Hammer Strength",
-          "linea": "Plate Loaded",
-          "modelo": "Abdominal / Oblique Crunch",
-          "codigo": null,
-          "disponibilidad_zubiarte": "sin_verificar"
-        }
-      ],
+      "machineVariants": [],
       "notes": "",
       "isNew": true
     },
@@ -10107,14 +11400,8 @@
           "linea": "Selection 900",
           "modelo": "Rotary Torso",
           "codigo": null,
-          "disponibilidad_zubiarte": "sin_verificar"
-        },
-        {
-          "marca": "gym80",
-          "linea": "Sygnum",
-          "modelo": "ROTARY MACHINE",
-          "codigo": "3225",
-          "disponibilidad_zubiarte": "sin_verificar"
+          "disponibilidad_zubiarte": "sin_verificar",
+          "disponibilidad_provisional_zubiarte": true
         }
       ],
       "notes": "",
@@ -10237,7 +11524,8 @@
           "linea": "Selection 900",
           "modelo": "Total Abdominal",
           "codigo": null,
-          "disponibilidad_zubiarte": "sin_verificar"
+          "disponibilidad_zubiarte": "sin_verificar",
+          "disponibilidad_provisional_zubiarte": true
         }
       ],
       "notes": "Máquina de Technogym distinta de Abdominal Crunch. Mantener una variante y cargas propias.",
@@ -10281,21 +11569,8 @@
           "linea": "Selection 900",
           "modelo": "Lower Back",
           "codigo": null,
-          "disponibilidad_zubiarte": "sin_verificar"
-        },
-        {
-          "marca": "gym80",
-          "linea": "Sygnum",
-          "modelo": "LOWER BACK MACHINE",
-          "codigo": "3007",
-          "disponibilidad_zubiarte": "sin_verificar"
-        },
-        {
-          "marca": "gym80",
-          "linea": "Sygnum",
-          "modelo": "LOWER BACK MACHINE",
-          "codigo": "3038",
-          "disponibilidad_zubiarte": "sin_verificar"
+          "disponibilidad_zubiarte": "sin_verificar",
+          "disponibilidad_provisional_zubiarte": true
         }
       ],
       "notes": "",
@@ -10345,7 +11620,8 @@
       "name": "Assault bike / Air Bike",
       "muscle": "Cardio",
       "materialOptions": [
-        "Máquina cardio"
+        "Máquina cardio",
+        "Cardio"
       ],
       "legacyNames": [],
       "machineVariants": [],
@@ -10372,9 +11648,30 @@
         "Cardio"
       ],
       "legacyNames": [
-        "Bicicleta estática"
+        "Bicicleta estática",
+        "Excite+ Bike",
+        "Artis Bike"
       ],
-      "machineVariants": [],
+      "machineVariants": [
+        {
+          "marca": "Technogym",
+          "linea": "Excite+",
+          "modelo": "Excite+ Bike",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "sourceUrl": "https://www.technogym.com/es-ES/category/excite/",
+          "disponibilidad_provisional_zubiarte": true
+        },
+        {
+          "marca": "Technogym",
+          "linea": "Artis",
+          "modelo": "Artis Bike",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "sourceUrl": "https://www.technogym.com/es-ES/business-equipment-cardio/",
+          "disponibilidad_provisional_zubiarte": true
+        }
+      ],
       "notes": "",
       "isNew": false
     },
@@ -10383,10 +11680,23 @@
       "name": "Bicicleta spinning",
       "muscle": "Cardio",
       "materialOptions": [
-        "Bicicleta"
+        "Bicicleta",
+        "Cardio"
       ],
-      "legacyNames": [],
-      "machineVariants": [],
+      "legacyNames": [
+        "Group Cycle"
+      ],
+      "machineVariants": [
+        {
+          "marca": "Technogym",
+          "linea": "Group Cycle",
+          "modelo": "Group Cycle",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "sourceUrl": "https://www.technogym.com/es-ES/business-equipment-cardio/",
+          "disponibilidad_provisional_zubiarte": true
+        }
+      ],
       "notes": "",
       "isNew": true
     },
@@ -10488,9 +11798,30 @@
         "Cardio"
       ],
       "legacyNames": [
-        "Elíptica"
+        "Elíptica",
+        "Excite+ Synchro",
+        "Artis Synchro"
       ],
-      "machineVariants": [],
+      "machineVariants": [
+        {
+          "marca": "Technogym",
+          "linea": "Excite+",
+          "modelo": "Excite+ Synchro",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "sourceUrl": "https://www.technogym.com/es-ES/category/excite/",
+          "disponibilidad_provisional_zubiarte": true
+        },
+        {
+          "marca": "Technogym",
+          "linea": "Artis",
+          "modelo": "Artis Synchro",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "sourceUrl": "https://www.technogym.com/es-ES/business-equipment-cardio/",
+          "disponibilidad_provisional_zubiarte": true
+        }
+      ],
       "notes": "",
       "isNew": false
     },
@@ -10499,10 +11830,23 @@
       "name": "Ergómetro de brazos",
       "muscle": "Cardio",
       "materialOptions": [
-        "Máquina cardio"
+        "Máquina cardio",
+        "Cardio"
       ],
-      "legacyNames": [],
-      "machineVariants": [],
+      "legacyNames": [
+        "Excite+ Top"
+      ],
+      "machineVariants": [
+        {
+          "marca": "Technogym",
+          "linea": "Excite+",
+          "modelo": "Excite+ Top",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "sourceUrl": "https://www.technogym.com/es-ES/category/excite/",
+          "disponibilidad_provisional_zubiarte": true
+        }
+      ],
       "notes": "",
       "isNew": true
     },
@@ -10540,9 +11884,20 @@
         "Cardio"
       ],
       "legacyNames": [
-        "Remo ergómetro"
+        "Remo ergómetro",
+        "Skillrow"
       ],
-      "machineVariants": [],
+      "machineVariants": [
+        {
+          "marca": "Technogym",
+          "linea": "Skill",
+          "modelo": "Skillrow",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "sourceUrl": "https://www.technogym.com/es-ES/skill-line-performance-equipment/",
+          "disponibilidad_provisional_zubiarte": true
+        }
+      ],
       "notes": "",
       "isNew": false
     },
@@ -10603,12 +11958,34 @@
       "name": "Stair Climber",
       "muscle": "Cardio",
       "materialOptions": [
-        "Máquina"
+        "Máquina",
+        "Cardio"
       ],
       "legacyNames": [
-        "Stair Climber"
+        "Stair Climber",
+        "Excite+ Climb",
+        "Artis Climb"
       ],
-      "machineVariants": [],
+      "machineVariants": [
+        {
+          "marca": "Technogym",
+          "linea": "Excite+",
+          "modelo": "Excite+ Climb",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "sourceUrl": "https://www.technogym.com/es-ES/category/excite/",
+          "disponibilidad_provisional_zubiarte": true
+        },
+        {
+          "marca": "Technogym",
+          "linea": "Artis",
+          "modelo": "Artis Climb",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "sourceUrl": "https://www.technogym.com/es-ES/business-equipment-cardio/",
+          "disponibilidad_provisional_zubiarte": true
+        }
+      ],
       "notes": "",
       "isNew": false
     },
@@ -10633,9 +12010,40 @@
         "Cardio"
       ],
       "legacyNames": [
-        "Treadmill (caminadora)"
+        "Treadmill (caminadora)",
+        "Excite+ Run",
+        "Artis Run",
+        "Skillrun"
       ],
-      "machineVariants": [],
+      "machineVariants": [
+        {
+          "marca": "Technogym",
+          "linea": "Excite+",
+          "modelo": "Excite+ Run",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "sourceUrl": "https://www.technogym.com/es-ES/category/excite/",
+          "disponibilidad_provisional_zubiarte": true
+        },
+        {
+          "marca": "Technogym",
+          "linea": "Artis",
+          "modelo": "Artis Run",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "sourceUrl": "https://www.technogym.com/es-ES/business-equipment-cardio/",
+          "disponibilidad_provisional_zubiarte": true
+        },
+        {
+          "marca": "Technogym",
+          "linea": "Skill",
+          "modelo": "Skillrun",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "sourceUrl": "https://www.technogym.com/es-ES/skill-line-performance-equipment/",
+          "disponibilidad_provisional_zubiarte": true
+        }
+      ],
       "notes": "",
       "isNew": false
     },
@@ -10948,19 +12356,591 @@
       "machineVariants": [],
       "notes": "",
       "isNew": true
+    },
+    {
+      "id": "grupo-remo-bajo-de-palanca",
+      "name": "Remo bajo de palanca",
+      "muscle": "Espalda",
+      "materialOptions": [
+        "Máquina"
+      ],
+      "legacyNames": [
+        "Pure Strength Low Row"
+      ],
+      "machineVariants": [
+        {
+          "marca": "Technogym",
+          "linea": "Pure Strength",
+          "modelo": "Pure Strength Low Row",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "sourceUrl": "https://www.technogym.com/es-ES/category/pure-strength/",
+          "disponibilidad_provisional_zubiarte": true
+        }
+      ],
+      "notes": "",
+      "isNew": true
+    },
+    {
+      "id": "grupo-press-de-hombros-de-pie",
+      "name": "Press de hombros de pie",
+      "muscle": "Hombros",
+      "materialOptions": [
+        "Máquina"
+      ],
+      "legacyNames": [],
+      "machineVariants": [],
+      "notes": "",
+      "isNew": true
+    },
+    {
+      "id": "grupo-elevaciones-laterales-de-pie-maquina",
+      "name": "Elevaciones laterales de pie en máquina",
+      "muscle": "Hombros",
+      "materialOptions": [
+        "Máquina"
+      ],
+      "legacyNames": [
+        "Multi Flight"
+      ],
+      "machineVariants": [
+        {
+          "marca": "Technogym",
+          "linea": "Selection 900",
+          "modelo": "Multi Flight",
+          "codigo": "MN3P",
+          "disponibilidad_zubiarte": "sin_verificar",
+          "sourceUrl": "https://www.technogym.com/en-GB/product/selection-900-multi-flight_MN3P.html",
+          "disponibilidad_provisional_zubiarte": true
+        }
+      ],
+      "notes": "",
+      "isNew": true
+    },
+    {
+      "id": "grupo-fondos-sentados-en-maquina",
+      "name": "Fondos sentado en máquina",
+      "muscle": "Tríceps",
+      "materialOptions": [
+        "Máquina"
+      ],
+      "legacyNames": [
+        "Pure Strength Seated Dip"
+      ],
+      "machineVariants": [
+        {
+          "marca": "Technogym",
+          "linea": "Pure Strength",
+          "modelo": "Pure Strength Seated Dip",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "sourceUrl": "https://www.technogym.com/es-ES/category/pure-strength/",
+          "disponibilidad_provisional_zubiarte": true
+        }
+      ],
+      "notes": "",
+      "isNew": true
+    },
+    {
+      "id": "grupo-agarre-en-maquina",
+      "name": "Agarre en máquina",
+      "muscle": "Antebrazos",
+      "materialOptions": [
+        "Máquina"
+      ],
+      "legacyNames": [],
+      "machineVariants": [],
+      "notes": "",
+      "isNew": true
+    },
+    {
+      "id": "grupo-flexion-cervical-maquina",
+      "name": "Flexión cervical en máquina",
+      "muscle": "Cuello",
+      "materialOptions": [
+        "Máquina"
+      ],
+      "legacyNames": [],
+      "machineVariants": [],
+      "notes": "",
+      "isNew": true
+    },
+    {
+      "id": "grupo-extension-cervical-maquina",
+      "name": "Extensión cervical en máquina",
+      "muscle": "Cuello",
+      "materialOptions": [
+        "Máquina"
+      ],
+      "legacyNames": [],
+      "machineVariants": [],
+      "notes": "",
+      "isNew": true
+    },
+    {
+      "id": "grupo-flexion-lateral-cervical-maquina",
+      "name": "Flexión lateral cervical en máquina",
+      "muscle": "Cuello",
+      "materialOptions": [
+        "Máquina"
+      ],
+      "legacyNames": [],
+      "machineVariants": [],
+      "notes": "",
+      "isNew": true
+    },
+    {
+      "id": "grupo-prensa-de-piernas-lineal-45",
+      "name": "Prensa lineal a 45°",
+      "muscle": "Cuádriceps",
+      "materialOptions": [
+        "Máquina"
+      ],
+      "legacyNames": [
+        "Pure Strength Linear Leg Press"
+      ],
+      "machineVariants": [
+        {
+          "marca": "Technogym",
+          "linea": "Pure Strength",
+          "modelo": "Pure Strength Linear Leg Press",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "sourceUrl": "https://www.technogym.com/es-ES/category/pure-strength/",
+          "disponibilidad_provisional_zubiarte": true
+        }
+      ],
+      "notes": "",
+      "isNew": true
+    },
+    {
+      "id": "grupo-sentadilla-de-palanca",
+      "name": "Sentadilla de palanca",
+      "muscle": "Cuádriceps",
+      "materialOptions": [
+        "Máquina"
+      ],
+      "legacyNames": [],
+      "machineVariants": [],
+      "notes": "",
+      "isNew": true
+    },
+    {
+      "id": "grupo-abduccion-de-cadera-de-pie",
+      "name": "Abducción de cadera de pie",
+      "muscle": "Glúteos",
+      "materialOptions": [
+        "Máquina"
+      ],
+      "legacyNames": [
+        "Pure Strength Standing Abductor",
+        "Multi Hip"
+      ],
+      "machineVariants": [
+        {
+          "marca": "Technogym",
+          "linea": "Pure Strength",
+          "modelo": "Pure Strength Standing Abductor",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "sourceUrl": "https://www.technogym.com/es-ES/category/pure-strength/",
+          "disponibilidad_provisional_zubiarte": true
+        },
+        {
+          "marca": "Technogym",
+          "linea": "Selection 700",
+          "modelo": "Multi Hip",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "sourceUrl": "https://www.technogym.com/es-ES/category/selection/",
+          "disponibilidad_provisional_zubiarte": true
+        }
+      ],
+      "notes": "",
+      "isNew": true
+    },
+    {
+      "id": "grupo-flexion-de-cadera-maquina",
+      "name": "Flexión de cadera en máquina",
+      "muscle": "Glúteos",
+      "materialOptions": [
+        "Máquina"
+      ],
+      "legacyNames": [
+        "Multi Hip"
+      ],
+      "machineVariants": [
+        {
+          "marca": "Technogym",
+          "linea": "Selection 700",
+          "modelo": "Multi Hip",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "sourceUrl": "https://www.technogym.com/es-ES/category/selection/",
+          "disponibilidad_provisional_zubiarte": true
+        }
+      ],
+      "notes": "",
+      "isNew": true
+    },
+    {
+      "id": "grupo-extension-de-cadera-maquina",
+      "name": "Extensión de cadera en máquina",
+      "muscle": "Glúteos",
+      "materialOptions": [
+        "Máquina"
+      ],
+      "legacyNames": [
+        "Multi Hip"
+      ],
+      "machineVariants": [
+        {
+          "marca": "Technogym",
+          "linea": "Selection 700",
+          "modelo": "Multi Hip",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "sourceUrl": "https://www.technogym.com/es-ES/category/selection/",
+          "disponibilidad_provisional_zubiarte": true
+        }
+      ],
+      "notes": "",
+      "isNew": true
+    },
+    {
+      "id": "grupo-aduccion-de-cadera-de-pie",
+      "name": "Aducción de cadera de pie",
+      "muscle": "Aductores",
+      "materialOptions": [
+        "Máquina"
+      ],
+      "legacyNames": [
+        "Multi Hip"
+      ],
+      "machineVariants": [
+        {
+          "marca": "Technogym",
+          "linea": "Selection 700",
+          "modelo": "Multi Hip",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "sourceUrl": "https://www.technogym.com/es-ES/category/selection/",
+          "disponibilidad_provisional_zubiarte": true
+        }
+      ],
+      "notes": "",
+      "isNew": true
+    },
+    {
+      "id": "grupo-gemelos-prensa-horizontal",
+      "name": "Gemelos en prensa horizontal",
+      "muscle": "Gemelos",
+      "materialOptions": [
+        "Máquina"
+      ],
+      "legacyNames": [],
+      "machineVariants": [],
+      "notes": "",
+      "isNew": true
+    },
+    {
+      "id": "grupo-tiron-alto-potencia",
+      "name": "Tirón alto de potencia",
+      "muscle": "Hombros",
+      "materialOptions": [
+        "Máquina"
+      ],
+      "legacyNames": [],
+      "machineVariants": [],
+      "notes": "",
+      "isNew": true
+    },
+    {
+      "id": "grupo-cinta-curva",
+      "name": "Cinta curva sin motor",
+      "muscle": "Cardio",
+      "materialOptions": [
+        "Cardio"
+      ],
+      "legacyNames": [
+        "Skillmill"
+      ],
+      "machineVariants": [
+        {
+          "marca": "Technogym",
+          "linea": "Skill",
+          "modelo": "Skillmill",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "sourceUrl": "https://www.technogym.com/es-ES/skill-line-performance-equipment/",
+          "disponibilidad_provisional_zubiarte": true
+        }
+      ],
+      "notes": "",
+      "isNew": true
+    },
+    {
+      "id": "grupo-bicicleta-reclinada",
+      "name": "Bicicleta reclinada",
+      "muscle": "Cardio",
+      "materialOptions": [
+        "Cardio"
+      ],
+      "legacyNames": [
+        "Excite+ Recline"
+      ],
+      "machineVariants": [
+        {
+          "marca": "Technogym",
+          "linea": "Excite+",
+          "modelo": "Excite+ Recline",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "sourceUrl": "https://www.technogym.com/es-ES/category/excite/",
+          "disponibilidad_provisional_zubiarte": true
+        }
+      ],
+      "notes": "",
+      "isNew": true
+    },
+    {
+      "id": "grupo-eliptica-zancada-variable",
+      "name": "Elíptica de zancada variable",
+      "muscle": "Cardio",
+      "materialOptions": [
+        "Cardio"
+      ],
+      "legacyNames": [
+        "Excite+ Vario",
+        "Artis Vario"
+      ],
+      "machineVariants": [
+        {
+          "marca": "Technogym",
+          "linea": "Excite+",
+          "modelo": "Excite+ Vario",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "sourceUrl": "https://www.technogym.com/es-ES/category/excite/",
+          "disponibilidad_provisional_zubiarte": true
+        },
+        {
+          "marca": "Technogym",
+          "linea": "Artis",
+          "modelo": "Artis Vario",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "sourceUrl": "https://www.technogym.com/es-ES/business-equipment-cardio/",
+          "disponibilidad_provisional_zubiarte": true
+        }
+      ],
+      "notes": "",
+      "isNew": true
+    },
+    {
+      "id": "grupo-entrenador-en-arco",
+      "name": "Entrenador en arco",
+      "muscle": "Cardio",
+      "materialOptions": [
+        "Cardio"
+      ],
+      "legacyNames": [],
+      "machineVariants": [],
+      "notes": "",
+      "isNew": true
+    },
+    {
+      "id": "grupo-bicicleta-rendimiento",
+      "name": "Bicicleta de rendimiento",
+      "muscle": "Cardio",
+      "materialOptions": [
+        "Cardio"
+      ],
+      "legacyNames": [
+        "Skillbike"
+      ],
+      "machineVariants": [
+        {
+          "marca": "Technogym",
+          "linea": "Skill",
+          "modelo": "Skillbike",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "sourceUrl": "https://www.technogym.com/es-ES/skill-line-performance-equipment/",
+          "disponibilidad_provisional_zubiarte": true
+        }
+      ],
+      "notes": "",
+      "isNew": true
+    },
+    {
+      "id": "grupo-ergometro-vertical",
+      "name": "Ergómetro vertical",
+      "muscle": "Cardio",
+      "materialOptions": [
+        "Cardio"
+      ],
+      "legacyNames": [
+        "Skillup"
+      ],
+      "machineVariants": [
+        {
+          "marca": "Technogym",
+          "linea": "Skill",
+          "modelo": "Skillup",
+          "codigo": null,
+          "disponibilidad_zubiarte": "sin_verificar",
+          "sourceUrl": "https://www.technogym.com/es-ES/skill-line-performance-equipment/",
+          "disponibilidad_provisional_zubiarte": true
+        }
+      ],
+      "notes": "",
+      "isNew": true
+    },
+    {
+      "id": "grupo-press-de-pecho-de-pie-maquina",
+      "name": "Press de pecho de pie en máquina",
+      "muscle": "Pecho",
+      "materialOptions": [
+        "Máquina"
+      ],
+      "legacyNames": [
+        "Standing Chest Press"
+      ],
+      "machineVariants": [
+        {
+          "marca": "gym80",
+          "linea": "80ATHLETICS",
+          "modelo": "Standing Chest Press",
+          "codigo": "80A00014",
+          "disponibilidad_zubiarte": "confirmada",
+          "sourceUrl": "https://gym80.de/en/product/80a00014/"
+        }
+      ],
+      "notes": "Modelo identificado en las fotografías del usuario.",
+      "isNew": true
     }
   ],
   "catalogInfo": {
-    "name": "NIVEL catálogo ampliado 4.7",
-    "source": "NIVEL catálogo maestro 4.7 y plantilla NIVEL 4.6",
+    "name": "NIVEL catálogo Fitness Park Zubiarte — selección de equipamiento",
+    "source": "NIVEL 4.7 + catálogos oficiales consultados 2026-11-25",
     "baseExercisesPreserved": 163,
-    "newMovementsAdded": 170,
-    "selectableExerciseCards": 333,
-    "uniqueMovementGroups": 271,
-    "machineModelReferences": 139,
-    "availabilityAtFitnessParkZubiarte": "No verificada por modelo",
+    "newMovementsAdded": 205,
+    "selectableExerciseCards": 373,
+    "uniqueMovementGroups": 292,
+    "machineModelReferences": 97,
+    "availabilityAtFitnessParkZubiarte": "gym80: cinco modelos conservados según revisión anterior. Hammer Strength: 16 modelos candidatos según capturas del usuario, sin verificar presencialmente. Technogym: catálogo conservado completo (71 modelos por gama y nombre), disponible de forma provisional según indicación del usuario; modelos individuales sin verificar.",
     "userData": "Archivo plantilla; NO contiene mediciones ni sesiones reales",
-    "note": "NIVEL 4.8 usa movementCatalog y machineVariants para mostrar alternativas y seleccionar máquinas. Los modelos no están confirmados en Zubiarte."
-  },
-  "machineAvailability": {}
+    "note": "En la interfaz 4.6 se muestran fichas individuales. movementCatalog y machineVariants están disponibles como datos pero requieren cambios de app.js para mostrar un selector integrado por marca y modelo.",
+    "fitnessParkExpansion": {
+      "date": "2026-11-25",
+      "newExerciseCards": 151,
+      "newMovementGroups": 35,
+      "newModelAssociations": 151,
+      "sources": [
+        "https://www.fitnesspark.es/club/bilbao-zubiarte/",
+        "https://zubiarte.com/blog/fitness_park_zubiarte/",
+        "https://www.lifefitness.com/es-es/brands/hammer-strength",
+        "https://gym80.de/en/all-products/",
+        "https://www.technogym.com/es-ES/category/pure-strength/",
+        "https://www.technogym.com/es-ES/category/selection/",
+        "https://www.technogym.com/es-ES/category/excite/"
+      ],
+      "confirmedAreas": [
+        "Musculación guiada y libre",
+        "Cardio conectado",
+        "Cross Training",
+        "Hammer Strength",
+        "Eleiko",
+        "Pure Strength",
+        "Studio Bike"
+      ],
+      "note": "catalogVerified indica existencia del modelo en el fabricante, no instalación en Zubiarte. No se ha inspeccionado el club ni app.js."
+    },
+    "gym80InventoryReview": {
+      "date": "2026-11-26",
+      "retainedModelCodes": [
+        "4325",
+        "4341",
+        "4353N",
+        "4361",
+        "80A00014"
+      ],
+      "removedExerciseCards": 81,
+      "note": "Códigos según identificación previa de las fotos; no se han comprobado las placas de fabricante. Se han conservado ejercicios genéricos y alternativas de material."
+    },
+    "hammerStrengthInventoryReview": {
+      "date": "2026-11-26",
+      "retainedLines": [
+        "Plate Loaded",
+        "Ground Base"
+      ],
+      "removedLines": [
+        "HD Performance Trainers",
+        "MTS",
+        "Select"
+      ],
+      "removedExerciseCards": 23,
+      "note": "Usuario indica que Hammer Strength es de carga por discos. Modelos restantes pendientes de comprobación; clasificación según catálogo previo."
+    },
+    "hammerStrengthShortlist": {
+      "retainedModels": [
+        "Iso-Lateral Bench Press",
+        "Iso-Lateral Chest/Back",
+        "Iso-Lateral Front Lat Pulldown",
+        "Iso-Lateral High Row",
+        "Iso-Lateral Horizontal Bench Press",
+        "Iso-Lateral Incline Press",
+        "Iso-Lateral Leg Extension",
+        "Iso-Lateral Low Row",
+        "Iso-Lateral Row",
+        "Iso-Lateral Shoulder Press",
+        "Iso-Lateral Super Incline Press",
+        "Iso-Lateral Wide Chest",
+        "Iso-Lateral Wide Pulldown",
+        "Plate Loaded Hack Squat",
+        "Plate Loaded Linear Leg Press",
+        "Plate Loaded Super Squat Press"
+      ],
+      "removedModels": [
+        "Abdominal / Oblique Crunch",
+        "Glute Ham / Reverse Hyper Combo",
+        "Ground Base Combo Twist",
+        "Ground Base Jammer",
+        "Ground Base Multi-Squat",
+        "Ground Base Squat / High Pull",
+        "Iso-Lateral D.Y. Row",
+        "Iso-Lateral Decline Chest Press",
+        "Iso-Lateral Kneeling Leg Curl",
+        "Iso-Lateral Leg Curl",
+        "Iso-Lateral T-Bar Row",
+        "Pendulum-X Squat",
+        "Plate Loaded 4-Way Neck",
+        "Plate Loaded Assisted Nordic Ham",
+        "Plate Loaded Belt Squat",
+        "Plate Loaded Glute Drive",
+        "Plate Loaded Gripper",
+        "Plate Loaded Lateral Raise",
+        "Plate Loaded Pullover",
+        "Plate Loaded Seated Biceps",
+        "Plate Loaded Seated Calf Raise",
+        "Plate Loaded Seated Dip",
+        "Plate Loaded Super Fly",
+        "Plate Loaded T-Bar Row",
+        "Plate Loaded Tibia Dorsi-Flexion",
+        "Reverse V-Squat",
+        "Seated / Standing Shrug"
+      ],
+      "addedModel": "Iso-Lateral Chest/Back",
+      "status": "sin_verificar",
+      "note": "Selección provisional, no inventario confirmado. Los modelos descartados se conservan en el archivo anterior."
+    },
+    "technogymInventoryReview": {
+      "date": "2026-11-26",
+      "retainedModels": 71,
+      "removedModels": 0,
+      "status": "disponibilidad_provisional",
+      "note": "El usuario indica que Technogym es la marca más abundante y que están casi todas. Se mantienen todas como candidatas utilizables, sin confirmar cada modelo. El estado sin_verificar se conserva para compatibilidad; el campo disponibilidad_provisional_zubiarte indica la presunción de disponibilidad."
+    }
+  }
 }

@@ -1,0 +1,13 @@
+import test from 'node:test';import assert from 'node:assert/strict';import fs from 'node:fs';
+import {normalizeExerciseQuery,exerciseSearchRecord,exerciseSearchScore} from '../../frontend/domain/exercise-search.js';
+const seed=JSON.parse(fs.readFileSync(new URL('../../frontend/data.json',import.meta.url)));
+const records=seed.exercises.map(e=>({e,r:exerciseSearchRecord(e,seed.movementCatalog.find(g=>g.id===e.movementGroup))}));
+const find=q=>records.map(({e,r})=>({e,score:exerciseSearchScore(r,q)})).filter(x=>x.score>=0).sort((a,b)=>b.score-a.score).map(x=>x.e);
+test('search by exact machine code, case insensitive and punctuation insensitive',()=>{assert.equal(find('4341')[0].id,'fpz-gym80-4341');assert.equal(find('4353n')[0].id,'fpz-gym80-4353n');assert.equal(find('il-cb').length,2);assert.equal(find('ILCB').length,2);});
+test('Spanish movements identify English branded models',()=>{assert.ok(find('mariposa gym80').some(e=>e.id==='fpz-gym80-4341'));assert.ok(find('prensa piernas gym 80').some(e=>e.id==='fpz-gym80-4361'));assert.ok(find('hammer jalón').some(e=>e.id==='catalog-hammer-strength-15'));});
+test('brand queries return only actual branded exercises',()=>{assert.equal(find('hammer').length,18);assert.ok(find('hammer pecho').every(e=>e.brand==='Hammer Strength'));assert.equal(find('gym80').length,5);assert.equal(find('Technogym').length,75);});
+test('accent insensitive and independent word order',()=>{assert.equal(normalizeExerciseQuery('  BÍCEPS / Polea '),'biceps polea');assert.deepEqual(find('polea biceps').map(e=>e.id).sort(),find('bíceps polea').map(e=>e.id).sort());assert.ok(find('polea biceps').some(e=>e.id==='curl-polea'));});
+test('no result for unknown model; search all returns entire active seed',()=>{assert.equal(find('zzzz-nonexistent').length,0);assert.equal(find('').length,351);});
+test('group alternative machine identifiers are not indexed on free weights',()=>{const rec=exerciseSearchRecord({name:'Press con barra',equipment:'Barra',muscle:'Pecho',movementGroup:'grupo-press-de-pecho-horizontal'},{name:'Press de pecho horizontal',machineVariants:[{marca:'gym80',modelo:'Modelo prueba',codigo:'12345678'}]});assert.equal(exerciseSearchScore(rec,'gym80'),-1);assert.equal(exerciseSearchScore(rec,'12345678'),-1);});
+
+test("all Technogym reference models searchable, including Vertical Traction",()=>{for(const r of seed.machineReferenceCatalog.filter(r=>r.brand==="Technogym")){assert.ok(find(r.model).some(e=>e.brand===r.brand&&e.machineLine===r.line&&e.modelName===r.model),r.model);}assert.equal(find("Vertical Traction")[0].modelName,"Vertical Traction");assert.equal(find("Vertical Traction")[0].brand,"Technogym");});
